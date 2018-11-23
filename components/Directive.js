@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
 `;
 
 const Directive = props => (
-  <StyledDiv>
+  <StyledDiv aria-hidden="true">
     <span>{props.children}</span>
     <IconNavigator />
   </StyledDiv>
