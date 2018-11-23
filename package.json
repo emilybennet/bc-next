@@ -1,0 +1,24 @@
+{
+  "name": "bronycon-next",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Emily Bennet <emily@bronycon.org>",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^0.16.0",
+    "@zeit/next-mdx": "^1.2.0",
+    "axios": "^0.18.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "remark-emoji": "^2.0.2",
+    "remark-images": "^0.16.0",
+    "styled-components": "^4.0.3"
+  }
+}
