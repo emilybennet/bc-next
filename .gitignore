@@ -76,6 +76,6 @@ typings/
 .fusebox/
 
 # General from macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
