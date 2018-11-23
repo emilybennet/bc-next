@@ -1,21 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../static/images/bronycon-logo.svg";
 
-console.log(JSON.stringify(Logo));
-
-const StyledLogo = styled.div`
-  display: inline-block;
-  #bronycon-logo-mono {
-    fill: yellow;
-  }
-`;
+import Masthead from "../components/Masthead";
 
 const Index = props => (
   <div>
-    <StyledLogo>
-      <Logo />
-    </StyledLogo>
+    <Masthead />
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id felis
     venenatis, sollicitudin ante nec, posuere nunc. Aenean tellus elit, gravida
     id metus in, gravida tempor nulla. Vestibulum eget arcu nec sapien ornare
