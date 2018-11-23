@@ -74,3 +74,8 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# General from macOS
+.DS_Store
+.AppleDouble
+.LSOverride
