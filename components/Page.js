@@ -107,6 +107,11 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  @media (max-width: 600px) {
+    body {
+      font-size: 1.2rem;
+    }
+  }
  
 `;
 
