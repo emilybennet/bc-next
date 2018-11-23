@@ -36,7 +36,7 @@ const theme = {
   poppins: '"Poppins", Helvetica, Arial, sans-serif',
   plex: '"IBM Plex Mono", monospace',
 
-  maxWidth: "1300px"
+  maxWidth: "1040px"
 };
 
 const GlobalStyle = createGlobalStyle`
