@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Directive from "../components/Directive";
 import Cover from "../components/Cover";
 import StandardRegistration from "../components/StandardRegistration";
+import HomeTease from "../components/HomeTease";
 
 const EnlistFlow = styled.div`
   section {
@@ -16,6 +17,7 @@ const Index = props => (
     <Cover />
     <StandardRegistration />
     <Directive>Continue for Briefing</Directive>
+    <HomeTease />
   </EnlistFlow>
 );
 
