@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import Masthead from "../components/Masthead";
-import Directive from "../components/Directive";
+import Cover from "../components/Cover";
 
 const Index = props => (
   <div>
-    <Masthead />
-    <Directive>Hello, I'm the directive</Directive>
+    <Cover />
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id felis
     venenatis, sollicitudin ante nec, posuere nunc. Aenean tellus elit, gravida
     id metus in, gravida tempor nulla. Vestibulum eget arcu nec sapien ornare
