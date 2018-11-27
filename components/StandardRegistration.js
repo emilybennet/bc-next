@@ -85,7 +85,7 @@ const BADGES = {
 };
 
 const StandardRegistration = props => (
-  <Container>
+  <Container id="register">
     <H2>Choose Your Clearance Level</H2>
     <Options>
       <RegisterCard {...BADGES.SINGLE_DAY} />
