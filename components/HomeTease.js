@@ -16,6 +16,7 @@ const H2 = styled.h2`
   font-weight: 700;
   margin: 0;
   letter-spacing: 3px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
 `;
@@ -25,9 +26,13 @@ const Teaser = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  padding: 0 20px;
   width: 100%;
   > * {
     flex: 1;
+  }
+  @media (max-width: 800px) {
+    display: block;
   }
 `;
 
@@ -43,6 +48,10 @@ const TeaserText = styled.div`
     &:hover {
       color: ${props => props.theme.turquoise};
     }
+  }
+  @media (max-width: 800px) {
+    font-size: 1em;
+    line-height: initial;
   }
 `;
 
