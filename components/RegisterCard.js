@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./styled/Button";
 
 const Container = styled.div`
   padding: 2em 2em;
@@ -30,25 +31,6 @@ const Price = styled.span`
   font-variant-numeric: slashed-zero;
   font-weight: 300;
   line-height: 1.6;
-`;
-
-const Button = styled.a`
-  background: ${props => props.theme.aqua};
-  border-radius: 3px;
-  color: ${props => props.theme.midnight};
-  cursor: pointer;
-  display: block;
-  font-family: ${props => props.theme.poppins};
-  font-size: 0.88em;
-  font-weight: 600;
-  letter-spacing: 3.2px;
-  line-height: 1;
-  padding: 0.88em;
-  text-transform: uppercase;
-  transition: background 0.15s;
-  &:hover {
-    background: ${props => props.theme.turquoise};
-  }
 `;
 
 const Description = styled.p`
