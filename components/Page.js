@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: 'IBM Plex Mono';
-    src: url('/static/fonts/IBMPlexMono-LightItalic-Latin1.woff2') format('woff2');
+    src: url('/static/fonts/IBMPlexMono-LightItalic-Full.woff2') format('woff2');
     font-weight: 300; /* light */
     font-style: italic;
   }

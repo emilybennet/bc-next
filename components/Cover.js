@@ -75,7 +75,7 @@ const HeroDisplay = styled.div`
 `;
 
 const Dymo = styled.span`
-  font-feature-settings: "zero" on;
+  /* font-feature-settings: "ss01"; */
   font-variant-numeric: slashed-zero;
 
   background: ${props => props.theme.black};
