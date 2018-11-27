@@ -11,9 +11,9 @@ const StyledLink = styled.a`
   flex-direction: row;
   height: 0;
   justify-content: center;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
   overflow: visible;
-  transform: translateY(-40%);
+  transform: translateY(40%);
   width: 100%;
 
   svg {
@@ -33,6 +33,12 @@ const StyledLink = styled.a`
       transform: translateY(10px);
       opacity: 0.15;
     }
+  }
+  @media (max-width: 700px) {
+    align-items: flex-start;
+    transform: translateY(-30%);
+    height: auto;
+    margin-bottom: 0;
   }
 `;
 
