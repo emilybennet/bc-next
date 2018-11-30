@@ -123,7 +123,7 @@ const TEASER_CONTENT = [
     offsetX: 7
   },
   {
-    text: "Thursday?",
+    text: "Cornhole",
     rotate: -4,
     offsetX: -17
   },
