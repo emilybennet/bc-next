@@ -5,7 +5,7 @@ import Link from "next/link";
 const StyledAnchor = styled.a`
   background: ${props => props.theme.aqua};
   border-radius: 3px;
-  color: ${props => props.theme.midnight} !important;
+  color: ${props => props.theme.midnight};
   cursor: pointer;
   display: block;
   font-family: ${props => props.theme.poppins};
@@ -24,7 +24,9 @@ const StyledAnchor = styled.a`
 
 const Button = props => (
   <Link href={props.href} passHref>
-    <StyledAnchor target={props.target}>{props.children}</StyledAnchor>
+    <StyledAnchor target={props.target} className={props.className}>
+      {props.children}
+    </StyledAnchor>
   </Link>
 );
 
