@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import Button from "./styled/Button";
+import SectionHeading from "./styled/SectionHeading";
 
 const Container = styled.section`
   display: block;
@@ -42,16 +43,17 @@ const TeaserText = styled.div`
   font-weight: 300;
   line-height: 1.78;
   letter-spacing: 1.5px;
-  a {
-    color: ${props => props.theme.aqua};
-    transition: all 0.15s;
-    &:hover {
-      color: ${props => props.theme.turquoise};
-    }
-  }
   @media (max-width: 800px) {
     font-size: 1em;
     line-height: initial;
+  }
+`;
+
+const InlineLink = styled.a`
+  color: ${props => props.theme.aqua};
+  transition: all 0.15s;
+  &:hover {
+    color: ${props => props.theme.turquoise};
   }
 `;
 
@@ -150,8 +152,8 @@ const TEASER_CONTENT = [
 ];
 
 const HomeTease = props => (
-  <Container id="events">
-    <H2>Survey the Fun</H2>
+  <Container>
+    <SectionHeading text="Survey the Fun" id="events" />
     <Teaser>
       <TeaserText>
         <p>
@@ -164,7 +166,7 @@ const HomeTease = props => (
         <p>
           Wanna change the world?{" "}
           <Link href="organization">
-            <a>Join our volunteer staff</a>
+            <InlineLink>Join our volunteer staff</InlineLink>
           </Link>{" "}
           and help us make the final BronyCon even better.
         </p>
