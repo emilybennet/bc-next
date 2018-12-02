@@ -107,6 +107,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
   a {
+    cursor: pointer;
     text-decoration: none;
   }
   @media (max-width: 600px) {
