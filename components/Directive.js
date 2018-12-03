@@ -23,6 +23,7 @@ const StyledDiv = styled.div`
   font-size: 1.1em;
   letter-spacing: 4px;
   line-height: 1;
+  text-align: center;
   text-transform: uppercase;
   span {
     display: block;
