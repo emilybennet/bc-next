@@ -32,6 +32,10 @@ const StyledAnchor = styled.a`
   color: ${props => props.theme.aqua};
   display: block;
   margin-bottom: 1em;
+  transition: color 0.15s;
+  &:hover {
+    color: ${props => props.theme.turquoise};
+  }
   &.active {
     text-decoration: underline;
   }
