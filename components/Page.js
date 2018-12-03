@@ -105,6 +105,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
+    background-size: 100px 100px;
+    background-repeat: repeat;
   }
   a {
     cursor: pointer;
