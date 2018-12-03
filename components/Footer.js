@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 import Map from "../static/images/footer-usa.svg";
 import IconFacebook from "../static/images/icons/social-facebook.svg";
@@ -45,6 +46,22 @@ const Legalese = styled.p`
   font-size: 0.7em;
   line-height: 1.5;
   margin-bottom: 1.6em;
+`;
+
+const FooterLinks = styled.div`
+  font-family: ${props => props.theme.plex};
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin-bottom: 1.6em;
+  a {
+    color: ${props => props.theme.aqua};
+    &:hover {
+      color: ${props => props.theme.turquoise};
+    }
+    &:not(:first-child) {
+      margin-left: 1em;
+    }
+  }
 `;
 
 const Heart = styled.span`
@@ -106,6 +123,17 @@ const Footer = props => (
       <Coordinates>
         39°17’10”N <Heart>♥</Heart> 76°36’56"W
       </Coordinates>
+      <FooterLinks>
+        <Link href="/">
+          <a>Attend</a>
+        </Link>
+        <Link href="/about">
+          <a>Organization</a>
+        </Link>
+        <Link href="/policies">
+          <a>Policies</a>
+        </Link>
+      </FooterLinks>
       <Legalese>
         © {new Date().getFullYear()} BronyCon. BronyCon and BronyPalooza are a
         registered trademark of Lunar Solis Corp. My Little Pony: Friendship is
