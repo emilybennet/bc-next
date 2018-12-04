@@ -57,7 +57,7 @@ const NavLink = withRouter(({ url, text, router }) => (
 const PolicyNav = props => (
   <StickyMenu>
     {NAV_LINKS.map(link => (
-      <NavLink {...link} />
+      <NavLink {...link} key={link.text} />
     ))}
   </StickyMenu>
 );
