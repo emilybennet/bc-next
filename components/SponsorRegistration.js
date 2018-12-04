@@ -84,7 +84,7 @@ const SponsorRegistration = props => (
     <LeadParagraph>
       The donations of our sponsors are what make BronyCon possible. When you
       give to our event, you’ll receive upgrades to your attendee
-      experience—like swag and perks—as a way for us to say “thank you” for your
+      experience&thinsp;—&thinsp;like swag and perks&thinsp;—&thinsp;as a way for us to say “thank you” for your
       generosity.
     </LeadParagraph>
 
