@@ -5,6 +5,12 @@ import SponsorIconGraph from "./SponsorIconGraph";
 import Button from "./styled/Button";
 import IconStar from "../static/images/icons/star.svg";
 
+const Tier = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Price = styled.span`
   display: block;
   font-family: ${props => props.theme.plex};
@@ -13,6 +19,11 @@ const Price = styled.span`
   font-style: italic;
   font-weight: 300;
   text-align: center;
+`;
+
+const ButtonWrap = styled(Button)`
+  width: 100%;
+  max-width: 70vw;
 `;
 
 const AxWrap = styled.div`
@@ -53,21 +64,21 @@ const SponsorCard = ({ Icon, ...props }) => {
     return stars;
   };
   return (
-    <div>
+    <Tier>
       <SponsorIconGraph
         Icon={Icon}
         color={props.color}
         percent={props.percent}
       />
       <Price>${props.price}</Price>
-      <Button href={props.url}>{props.name}</Button>
+      <ButtonWrap href={props.url}>{props.name}</ButtonWrap>
 
       <AxWrap>
         <span>A.X. Upgrades</span>
         {injectStars()}
       </AxWrap>
       <Note>{props.note}</Note>
-    </div>
+    </Tier>
   );
 };
 
