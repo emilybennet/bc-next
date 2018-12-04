@@ -115,9 +115,7 @@ const Cover = props => (
         <div className="invite">
           <h2>
             <BlockSpan>Join us on</BlockSpan> <Dymo>Aug 1-4, 2019</Dymo>
-            <BlockSpan>
-              for a celebration of a fandom unlike any other.
-            </BlockSpan>
+            <BlockSpan>for a fandom celebration unlike any other.</BlockSpan>
           </h2>
           <p>
             All good things must come to an end. BronyCon returns one final time
