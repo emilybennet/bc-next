@@ -130,6 +130,23 @@ const Page = props => (
         <title>BronyCon 2019</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/static/favicon.png" />
+
+        <meta name="twitter:site" content="@bronycon" />
+        <meta property="og:title" content="BronyCon 2019" />
+        <meta
+          property="og:description"
+          content="Join us for the final BronyCon in Baltimore, Maryland on August 1–4, 2019"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bronycon.org" />
+        <meta
+          property="og:image"
+          content="https://bronycon.org/static/images/opengraph.png"
+        />
+        <link
+          href="https://plus.google.com/117749353168703446152"
+          rel="publisher"
+        />
       </Head>
       {props.children}
       <GlobalStyle />
