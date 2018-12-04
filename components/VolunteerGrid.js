@@ -49,6 +49,11 @@ const Opening = ({ dept, description, url }) => (
 
 const APP_CONTENT = [
   {
+    dept: "Events",
+    description: "Coordinates scheduled sessions.",
+    url: "http://bit.ly/2zEZgsC"
+  },
+  {
     dept: "Finance",
     description: "Work with money. Cash counting skills required.",
     url: "http://bit.ly/2TTg87u"
@@ -66,7 +71,7 @@ const APP_CONTENT = [
   {
     dept: "Photography",
     description: "Say cheese and document everything.",
-    url: "http://bit.ly/2PYWHMh"
+    url: "http://bit.ly/2QqsQMm"
   },
   {
     dept: "Public Relations",
