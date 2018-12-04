@@ -72,7 +72,7 @@ const BADGES = {
     url: "https://bronycon2019.eventbrite.com#tickets",
     lead: "All-Weekend Access",
     description:
-      "Access to the event for the entire weekend. Youth, senior, an service member discounts are available."
+      "Access to the event for the entire weekend. Youth, senior, and service member discounts are available."
   },
   WEEKEND_PLUS: {
     name: "4-Day PLUS",
@@ -94,7 +94,7 @@ const StandardRegistration = props => (
     </Options>
     <Footer>
       Looking to help bankroll our operation?
-      <Link href="/sponsorships">
+      <Link href="/donate">
         <a>See how to become a sponsor →</a>
       </Link>
     </Footer>
