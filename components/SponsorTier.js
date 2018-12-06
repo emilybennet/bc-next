@@ -45,7 +45,6 @@ const Note = styled.div`
   font-family: ${props => props.theme.poppins};
   font-size: 0.77em;
   letter-spacing: 1px;
-  margin: 3.3em 0;
   text-align: center;
   text-transform: uppercase;
 `;
