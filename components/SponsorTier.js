@@ -55,10 +55,10 @@ const SponsorCard = ({ Icon, ...props }) => {
     let stars = [];
 
     for (let index = 0; index < props.axLevel; index++) {
-      stars.push(<IconStar fill="#39FFF6" />);
+      stars.push(<IconStar fill="#39FFF6" key={stars.length} />);
     }
     for (let index = props.axLevel; index < 4; index++) {
-      stars.push(<IconStar fill="#071318" />);
+      stars.push(<IconStar fill="#071318" key={stars.length} />);
     }
 
     return stars;
