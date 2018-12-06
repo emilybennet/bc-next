@@ -11,6 +11,9 @@ const Container = styled.section`
   min-height: 100vh;
   padding-bottom: 20px;
   width: 100vw;
+  @media (max-width: 700px) {
+    min-height: unset;
+  }
 `;
 
 const Hero = styled.div`
@@ -67,6 +70,7 @@ const HeroDisplay = styled.div`
 
   @media (max-width: 700px) {
     display: flex;
+    margin-bottom: 5em;
     padding: 0 5em;
     svg {
       display: none;
