@@ -47,7 +47,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#D291BE",
     axLevel: 1,
-    percent: 100,
+    percent: 53,
     note: ""
   },
   {
@@ -57,7 +57,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#6ED2FA",
     axLevel: 2,
-    percent: 100,
+    percent: 47,
     note: ""
   },
   {
@@ -67,7 +67,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#FFC30F",
     axLevel: 3,
-    percent: 100,
+    percent: 7,
     note: ""
   },
   {
@@ -77,7 +77,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#1FB3AC",
     axLevel: 4,
-    percent: 100,
+    percent: 0,
     note: "Partner hotel accommodations."
   }
 ];
