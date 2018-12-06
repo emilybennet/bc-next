@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import SponsorIconGraph from "./SponsorIconGraph";
+import ProgressRing from "./ProgressRing";
 import Button from "./styled/Button";
 import IconStar from "../static/images/icons/star.svg";
 
@@ -65,10 +65,14 @@ const SponsorCard = ({ Icon, ...props }) => {
   };
   return (
     <Tier>
-      <SponsorIconGraph
+      <ProgressRing
+        radius={100}
+        stroke={6}
+        progress={props.percent}
+        barColor={props.color}
         Icon={Icon}
-        color={props.color}
-        percent={props.percent}
+        countdown={true}
+        message="Sold Out"
       />
       <Price>${props.price}</Price>
       <ButtonWrap href={props.url}>{props.name}</ButtonWrap>

@@ -66,7 +66,6 @@ class ProgressRing extends Component {
             stroke="rgba(255,255,255,.05)"
             fill="transparent"
             strokeWidth={stroke}
-            stroke-width={stroke}
             r={this.normalizedRadius}
             cx={radius}
             cy={radius}
@@ -77,7 +76,6 @@ class ProgressRing extends Component {
             strokeWidth={stroke}
             strokeDasharray={this.circumference + " " + this.circumference}
             style={{ strokeDashoffset }}
-            stroke-width={stroke}
             strokeLinecap="round"
             r={this.normalizedRadius}
             cx={radius}
