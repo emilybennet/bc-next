@@ -49,6 +49,7 @@ const TierWrap = styled.div`
     }
     > *:not(:last-child) {
       border-bottom: 8px dotted ${props => props.theme.abyss};
+    }
   }
 `;
 
