@@ -1,9 +1,11 @@
 import React from "react";
 import Head from "next/head";
+import { withRouter } from "next/router";
+
 import Header from "./Header";
 import Footer from "./Footer";
 
-const BasicLayout = props => {
+const BasicLayout = withRouter(({ router, ...props }) => {
   const titleString = `${
     props.pageTitle ? props.pageTitle + " •" : ""
   } BronyCon 2019`;
@@ -12,12 +14,16 @@ const BasicLayout = props => {
       <Head>
         <title>{titleString}</title>
         <meta property="og:title" content={titleString} />
+        <meta
+          property="og:url"
+          content={`https://bronycon.org${router.pathname}`}
+        />
       </Head>
       <Header />
       {props.children}
       <Footer />
     </React.Fragment>
   );
-};
+});
 
 export default BasicLayout;
