@@ -74,7 +74,9 @@ const SponsorCard = ({ Icon, ...props }) => {
         message="Sold Out"
       />
       <Price>${props.price}</Price>
-      <ButtonWrap href={props.url}>{props.name}</ButtonWrap>
+      <ButtonWrap href={props.url} disabled={!props.percent > 0}>
+        {props.name}
+      </ButtonWrap>
 
       <AxWrap>
         <span>A.X. Upgrades</span>

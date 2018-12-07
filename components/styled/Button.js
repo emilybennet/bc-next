@@ -20,14 +20,27 @@ const StyledAnchor = styled.a`
   &:hover {
     background: ${props => props.theme.turquoise};
   }
+  &.disabled {
+    background: ${props => props.theme.abyss};
+    color: ${props => props.theme.aqua};
+    cursor: default;
+    text-decoration: line-through;
+    user-select: none;
+  }
 `;
 
-const Button = props => (
-  <Link href={props.href} passHref>
-    <StyledAnchor target={props.target} className={props.className}>
-      {props.children}
-    </StyledAnchor>
-  </Link>
-);
+const Button = ({ href, target, className, disabled, ...props }) => {
+  if (disabled) {
+    className = `${className} disabled`;
+    href = "";
+  }
+  return (
+    <Link href={href} passHref>
+      <StyledAnchor target={target} className={className}>
+        {props.children}
+      </StyledAnchor>
+    </Link>
+  );
+};
 
 export default Button;
