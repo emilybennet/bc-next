@@ -20,6 +20,9 @@ const LeadParagraph = styled.p`
   max-width: ${props => props.theme.maxWidth};
   margin: 2em auto 3em;
   text-align: center;
+  @media (max-width: ${props => props.theme.maxWidth}) {
+    padding: 0 20px;
+  }
 `;
 
 const TierWrap = styled.div`
