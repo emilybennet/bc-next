@@ -163,6 +163,9 @@ const HomeTease = props => (
         <Button href="https://airtable.com/shr4tT9iU9woR8rp6" target="_blank">
           Run a Panel/Activity
         </Button>
+        <Button href="/exhibit" style={{ marginTop: 20 }}>
+          Exhibit in Marketplace
+        </Button>
         <p>
           Wanna change the world?{" "}
           <Link href="/about">

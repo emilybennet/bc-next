@@ -127,6 +127,9 @@ const Footer = props => (
         <Link href="/">
           <a>Attend</a>
         </Link>
+        <Link href="/exhibit">
+          <a>Exhibit</a>
+        </Link>
         <Link href="/about">
           <a>Organization</a>
         </Link>

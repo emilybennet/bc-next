@@ -29,14 +29,14 @@ const StyledAnchor = styled.a`
   }
 `;
 
-const Button = ({ href, target, className, disabled, ...props }) => {
+const Button = ({ href, target, className, disabled, style, ...props }) => {
   if (disabled) {
     className = `${className} disabled`;
     href = "";
   }
   return (
     <Link href={href} passHref>
-      <StyledAnchor target={target} className={className}>
+      <StyledAnchor target={target} className={className} style={style}>
         {props.children}
       </StyledAnchor>
     </Link>
