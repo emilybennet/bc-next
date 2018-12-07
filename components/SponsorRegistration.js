@@ -25,17 +25,30 @@ const LeadParagraph = styled.p`
 const TierWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
+  > * {
+    padding: 1em 25px;
+  }
+  > *:not(:last-child) {
+    border-right: 8px dotted ${props => props.theme.abyss};
+  }
   @media (max-width: ${props => props.theme.maxWidth}) {
     padding: 0 20px;
   }
   @media (max-width: 950px) {
     grid-template-columns: repeat(2, 1fr);
+    & > *:not(:last-child) {
+      border-right: none;
+    }
   }
   @media (max-width: 480px) {
     grid-template-columns: repeat(1, 1fr);
+    > * {
+      padding: 3em 25px;
+    }
+    > *:not(:last-child) {
+      border-bottom: 8px dotted ${props => props.theme.abyss};
   }
 `;
 
