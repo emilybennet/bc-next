@@ -29,7 +29,7 @@ const theme = {
   midnight: "#131D35",
   ruby: "#F73E69",
   turquoise: "#1FB3AC",
-  white: "#FFFFFF",
+  white: "#CCFBF5",
   deepAbyss: "#08252F", //page
 
   // font stacks
@@ -106,9 +106,13 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
-    background-size: 100px 100px;
-    background-repeat: repeat;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(120, 250, 245, .1) 0, transparent 100%), 
+      repeating-linear-gradient(2deg, transparent, transparent 4px, rgba(0, 0, 0, .15) 4px, rgba(0, 0, 0, .15) 5px), 
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
+    background-size: cover, cover, 100px 100px;
+    background-repeat: no-repeat, repeat, repeat;
+    background-attachment: fixed, fixed, scroll;
   }
   a {
     cursor: pointer;
