@@ -86,6 +86,15 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
+  @keyframes 'lcd' {
+    0% {
+      background-position-y: 0%, 0%, 0%;
+    }
+    100% {
+      background-position-y: 0%, 100%, 0%;
+    }
+  }
+
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -108,11 +117,12 @@ const GlobalStyle = createGlobalStyle`
 
     background-image: 
       radial-gradient(circle at 50% 50%, rgba(120, 250, 245, .1) 0, transparent 100%), 
-      repeating-linear-gradient(2deg, transparent, transparent 4px, rgba(0, 0, 0, .15) 4px, rgba(0, 0, 0, .15) 5px), 
+      repeating-linear-gradient(transparent, transparent 5px, rgba(0, 0, 0, .15) 10px, rgba(0, 0, 0, .15) 10px), 
       radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
-    background-size: cover, cover, 100px 100px;
+    background-size: cover, 50px 50px, 100px 100px;
     background-repeat: no-repeat, repeat, repeat;
     background-attachment: fixed, fixed, scroll;
+    animation: 'lcd' 60s infinite linear forwards;
   }
   a {
     cursor: pointer;
