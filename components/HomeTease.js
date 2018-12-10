@@ -172,9 +172,7 @@ const HomeTease = props => (
         </Button>
         <p>
           Wanna change the world?{" "}
-          <Link href="/about">
-            <InlineLink>Join our volunteer staff</InlineLink>
-          </Link>{" "}
+          <InlineLink href="/about">Join our volunteer staff</InlineLink>{" "}
           and help us make the final BronyCon even better.
         </p>
       </TeaserText>
