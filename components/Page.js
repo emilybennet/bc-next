@@ -31,6 +31,7 @@ const theme = {
   turquoise: "#1FB3AC",
   white: "#CCFBF5",
   deepAbyss: "#08252F", //page
+  sapphire: "hsl(100, 100%, 75%)",
 
   // font stacks
   poppins: '"Poppins", Helvetica, Arial, sans-serif',

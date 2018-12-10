@@ -55,6 +55,13 @@ const InlineLink = styled.a`
   &:hover {
     color: ${props => props.theme.turquoise};
   }
+  &:focus {
+    outline: none;
+    background: ${props => props.theme.sapphire};
+    color: ${props => props.theme.midnight};
+    box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
+    border-radius: 1px;
+  }
 `;
 
 const Classified = styled.div`

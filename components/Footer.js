@@ -61,6 +61,13 @@ const FooterLinks = styled.div`
     &:not(:first-child) {
       margin-left: 1em;
     }
+    &:focus {
+      outline: none;
+      background: ${props => props.theme.sapphire};
+      color: ${props => props.theme.midnight};
+      box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
+      border-radius: 1px;
+    }
   }
 `;
 
@@ -71,8 +78,13 @@ const Heart = styled.span`
 
 const SocialLinks = styled.div`
   display: block;
+  a {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 5px;
+  }
   a:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   path {
     fill: ${props => props.theme.aqua};
@@ -82,6 +94,10 @@ const SocialLinks = styled.div`
     path {
       fill ${props => props.theme.turquoise};
     }
+  }
+  a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
   }
 `;
 
