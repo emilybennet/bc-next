@@ -143,7 +143,7 @@ const ARTIST_ALLEY_OPTIONS = [
 ];
 
 const ExhibitPage = props => (
-  <BasicLayout>
+  <BasicLayout pageTitle="Exhibit">
     <Directive>Apply For Exhibitor Clearance</Directive>
 
     <MarketplaceSection>
