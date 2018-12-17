@@ -4,11 +4,7 @@ import BasicLayout from "../../components/BasicLayout";
 import Directive from "../../components/Directive";
 import PolicyView from "../../components/PolicyView";
 
-// import Content from "../../content/policy_attendee.mdx";
-
-const Content = () => (
-  <p>Marketplace policies are being redefined for 2019, stay tuned.</p>
-);
+import Content from "../../content/policy_marketplace.mdx";
 
 const MarketplacePolicies = props => (
   <BasicLayout pageTitle="Marketplace Policies">

@@ -83,6 +83,19 @@ const StyledH2 = styled.h2`
   }
 `;
 
+const StyledH3 = styled.h3`
+  font-size: 1.17em;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:first-of-type {
+    margin-top: 0;
+  }
+`;
+
 const Blockquote = styled.blockquote`
   color: ${props => props.theme.aqua};
   font-size: 1.14em;
@@ -111,6 +124,10 @@ const H2 = ({ children }) => (
   <ContentHeading Component={StyledH2}>{children}</ContentHeading>
 );
 
+const H3 = ({ children }) => (
+  <ContentHeading Component={StyledH3}>{children}</ContentHeading>
+);
+
 const PolicyView = ({ Content, ...props }) => {
   return (
     <Container>
@@ -119,7 +136,13 @@ const PolicyView = ({ Content, ...props }) => {
         <PolicyNav />
         <ContentWrap>
           <Content
-            components={{ h1: H1, h2: H2, a: Anchor, blockquote: Blockquote }}
+            components={{
+              h1: H1,
+              h2: H2,
+              h3: H3,
+              a: Anchor,
+              blockquote: Blockquote
+            }}
           />
         </ContentWrap>
       </PolicyLayout>
