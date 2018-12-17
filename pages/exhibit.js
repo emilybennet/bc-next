@@ -158,7 +158,10 @@ const ExhibitPage = props => (
           <Configuration {...opt} key={opt.config} />
         ))}
       </CompareGrid>
-      <InlineButton href="https://airtable.com/shr72SP1FNH3plLmn">
+      <InlineButton
+        href="https://airtable.com/shr72SP1FNH3plLmn"
+        target="_blank"
+      >
         Apply For Vendor Hall
       </InlineButton>
       <div>
@@ -174,14 +177,14 @@ const ExhibitPage = props => (
         Half-table slots for individual artists who create and sell their own
         works of art or perform commissions.
       </Lead>
-      <CompareGridHeading>Artist Alley Options</CompareGridHeading>
+      {/* <CompareGridHeading>Artist Alley Options</CompareGridHeading>
       <CompareGrid>
         {ARTIST_ALLEY_OPTIONS.map(opt => (
           <Configuration {...opt} key={opt.config} />
         ))}
-      </CompareGrid>
+      </CompareGrid> */}
       <InlineButton href="#" disabled={true}>
-        Apply For Artist Alley
+        Apply in Early 2019
       </InlineButton>
       <div>
         <PolicyLink href="https://eepurl.com/dCvaLf" target="_blank">
@@ -200,7 +203,7 @@ const ExhibitPage = props => (
         BronyCon-operated art gallery.
       </Lead>
       <InlineButton href="#" disabled={true}>
-        Apply For Art Show
+        Apply in Spring 2019
       </InlineButton>
       <div>
         <Link href="https://eepurl.com/dCvaLf">
