@@ -8,9 +8,9 @@ import SectionHeading from "../components/styled/SectionHeading";
 import Button from "../components/styled/Button";
 import Configuration from "../components/ExhibitorPackageCard";
 
-import SingleBooth from "../static/images/vendor_hall-diagram-single.svg";
-import DoubleBooth from "../static/images/vendor_hall-diagram-double.svg";
-import QuadBooth from "../static/images/vendor_hall-diagram-quad.svg";
+import SingleBooth from "../static/images/vendor_hall-diagram-feet-single.svg";
+import DoubleBooth from "../static/images/vendor_hall-diagram-feet-double.svg";
+import QuadBooth from "../static/images/vendor_hall-diagram-feet-quad.svg";
 
 const MarketplaceSection = styled.section`
   margin-bottom: 8em;
