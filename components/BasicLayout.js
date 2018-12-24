@@ -4,6 +4,7 @@ import { withRouter } from "next/router";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import EapBanner from "./EapBanner";
 
 const BasicLayout = withRouter(({ router, ...props }) => {
   const titleString = `${
@@ -19,6 +20,7 @@ const BasicLayout = withRouter(({ router, ...props }) => {
           content={`https://bronycon.org${router.pathname}`}
         />
       </Head>
+      <EapBanner />
       <Header />
       {props.children}
       <Footer />
