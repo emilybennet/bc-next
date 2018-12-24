@@ -210,40 +210,43 @@ class HolidayPage extends React.PureComponent {
           <title>A holiday message from our Chairs • BronyCon</title>
           <meta
             name="description"
-            content="Happy Holidays & Mare-y New Year!"
+            content="Greetings from your friends at BronyCon!"
           />
-          <meta property="og:title" content="Holiday cheer from our Chairs" />
+          <meta
+            property="og:title"
+            content="Greetings from your friends at BronyCon!"
+          />
           <meta
             property="og:description"
-            content="Happy Holidays & Mare-y New Year!"
+            content="We are thinking of you this holiday season as we prepare for our final, biggest and best year ever!"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://bronycon.org/holiday" />
           <meta
             property="og:image"
-            content="http://bronycon.org/images/opengraph-holiday2018.jpg"
+            content="http://bronycon.org/static/images/opengraph-holiday2018.jpg"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@bronycon" />
           <meta name="twitter:creator" content="@bronycon" />
           <meta
             name="twitter:title"
-            content="Holiday cheer message from our Chairs"
+            content="Greetings from your friends at BronyCon!"
           />
           <meta
             name="twitter:description"
-            content="Happy Holidays & Mare-y New Year!"
+            content="We are thinking of you this holiday season as we prepare for our final, biggest and best year ever!"
           />
           <meta
             name="twitter:image:src"
-            content="https://bronycon.org/images/opengraph-holiday2018.jpg"
+            content="https://bronycon.org/static/images/opengraph-holiday2018.jpg"
           />
         </Head>
         <GlobalOverwrite />
         <CardCover>
           <img
             src="/static/images/holiday2018/cover-fg-cozy-scene.png"
-            alt=""
+            alt="BronyCon Mascots"
           />
           <FestiveFrame />
         </CardCover>
