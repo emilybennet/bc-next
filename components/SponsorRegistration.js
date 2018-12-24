@@ -64,7 +64,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#D291BE",
     axLevel: 1,
-    percent: 31,
+    percent: 30,
     note: ""
   },
   {
@@ -74,7 +74,7 @@ const SPONSOR_TIERS = [
     url: "https://bronycon2019.eventbrite.com",
     color: "#6ED2FA",
     axLevel: 2,
-    percent: 5,
+    percent: 0,
     note: ""
   },
   {
