@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Directive from "../components/Directive";
+import EapBanner from "../components/EapBanner";
 import Cover from "../components/Cover";
 import StandardRegistration from "../components/StandardRegistration";
 import HomeTease from "../components/HomeTease";
@@ -15,6 +16,7 @@ const EnlistFlow = styled.div`
 
 const Index = props => (
   <EnlistFlow>
+    <EapBanner />
     <Cover />
     <StandardRegistration />
     <Directive>Continue for Briefing</Directive>

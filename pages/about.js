@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import EapBanner from "../components/EapBanner";
 import Directive from "../components/Directive";
 import SectionHeading from "../components/styled/SectionHeading";
 import VolunteerGrid from "../components/VolunteerGrid";
@@ -18,6 +19,7 @@ const Inner = styled.div`
 
 const AboutPage = props => (
   <React.Fragment>
+    <EapBanner />
     <Header />
     <Directive>Eyes Only Communiqué</Directive>
     <Section>
