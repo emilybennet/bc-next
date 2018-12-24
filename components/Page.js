@@ -142,6 +142,7 @@ const Page = props => (
         <meta
           property="og:image"
           content="https://bronycon.org/static/images/opengraph.png"
+          key="opengraphImage"
         />
         <link
           href="https://plus.google.com/117749353168703446152"

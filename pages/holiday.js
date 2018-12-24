@@ -225,6 +225,7 @@ class HolidayPage extends React.PureComponent {
           <meta
             property="og:image"
             content="http://bronycon.org/static/images/opengraph-holiday2018.jpg"
+            key="opengraphImage"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@bronycon" />
