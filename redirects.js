@@ -76,4 +76,15 @@ const marketplace = [
   }
 ];
 
-module.exports = [...policies, ...marketplace];
+const social = [
+  {
+    from: "/telegram",
+    to: "https://t.me/BronyCon"
+  },
+  {
+    from: "/discord",
+    to: "https://discord.gg/7rMhsKQ"
+  }
+];
+
+module.exports = [...policies, ...marketplace, ...social];
