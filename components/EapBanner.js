@@ -34,13 +34,14 @@ const Container = styled.div`
 `;
 
 const EapBanner = props => (
-  <Container>
-    <Link href="/holiday">
-      <a>
-        <span>// Incoming Transmission →</span> <Snowflake />
-      </a>
-    </Link>
-  </Container>
+  // <Container>
+  //   <Link href="/holiday">
+  //     <a>
+  //       <span>// Incoming Transmission →</span> <Snowflake />
+  //     </a>
+  //   </Link>
+  // </Container>
+  <div />
 );
 
 export default EapBanner;
