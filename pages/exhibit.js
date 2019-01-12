@@ -165,7 +165,7 @@ const ExhibitPage = props => (
         Apply For Vendor Hall
       </InlineButton> */}
       <InlineButton href="#" disabled={true}>
-        Applications Closed
+        Application Closed
       </InlineButton>
       <div>
         <Link href="/policies/marketplace">
