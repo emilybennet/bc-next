@@ -148,6 +148,10 @@ const Page = props => (
           href="https://plus.google.com/117749353168703446152"
           rel="publisher"
         />
+        <link
+          href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css"
+          rel="stylesheet"
+        />
       </Head>
       {props.children}
       <GlobalStyle />
