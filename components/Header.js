@@ -31,13 +31,15 @@ const LogoWrap = styled.a`
 `;
 
 const Header = props => (
-  <StyledHeader>
+  <StyledHeader className={props.className}>
     <Link href="/">
       <LogoWrap>
         <Logo />
       </LogoWrap>
     </Link>
-    <Button href="/">Enlist</Button>
+    <Button className="btn" href="/">
+      Enlist
+    </Button>
   </StyledHeader>
 );
 
