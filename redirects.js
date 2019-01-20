@@ -87,4 +87,27 @@ const social = [
   }
 ];
 
-module.exports = [...policies, ...marketplace, ...social];
+const baltimore = [
+  {
+    from: "/baltimore/hotels",
+    to: "/baltimore"
+  },
+  {
+    from: "/baltimore/getting-here",
+    to: "/baltimore"
+  },
+  {
+    from: "/baltimore/getting-here/by-car",
+    to: "/baltimore"
+  },
+  {
+    from: "/baltimore/getting-here/by-air",
+    to: "/baltimore"
+  },
+  {
+    from: "/baltimore/getting-here/by-train",
+    to: "/baltimore"
+  }
+];
+
+module.exports = [...policies, ...marketplace, ...social, ...baltimore];
