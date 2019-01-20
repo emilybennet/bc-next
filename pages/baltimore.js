@@ -1,21 +1,15 @@
-import BasicLayout from "../components/BasicLayout";
-// import CityGuideMap from "../components/CityGuideMap";
-
-import dynamic from "next/dynamic";
-
-const DynamicCityGuideMap = dynamic(
-  () => import("../components/BaltimoreMap"),
-  {
-    loading: () => <p>Stand By...</p>,
-    ssr: false
-  }
-);
+import Head from "next/head";
+import MapLayout from "../components/MapLayout";
 
 const BaltimorePage = props => (
-  <BasicLayout>
-    <p>Hello Baltimore City .</p>
-    <DynamicCityGuideMap />
-  </BasicLayout>
+  <React.Fragment>
+    <Head>
+      <title>Baltimore • BronyCon 2019</title>
+      <meta property="og:title" content="Baltimore • BronyCon" />
+      <meta property="og:url" content="https://bronycon.org/baltimore" />
+    </Head>
+    <MapLayout />
+  </React.Fragment>
 );
 
 export default BaltimorePage;

@@ -4,13 +4,14 @@ import mapboxgl from "mapbox-gl";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYnJvbnljb24iLCJhIjoiRklsbENRTSJ9.21dt7yfYoQ7iSFRPkmon7A";
 
-class BaltimoreMap extends React.Component {
+class Map extends React.Component {
   componentDidMount() {
     const map = new mapboxgl.Map({
       container: this.mapContainer,
       style: "mapbox://styles/bronycon/cjr2w53yj0jrv2rp82ky8lwsg",
       // style: "mapbox://styles/mapbox/streets-v9"
-      center: [-76.615779, 39.285996],
+      // center: [-76.615779, 39.285996],
+      center: [-76.615595, 39.283566],
       zoom: 14
     });
 
@@ -23,10 +24,18 @@ class BaltimoreMap extends React.Component {
     return (
       <div
         ref={el => (this.mapContainer = el)}
-        style={{ width: "100vw", height: "100vh" }}
+        style={{
+          width: "100vw",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 1,
+          opacity: 0.2
+        }}
       />
     );
   }
 }
 
-export default BaltimoreMap;
+export default Map;
