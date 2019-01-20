@@ -20,6 +20,12 @@ app.prepare().then(() => {
   });
 
   server.get("*", (req, res) => {
+    // remove trailing slashes unless it's home
+    // fixes the /baltimore => a page vs /baltimore/ => 404 bug
+    req.url = req.url.replace(/\/$/, "");
+    if (req.url == "") {
+      req.url = "/";
+    }
     return handler(req, res);
   });
 
