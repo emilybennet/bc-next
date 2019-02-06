@@ -22,30 +22,38 @@ const Lineup = styled.div`
 
 const GUESTS_CONTENT = [
   {
-    photo: "/static/images/guests/placeholders/Curtis.jpg"
+    photo: "/static/images/guests/placeholders/Curtis.jpg",
+    id: "unknown1"
   },
   {
-    photo: "/static/images/guests/placeholders/Alex.jpg"
+    photo: "/static/images/guests/placeholders/Alex.jpg",
+    id: "unknown2"
   },
   {
     photo: "/static/images/guests/nicole-oliver.jpg",
-    name: "Nicole Oliver"
+    name: "Nicole Oliver",
+    id: "oliver"
   },
   {
-    photo: "/static/images/guests/placeholders/Jason.jpg"
+    photo: "/static/images/guests/placeholders/Jason.jpg",
+    id: "unknown3"
   },
   {
-    photo: "/static/images/guests/placeholders/Justin.jpg"
+    photo: "/static/images/guests/placeholders/Justin.jpg",
+    id: "unknown4"
   },
   {
-    photo: "/static/images/guests/placeholders/Whitney.jpg"
+    photo: "/static/images/guests/placeholders/Whitney.jpg",
+    id: "unknown5"
   },
   {
-    photo: "/static/images/guests/placeholders/Tyler.jpg"
+    photo: "/static/images/guests/placeholders/Tyler.jpg",
+    id: "unknown6"
   },
   {
-    photo: "/static/images/guests/placeholders/Kris.jpg"
-  },
+    photo: "/static/images/guests/placeholders/Kris.jpg",
+    id: "unknown7"
+  }
   // {
   //   photo: "/static/images/guests/britt-mckillip.jpg",
   //   name: "Britt McKillip"
@@ -61,10 +69,11 @@ const GuestTease = props => (
     <Directive>Encounter High-Value Assets</Directive>
     <Lineup>
       {GUESTS_CONTENT.map(guest => (
-        <DossierCard 
-          srcPath={guest.photo} 
+        <DossierCard
+          srcPath={guest.photo}
           name={guest.name}
-          alt={guest.name} 
+          alt={guest.name}
+          key={guest.id}
         />
       ))}
     </Lineup>
