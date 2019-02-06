@@ -45,10 +45,18 @@ const Footer = styled.footer`
   a {
     color: ${props => props.theme.aqua};
     font-weight: 700;
-    padding: 0 2em;
+    padding: 0 .25em;
+    margin-left: 1.75em;
     transition: color 0.15s;
     &:hover {
       color: ${props => props.theme.turquoise};
+    }
+    &:focus {
+      outline: none;
+      background: ${props => props.theme.sapphire};
+      color: ${props => props.theme.midnight};
+      box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
+      border-radius: 1px;
     }
   }
   @media (max-width: 700px) {

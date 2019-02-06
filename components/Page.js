@@ -29,8 +29,9 @@ const theme = {
   midnight: "#131D35",
   ruby: "#F73E69",
   turquoise: "#1FB3AC",
-  white: "#FFFFFF",
+  white: "#CCFBF5",
   deepAbyss: "#08252F", //page
+  sapphire: "hsl(100, 100%, 75%)",
 
   // font stacks
   poppins: '"Poppins", Helvetica, Arial, sans-serif',
@@ -106,9 +107,13 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
-    background-size: 100px 100px;
-    background-repeat: repeat;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(120, 250, 245, .1) 0, transparent 100%), 
+      repeating-linear-gradient(transparent, transparent 5px, rgba(0, 0, 0, .15) 10px, rgba(0, 0, 0, .15) 10px), 
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .2) 0, transparent 2px);
+    background-size: cover, 50px 50px, 100px 100px;
+    background-repeat: no-repeat, repeat, repeat;
+    background-attachment: fixed, fixed, scroll;
   }
   a {
     cursor: pointer;
@@ -153,6 +158,16 @@ const Page = props => (
           rel="stylesheet"
         />
       </Head>
+      <svg style={{'color-interpolation-filters': 'sRGB', 'width': 0, 'height': 0}}>
+        <filter id="lcd_duotone">
+          <feColorMatrix 
+            type="matrix" 
+            values="0 0.22 0 0 0 
+                    0 1 0 0 0 
+                    0 0.96 0 0 0 
+                    0 0 0 1 0" />
+        </filter>
+      </svg>
       {props.children}
       <GlobalStyle />
     </div>

@@ -17,6 +17,10 @@ const StyledAnchor = styled.a`
   text-align: center;
   text-transform: uppercase;
   transition: background 0.15s;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px ${props => props.theme.midnight}, 0 0 0 4px ${props => props.theme.sapphire};
+  }
   &:hover {
     background: ${props => props.theme.turquoise};
   }
@@ -26,6 +30,9 @@ const StyledAnchor = styled.a`
     cursor: default;
     text-decoration: line-through;
     user-select: none;
+    &:focus {
+      box-shadow: 0 0 0 1px ${props => props.theme.midnight}, 0 0 0 4px ${props => props.theme.ruby};
+    }
   }
 `;
 

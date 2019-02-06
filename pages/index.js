@@ -6,6 +6,7 @@ import EapBanner from "../components/EapBanner";
 import Cover from "../components/Cover";
 import StandardRegistration from "../components/StandardRegistration";
 import HomeTease from "../components/HomeTease";
+import GuestTease from "../components/GuestGrid";
 import Footer from "../components/Footer";
 
 const EnlistFlow = styled.div`
@@ -19,6 +20,7 @@ const Index = props => (
     <EapBanner />
     <Cover />
     <StandardRegistration />
+    <GuestTease />
     <Directive>Continue for Briefing</Directive>
     <HomeTease />
     <Footer />

@@ -24,6 +24,11 @@ const DeptCard = styled.a`
   @media (max-width: 666px) {
     justify-content: center;
   }
+  &:focus {
+    outline: none;
+    color: ${props => props.theme.aqua};
+    box-shadow: 0 0 0 1px ${props => props.theme.midnight}, 0 0 0 4px ${props => props.theme.sapphire};
+  }
 `;
 
 const DeptName = styled.h3`

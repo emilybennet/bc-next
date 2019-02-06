@@ -55,6 +55,13 @@ const InlineLink = styled.a`
   &:hover {
     color: ${props => props.theme.turquoise};
   }
+  &:focus {
+    outline: none;
+    background: ${props => props.theme.sapphire};
+    color: ${props => props.theme.midnight};
+    box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
+    border-radius: 1px;
+  }
 `;
 
 const Classified = styled.div`
@@ -168,9 +175,7 @@ const HomeTease = props => (
         </Button>
         <p>
           Wanna change the world?{" "}
-          <Link href="/about">
-            <InlineLink>Join our volunteer staff</InlineLink>
-          </Link>{" "}
+          <InlineLink href="/about">Join our volunteer staff</InlineLink>{" "}
           and help us make the final BronyCon even better.
         </p>
       </TeaserText>
