@@ -158,14 +158,22 @@ const Page = props => (
           rel="stylesheet"
         />
       </Head>
-      <svg style={{'color-interpolation-filters': 'sRGB', 'width': 0, 'height': 0}}>
+      <svg
+        style={{
+          colorInterpolationFilters: "sRGB",
+          width: 0,
+          height: 0,
+          display: "none"
+        }}
+      >
         <filter id="lcd_duotone">
-          <feColorMatrix 
-            type="matrix" 
+          <feColorMatrix
+            type="matrix"
             values="0 0.22 0 0 0 
                     0 1 0 0 0 
                     0 0.96 0 0 0 
-                    0 0 0 1 0" />
+                    0 0 0 1 0"
+          />
         </filter>
       </svg>
       {props.children}
