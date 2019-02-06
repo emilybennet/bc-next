@@ -87,15 +87,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  @keyframes 'lcd' {
-    0% {
-      background-position-y: 0%, 0%, 0%;
-    }
-    100% {
-      background-position-y: 0%, 100%, 0%;
-    }
-  }
-
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -123,7 +114,6 @@ const GlobalStyle = createGlobalStyle`
     background-size: cover, 50px 50px, 100px 100px;
     background-repeat: no-repeat, repeat, repeat;
     background-attachment: fixed, fixed, scroll;
-    animation: 'lcd' 60s infinite linear forwards;
   }
   a {
     cursor: pointer;
@@ -163,6 +153,16 @@ const Page = props => (
           rel="publisher"
         />
       </Head>
+      <svg style={{'color-interpolation-filters': 'sRGB', 'width': 0, 'height': 0}}>
+        <filter id="lcd_duotone">
+          <feColorMatrix 
+            type="matrix" 
+            values="0 0.22 0 0 0 
+                    0 1 0 0 0 
+                    0 0.96 0 0 0 
+                    0 0 0 1 0" />
+        </filter>
+      </svg>
       {props.children}
       <GlobalStyle />
     </div>

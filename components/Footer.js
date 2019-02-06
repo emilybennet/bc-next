@@ -39,6 +39,9 @@ const Coordinates = styled.span`
   letter-spacing: 1.3px;
   line-height: 1;
   margin-bottom: 1.25em;
+  a {
+    color: white;
+  }
 `;
 
 const Legalese = styled.p`
@@ -137,7 +140,7 @@ const Footer = props => (
     </MapWrap>
     <LegalWrap>
       <Coordinates>
-        39°17’10”N <Heart>♥</Heart> 76°36’56"W
+        <a href="http://madewithloveinbaltimore.org">39°17’10”N <Heart>♥</Heart> 76°36’56"W</a>
       </Coordinates>
       <FooterLinks>
         <Link href="/">
