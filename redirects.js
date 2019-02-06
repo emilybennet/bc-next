@@ -110,4 +110,25 @@ const baltimore = [
   }
 ];
 
-module.exports = [...policies, ...marketplace, ...social, ...baltimore];
+const about = [
+  {
+    from: "/press",
+    to: "http://bit.ly/2BouuoZ"
+  },
+  {
+    from: "/about/press-media",
+    to: "http://bit.ly/2BouuoZ"
+  },
+  {
+    from: "/about/press-media/apply",
+    to: "http://bit.ly/2BouuoZ"
+  }
+];
+
+module.exports = [
+  ...policies,
+  ...marketplace,
+  ...social,
+  ...baltimore,
+  ...about
+];
