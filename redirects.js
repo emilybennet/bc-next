@@ -122,6 +122,10 @@ const about = [
   {
     from: "/about/press-media/apply",
     to: "http://bit.ly/2BouuoZ"
+  },
+  {
+    from: "/guests",
+    to: "/#guests"
   }
 ];
 
