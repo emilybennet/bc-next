@@ -13,7 +13,7 @@ const GuestName = styled.div`
   color: ${props => props.theme.gold};
   font-weight: 500;
   background: ${props => props.theme.black};
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   border-radius: 2px;
   position: relative;
   display: inline-block;
@@ -21,11 +21,34 @@ const GuestName = styled.div`
   top: -1em;
 `;
 
-const DossierCard = props => (
-  <Container>
-    <DossierPhoto style={{ width: '100%', height: '250px' }} srcPath={props.photo} {...props} />
-    { props.name && <GuestName>{props.name}</GuestName>}
-  </Container>
-);
+const DossierCard = props => {
+  if (props.url) {
+    return (
+      <Container>
+        <Link href={props.url}>
+          <a>
+            <DossierPhoto
+              style={{ width: "100%", height: "250px" }}
+              srcPath={props.photo}
+              {...props}
+            />
+            {props.name && <GuestName>{props.name}</GuestName>}
+          </a>
+        </Link>
+      </Container>
+    );
+  } else {
+    return (
+      <Container>
+        <DossierPhoto
+          style={{ width: "100%", height: "250px" }}
+          srcPath={props.photo}
+          {...props}
+        />
+        {props.name && <GuestName>{props.name}</GuestName>}
+      </Container>
+    );
+  }
+};
 
 export default DossierCard;
