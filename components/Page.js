@@ -158,12 +158,13 @@ const Page = props => (
           rel="stylesheet"
         />
       </Head>
+      {props.children}
+      <GlobalStyle />
       <svg
         style={{
           colorInterpolationFilters: "sRGB",
           width: 0,
-          height: 0,
-          display: "none"
+          height: 0
         }}
       >
         <filter id="lcd_duotone">
@@ -176,8 +177,6 @@ const Page = props => (
           />
         </filter>
       </svg>
-      {props.children}
-      <GlobalStyle />
     </div>
   </ThemeProvider>
 );
