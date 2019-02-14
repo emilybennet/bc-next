@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import slugify from "slugify";
+
+const slugifySettings = {
+  replacement: "-",
+  lower: true,
+  remove: /[*+~.()'"!?:@]/g
+};
 
 const StyledH2 = styled.h2`
   font-size: 2.7em;
@@ -37,7 +44,7 @@ const Container = styled.header`
 `;
 
 const SectionHeading = ({ text, echo, id }) => {
-  const anchor = id ? id : text;
+  const anchor = id ? id : slugify(text, slugifySettings);
   return (
     <Container id={anchor.toLowerCase()}>
       <Echo aria-hidden="true">{text}</Echo>
