@@ -128,7 +128,7 @@ const ARTIST_ALLEY_OPTIONS = [
         price: 100
       }
     ],
-    includes: ["1 Exhibitor Badge"]
+    includes: ["Half of an 8' Table", "1 Exhibitor Badge"]
   },
   {
     config: "double",
@@ -138,7 +138,7 @@ const ARTIST_ALLEY_OPTIONS = [
         price: 175
       }
     ],
-    includes: ["2 Exhibitor Badges"]
+    includes: ["An Entire 8' Table", "2 Exhibitor Badges"]
   }
 ];
 
@@ -180,19 +180,16 @@ const ExhibitPage = props => (
         Half-table slots for individual artists who create and sell their own
         works of art or perform commissions.
       </Lead>
-      {/* <CompareGridHeading>Artist Alley Options</CompareGridHeading>
+      <CompareGridHeading>Artist Alley Options</CompareGridHeading>
       <CompareGrid>
         {ARTIST_ALLEY_OPTIONS.map(opt => (
           <Configuration {...opt} key={opt.config} />
         ))}
-      </CompareGrid> */}
-      <InlineButton href="#" disabled={true}>
-        Apply in Early 2019
+      </CompareGrid>
+      <InlineButton href="https://airtable.com/shrm1UrM7he6zG6VG">
+        Apply for Artist Alley
       </InlineButton>
       <div>
-        <PolicyLink href="https://eepurl.com/dCvaLf" target="_blank">
-          Get Notified
-        </PolicyLink>
         <Link href="/policies/marketplace">
           <PolicyLink>Marketplace Policies</PolicyLink>
         </Link>
