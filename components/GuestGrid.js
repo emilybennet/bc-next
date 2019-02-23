@@ -26,18 +26,20 @@ const GUESTS_CONTENT = [
     id: "unknown1"
   },
   {
-    photo: "/static/images/guests/placeholders/katrien.jpg",
-    id: "unknown2"
-  },
-  {
     photo: "/static/images/guests/preview/libman.jpg",
     name: "Andrea Libman",
     id: "libman",
     url: "/guests/andrea-libman"
   },
   {
-    photo: "/static/images/guests/placeholders/steve.jpg",
-    id: "unknown3"
+    photo: "/static/images/guests/placeholders/joke.jpg",
+    id: "unknown2"
+  },
+  {
+    photo: "/static/images/guests/preview/thiessen.jpg",
+    name: "Jayson Thiessen",
+    id: "thiessen",
+    url: "/guests/jayson-thiessen"
   },
   {
     photo: "/static/images/guests/placeholders/jeffrey.jpg",
@@ -52,8 +54,10 @@ const GUESTS_CONTENT = [
     id: "unknown6"
   },
   {
-    photo: "/static/images/guests/placeholders/joke.jpg",
-    id: "unknown7"
+    photo: "/static/images/guests/preview/mckillip.jpg",
+    name: "Britt McKillip",
+    id: "mckillip",
+    url: "/guests/britt-mckillip"
   }
   // {
   //   photo: "/static/images/guests/britt-mckillip.jpg",
