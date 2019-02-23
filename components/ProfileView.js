@@ -29,7 +29,7 @@ const StyledH2 = styled.h2`
 
 const ProfileView = ({ Bio, ...props }) => (
   <Container>
-    <img src="/static/images/guests/headshot/libman.jpg" />
+    <img src={props.headshot} />
     <section>
       <StyledH2>{props.name}</StyledH2>
       <Bio />

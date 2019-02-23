@@ -9,7 +9,11 @@ import Bio from "../../content/guest-bios/andrea-libman.mdx";
 const AndreaLibman = props => (
   <BasicLayout pageTitle="Andrea Libman">
     <Directive>Declassified Intel</Directive>
-    <ProfileView name="Andrea Libman" Bio={Bio} />
+    <ProfileView
+      name="Andrea Libman"
+      headshot="/static/images/guests/headshot/libman.jpg"
+      Bio={Bio}
+    />
   </BasicLayout>
 );
 
