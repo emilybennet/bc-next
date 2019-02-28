@@ -140,7 +140,9 @@ const Footer = props => (
     </MapWrap>
     <LegalWrap>
       <Coordinates>
-        <a href="http://madewithloveinbaltimore.org">39°17’10”N <Heart>♥</Heart> 76°36’56"W</a>
+        <a href="http://madewithloveinbaltimore.org">
+          39°17’10”N <Heart>♥</Heart> 76°36’56"W
+        </a>
       </Coordinates>
       <FooterLinks>
         <Link href="/">
@@ -154,6 +156,9 @@ const Footer = props => (
         </Link>
         <Link href="/policies">
           <a>Policies</a>
+        </Link>
+        <Link href="/press">
+          <a>Press</a>
         </Link>
       </FooterLinks>
       <Legalese>
