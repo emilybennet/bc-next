@@ -112,7 +112,7 @@ const baltimore = [
 
 const about = [
   {
-    from: "/press",
+    from: "/pressapp",
     to: "http://bit.ly/2BouuoZ"
   },
   {
