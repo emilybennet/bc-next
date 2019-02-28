@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Footer from "../Footer";
 import PoiList from "./PoiList";
-import Warning from "./Warning";
+import Warning from "../Warning";
 
 const Container = styled.div`
   margin: 0 auto 0;
@@ -62,7 +62,21 @@ const Sheet = props => (
       </Tab>
     </TabContainer>
     <Content>
-      <Warning />
+      <Warning>
+        <div>
+          <p>
+            <strong>Demand for discounted rooms is extremely high</strong>, book
+            whatever days you can or try another hotel. Contact the hotel
+            directly to extend your stay at the standard rate for any days you
+            were unable to book at the discounted rate.
+          </p>
+          <p>
+            <strong>Pre-registration pickup</strong> doesn't start until
+            Thursday, August 1, so don't stress if you’re unable to get into
+            town on Wednesday.
+          </p>
+        </div>
+      </Warning>
       <PoiList data={props.hotels} />
       <Footer />
     </Content>
