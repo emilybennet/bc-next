@@ -47,7 +47,7 @@ const SectionHeading = ({ text, echo, id }) => {
   const anchor = id ? id : slugify(text, slugifySettings);
   return (
     <Container id={anchor.toLowerCase()}>
-      <Echo aria-hidden="true">{text}</Echo>
+      <Echo aria-hidden="true">{echo ? echo : text}</Echo>
       <StyledH2>{text}</StyledH2>
     </Container>
   );
