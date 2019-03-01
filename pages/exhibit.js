@@ -165,7 +165,7 @@ const ExhibitPage = props => (
         Apply For Vendor Hall
       </InlineButton> */}
       <InlineButton href="#" disabled={true}>
-        Application Closed
+        Vendor Hall Application Closed
       </InlineButton>
       <div>
         <Link href="/policies/marketplace">
@@ -186,8 +186,11 @@ const ExhibitPage = props => (
           <Configuration {...opt} key={opt.config} />
         ))}
       </CompareGrid>
-      <InlineButton href="https://airtable.com/shrm1UrM7he6zG6VG">
+      {/* <InlineButton href="https://airtable.com/shrm1UrM7he6zG6VG">
         Apply for Artist Alley
+      </InlineButton> */}
+      <InlineButton href="#" disabled={true}>
+        Arist Alley Application Closed
       </InlineButton>
       <div>
         <Link href="/policies/marketplace">
