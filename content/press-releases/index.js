@@ -39,5 +39,10 @@ export default [
     title: "Jayson Thiessen Directs Agents For Final BronyCon",
     date: "2019-02-20 18:00:00",
     path: "20190220-jayson-thiessen"
+  },
+  {
+    title: "BronyCon Celebrates Derpy Day with a Weekend of Savings",
+    date: "2019-03-01 00:00:00",
+    path: "20190301-derpy-day-sale"
   }
 ];

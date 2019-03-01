@@ -44,7 +44,8 @@ const RegOption = styled.div`
 const SPIRIT_OPTION = {
   name: "Spirit",
   price: 35,
-  url: "https://bronycon2019.eventbrite.com#tickets",
+  xurl: "https://bronycon2019.eventbrite.com#tickets",
+  url: "https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets",
   lead: "Remote Swag",
   description:
     "We'll ship you a limited edition Spirit attendee badge, a BronyCon branded orange lanyard, and a program book."

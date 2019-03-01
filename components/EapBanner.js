@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import Snowflake from "../static/images/icons/snowflake.svg";
+import Muffin from "../static/images/icons/muffin.svg";
 
 const Container = styled.div`
-  background: ${props => props.theme.gold};
-  color: ${props => props.theme.deepAbyss};
+  background: rgb(245, 245, 245);
+  color: ${props => props.theme.orange};
   display: block;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -16,11 +16,11 @@ const Container = styled.div`
   width: 100%;
   z-index: 500;
   &:hover {
-    background: ${props => props.theme.yellow};
+    background: rgb(230, 230, 230);
   }
   a {
     align-items: center;
-    color: ${props => props.theme.deepAbyss};
+    color: ${props => props.theme.orange};
     display: flex;
     padding: 0.5em 1em;
     width: 100%;
@@ -28,16 +28,22 @@ const Container = styled.div`
       margin-left: auto;
     }
     path {
-      fill: white;
+      fill: ${props => props.theme.orange};
     }
   }
 `;
 
 const EapBanner = props => (
   <Container>
-    <Link href="/baltimore">
+    <Link
+      href="https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets"
+      passHref
+    >
       <a>
-        <span>// Incoming Transmission → Book Discounted Hotels Now</span>
+        <span>
+          // Save $9.69 on 4-Day & 4-Day PLUS with code "MUFFIN" through Sunday.
+        </span>
+        <Muffin />
       </a>
     </Link>
   </Container>

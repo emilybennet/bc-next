@@ -45,7 +45,7 @@ const Footer = styled.footer`
   a {
     color: ${props => props.theme.aqua};
     font-weight: 700;
-    padding: 0 .25em;
+    padding: 0 0.25em;
     margin-left: 1.75em;
     transition: color 0.15s;
     &:hover {
@@ -70,14 +70,16 @@ const BADGES = {
   SINGLE_DAY: {
     name: "1-Day",
     price: 40,
-    url: "https://bronycon2019.eventbrite.com#tickets",
+    xurl: "https://bronycon2019.eventbrite.com#tickets",
+    url: "https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets",
     lead: "Visit for a Day",
     description: ""
   },
   WEEKEND: {
     name: "4-Day",
     price: 70,
-    url: "https://bronycon2019.eventbrite.com#tickets",
+    xurl: "https://bronycon2019.eventbrite.com#tickets",
+    url: "https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets",
     lead: "All-Weekend Access",
     description:
       "Access to the event for the entire weekend. Youth, senior, and service member discounts are available."
@@ -85,7 +87,8 @@ const BADGES = {
   WEEKEND_PLUS: {
     name: "4-Day PLUS",
     price: 150,
-    url: "https://bronycon2019.eventbrite.com#tickets",
+    xurl: "https://bronycon2019.eventbrite.com#tickets",
+    url: "https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets",
     lead: "Access + Exclusives",
     description:
       "Badge includes everything that comes with a 4-Day badge, plus an exclusive poster and t-shirt."
