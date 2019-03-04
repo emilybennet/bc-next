@@ -34,19 +34,20 @@ const Container = styled.div`
 `;
 
 const EapBanner = props => (
-  <Container>
-    <Link
-      href="https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets"
-      passHref
-    >
-      <a>
-        <span>
-          // Save $9.69 on 4-Day & 4-Day PLUS with code "MUFFIN" through Sunday.
-        </span>
-        <Muffin />
-      </a>
-    </Link>
-  </Container>
+  // <Container>
+  //   <Link
+  //     href="https://bronycon2019.eventbrite.com/?discount=MUFFIN#tickets"
+  //     passHref
+  //   >
+  //     <a>
+  //       <span>
+  //         // Save $9.69 on 4-Day & 4-Day PLUS with code "MUFFIN" through Sunday.
+  //       </span>
+  //       <Muffin />
+  //     </a>
+  //   </Link>
+  // </Container>
+  <div />
 );
 
 export default EapBanner;
