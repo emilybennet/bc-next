@@ -67,6 +67,23 @@ const hotels = [
     }
   },
   {
+    id: 10,
+    name: "Brookshire Suites Inner Harbor",
+    address: "120 E Lombard St",
+    phone: "410-625-1300",
+    url:
+      "https://www.bestwestern.com/en_US/book/baltimore/hotel-rooms/brookshire-suites-inner-harbor-bw-premier-collection/propertyCode.21061.html",
+    urlSpecial:
+      "https://www.bestwestern.com/en_US/book/hotel-rooms.21061.html?groupId=6M4AA5T8",
+    price: 169,
+    distance: 0.36,
+    walkTime: 0,
+    coordinates: {
+      lat: 39.287915,
+      lng: -76.612404
+    }
+  },
+  {
     id: 5,
     name: "Renaissance Baltimore Harborplace Hotel",
     address: "202 E Pratt St",
