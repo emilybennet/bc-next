@@ -80,7 +80,7 @@ const DymoTape = styled.span`
   font-size: 1.22em;
   line-height: 1;
   letter-spacing: 1px;
-  margin: 1em;
+  margin: 1.2em;
   padding: 0.6em 0.8em;
 `;
 
@@ -173,10 +173,16 @@ const HomeTease = props => (
         <Button href="/exhibit" style={{ marginTop: 20 }}>
           Exhibit in Marketplace
         </Button>
+        <Button
+          href="https://goo.gl/forms/Sr0PI2geuEctXaG62"
+          style={{ marginTop: 20 }}
+        >
+          Apply to Talent Show
+        </Button>
         <p>
           Wanna change the world?{" "}
-          <InlineLink href="/about">Join our volunteer staff</InlineLink>{" "}
-          and help us make the final BronyCon even better.
+          <InlineLink href="/about">Join our volunteer staff</InlineLink> and
+          help us make the final BronyCon even better.
         </p>
       </TeaserText>
       <Classified>

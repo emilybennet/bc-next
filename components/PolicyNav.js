@@ -15,6 +15,10 @@ const NAV_LINKS = [
   {
     text: "Press Policy",
     url: "/policies/press"
+  },
+  {
+    text: "Talent Show Rules",
+    url: "/policies/talent-show"
   }
 ];
 
