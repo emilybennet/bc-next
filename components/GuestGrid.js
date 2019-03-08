@@ -32,8 +32,10 @@ const GUESTS_CONTENT = [
     url: "/guests/andrea-libman"
   },
   {
-    photo: "/static/images/guests/placeholders/joke.jpg",
-    id: "unknown2"
+    photo: "/static/images/guests/preview/oliver.jpg",
+    name: "Nicole Oliver",
+    id: "oliver",
+    url: "/guests/nicole-oliver"
   },
   {
     photo: "/static/images/guests/preview/thiessen.jpg",
@@ -42,8 +44,8 @@ const GUESTS_CONTENT = [
     url: "/guests/jayson-thiessen"
   },
   {
-    photo: "/static/images/guests/placeholders/jeffrey.jpg",
-    id: "unknown4"
+    photo: "/static/images/guests/placeholders/joke.jpg",
+    id: "unknown2"
   },
   {
     photo: "/static/images/guests/placeholders/pascale.jpg",

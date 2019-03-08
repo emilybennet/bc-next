@@ -44,5 +44,10 @@ export default [
     title: "BronyCon Celebrates Derpy Day with a Weekend of Savings",
     date: "2019-03-01 00:00:00",
     path: "20190301-derpy-day-sale"
+  },
+  {
+    title: "Nicole Oliver Helps Lead The Final BronyCon Cast",
+    date: "2019-03-07 19:00:00",
+    path: "20190307-nicole-oliver"
   }
 ];
