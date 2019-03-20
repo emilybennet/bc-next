@@ -123,9 +123,13 @@ const Cover = props => (
               for a celebration of a fandom unlike any other.
             </BlockSpan>
           </h2>
-          <p>
+          {/* <p>
             All good things must come to an end. BronyCon returns one final time
             to the Baltimore Convention Center in Baltimore, Maryland, USA.
+          </p> */}
+          <p>
+            BronyCon returns to the Baltimore Convention Center in Baltimore,
+            Maryland, USA.
           </p>
         </div>
       </HeroDisplay>

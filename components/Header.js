@@ -38,7 +38,7 @@ const Header = props => (
       </LogoWrap>
     </Link>
     <Button className="btn" href="/">
-      Enlist
+      Attend
     </Button>
   </StyledHeader>
 );

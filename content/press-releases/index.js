@@ -49,5 +49,10 @@ export default [
     title: "Nicole Oliver Helps Lead The Final BronyCon Cast",
     date: "2019-03-07 19:00:00",
     path: "20190307-nicole-oliver"
+  },
+  {
+    title: "Cathy Weseluck Assists in Final BronyCon This August",
+    date: "2019-03-20 19:00:00",
+    path: "20190320-cathy-weseluck"
   }
 ];

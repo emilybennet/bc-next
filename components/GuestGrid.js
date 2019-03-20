@@ -44,8 +44,10 @@ const GUESTS_CONTENT = [
     url: "/guests/jayson-thiessen"
   },
   {
-    photo: "/static/images/guests/placeholders/joke.jpg",
-    id: "unknown2"
+    photo: "/static/images/guests/preview/weseluck.jpg",
+    name: "Cathy Weseluck",
+    id: "weseluck",
+    url: "/guests/cathy-weseluck"
   },
   {
     photo: "/static/images/guests/placeholders/pascale.jpg",
