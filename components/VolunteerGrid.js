@@ -6,7 +6,7 @@ const Container = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
   grid-gap: 30px;
-  padding: 4em 0;
+  padding: 4em 0 2em;
 `;
 
 const DeptCard = styled.a`
@@ -27,7 +27,8 @@ const DeptCard = styled.a`
   &:focus {
     outline: none;
     color: ${props => props.theme.aqua};
-    box-shadow: 0 0 0 1px ${props => props.theme.midnight}, 0 0 0 4px ${props => props.theme.sapphire};
+    box-shadow: 0 0 0 1px ${props => props.theme.midnight},
+      0 0 0 4px ${props => props.theme.sapphire};
   }
 `;
 
@@ -43,6 +44,20 @@ const DeptName = styled.h3`
 
 const DeptDesc = styled.p`
   margin: 0;
+`;
+
+const Anchor = styled.a`
+  color: ${props => props.theme.aqua};
+  text-decoration: underline;
+  transition: color 0.15s;
+  &:hover {
+    color: ${props => props.theme.turquoise};
+  }
+`;
+
+const H3 = styled.h3`
+  color: ${props => props.theme.gold};
+  font-size: 1.5em;
 `;
 
 const Opening = ({ dept, description, url }) => (
@@ -111,11 +126,21 @@ const APP_CONTENT = [
 ];
 
 const VolunteerGrid = props => (
-  <Container>
-    {APP_CONTENT.map(app => (
-      <Opening {...app} key={app.dept} />
-    ))}
-  </Container>
+  <div>
+    <Container>
+      {APP_CONTENT.map(app => (
+        <Opening {...app} key={app.dept} />
+      ))}
+    </Container>
+    <H3>Contribute Without Commitment</H3>
+    <p>
+      Attendees looking to only earn back the purchase value of their standard
+      4-Day badge in exchange for unskilled manual labor are welcome to{" "}
+      <Anchor href="https://goo.gl/forms/D3N4OlpQiKoubkPq1" target="_blank">
+        apply to our Gopher program.
+      </Anchor>
+    </p>
+  </div>
 );
 
 export default VolunteerGrid;
