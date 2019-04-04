@@ -84,6 +84,10 @@ const social = [
   {
     from: "/discord",
     to: "https://discord.gg/7rMhsKQ"
+  },
+  {
+    from: "/workcafe",
+    to: "https://forms.gle/GtToS1NyJsPat1MGA"
   }
 ];
 

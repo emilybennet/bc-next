@@ -167,9 +167,9 @@ const HomeTease = props => (
           Many of the details for BronyCon 2019 are still in planning and are
           not ready to be declassified.
         </p>
-        <Button href="https://airtable.com/shr4tT9iU9woR8rp6" target="_blank">
+        {/* <Button href="https://airtable.com/shr4tT9iU9woR8rp6" target="_blank">
           Run a Panel/Activity
-        </Button>
+        </Button> */}
         <Button href="/exhibit" style={{ marginTop: 20 }}>
           Exhibit in Marketplace
         </Button>
