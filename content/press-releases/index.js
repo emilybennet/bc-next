@@ -54,5 +54,20 @@ export default [
     title: "Cathy Weseluck Assists in Final BronyCon This August",
     date: "2019-03-20 19:00:00",
     path: "20190320-cathy-weseluck"
+  },
+  {
+    title: "Tony Fleecs is Drawn to BronyCon's Final Mission",
+    date: "2019-04-10 18:00:00",
+    path: "20190410-tony-fleecs"
+  },
+  {
+    title: "BronyCon Opens Art Show Application and Charity Submissions",
+    date: "2019-04-25 18:30:00",
+    path: "20190425-art-show"
+  },
+  {
+    title: "Andy Price Draws Up Plans for BronyCon This August",
+    date: "2019-05-02 19:00:00",
+    path: "20190502-andy-price"
   }
 ];
