@@ -1,6 +1,7 @@
 const hotels = [
   {
     id: 1,
+    hash: "hilton",
     name: "Hilton Baltimore",
     address: "401 W Pratt St",
     phone: "443-573-8700",
@@ -17,6 +18,7 @@ const hotels = [
   },
   {
     id: 2,
+    hash: "marriott",
     name: "Baltimore Marriott Inner Harbor at Camden Yards",
     address: "110 S Eutaw St",
     phone: "410-962-0202",
@@ -34,6 +36,7 @@ const hotels = [
   },
   {
     id: 3,
+    hash: "sheraton",
     name: "Sheraton Inner Harbor Hotel",
     address: "300 S Charles St",
     phone: "410-962-8300",
@@ -51,6 +54,7 @@ const hotels = [
   },
   {
     id: 4,
+    hash: "daysinn",
     name: "Days Inn by Wyndham Baltimore Inner Harbor",
     address: "100 Hopkins Place",
     phone: "410-576-1000",
@@ -68,6 +72,7 @@ const hotels = [
   },
   {
     id: 10,
+    hash: "brookshire",
     name: "Brookshire Suites Inner Harbor",
     address: "120 E Lombard St",
     phone: "410-625-1300",
@@ -84,7 +89,25 @@ const hotels = [
     }
   },
   {
+    id: 11,
+    hash: "sonesta",
+    name: "Royal Sonesta Harbor Court Baltimore",
+    address: "550 Light St",
+    phone: "410-234-0550",
+    url:
+      "https://www.sonesta.com/us/maryland/baltimore/royal-sonesta-harbor-court-baltimore",
+    urlSpecial: "https://tinyurl.com/Bronycon2019",
+    price: 139,
+    distance: 0.4,
+    walkTime: 0,
+    coordinates: {
+      lat: 39.282751,
+      lng: -76.613539
+    }
+  },
+  {
     id: 5,
+    hash: "renaissance",
     name: "Renaissance Baltimore Harborplace Hotel",
     address: "202 E Pratt St",
     phone: "410-547-1200",
@@ -102,6 +125,7 @@ const hotels = [
   },
   {
     id: 6,
+    hash: "holidayinn",
     name: "Holiday Inn: Baltimore Inner Harbor",
     address: "301 W Lombard St",
     phone: "410-685-3500",
@@ -119,6 +143,7 @@ const hotels = [
   },
   {
     id: 7,
+    hash: "lordbaltimore",
     name: "Lord Baltimore Hotel",
     address: "20 W Baltimore St",
     phone: "410-539-8400",
@@ -134,6 +159,7 @@ const hotels = [
   },
   {
     id: 8,
+    hash: "monaco",
     name: "Kimpton Hotel Monaco Baltimore Inner Harbor",
     address: "2 N Charles St",
     phone: "443-692-6170",
@@ -150,6 +176,7 @@ const hotels = [
   },
   {
     id: 9,
+    hash: "marriottwaterfront",
     name: "Baltimore Marriott Waterfront",
     address: "700 Aliceanna St",
     phone: "410-385-3000",

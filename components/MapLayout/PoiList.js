@@ -67,11 +67,11 @@ const ItemMetric = styled.div`
 `;
 
 const Poi = (
-  { name, address, phone, url, urlSpecial, price, distance, walkTime },
+  { name, address, phone, url, urlSpecial, price, distance, walkTime, hash },
   ...props
 ) => (
   <ItemContainer>
-    <div>
+    <div id={hash}>
       <ItemName>{name}</ItemName>
       <ItemLoc>
         {address} // {phone}
