@@ -22,8 +22,8 @@ const Lineup = styled.div`
 
 const GUESTS_CONTENT = [
   {
-    photo: "/static/images/guests/placeholders/pieter.jpg",
-    id: "unknown1"
+    photo: "/static/images/guests/placeholders/pascale.jpg",
+    id: "unknown5"
   },
   {
     photo: "/static/images/guests/preview/libman.jpg",
@@ -38,10 +38,10 @@ const GUESTS_CONTENT = [
     url: "/guests/nicole-oliver"
   },
   {
-    photo: "/static/images/guests/preview/thiessen.jpg",
-    name: "Jayson Thiessen",
-    id: "thiessen",
-    url: "/guests/jayson-thiessen"
+    photo: "/static/images/guests/preview/price.jpg",
+    name: "Andy Price",
+    id: "price",
+    url: "/guests/andy-price"
   },
   {
     photo: "/static/images/guests/preview/weseluck.jpg",
@@ -50,18 +50,42 @@ const GUESTS_CONTENT = [
     url: "/guests/cathy-weseluck"
   },
   {
-    photo: "/static/images/guests/placeholders/pascale.jpg",
-    id: "unknown5"
+    photo: "/static/images/guests/preview/fleecs.jpg",
+    name: "Tony Fleecs",
+    id: "fleecs",
+    url: "/guests/tony-fleecs"
   },
   {
-    photo: "/static/images/guests/placeholders/lloyd.jpg",
-    id: "unknown6"
+    photo: "/static/images/guests/preview/creber.jpg",
+    name: "Michelle Creber",
+    id: "creber",
+    url: "/guests/michelle-creber"
   },
   {
     photo: "/static/images/guests/preview/mckillip.jpg",
     name: "Britt McKillip",
     id: "mckillip",
     url: "/guests/britt-mckillip"
+  },
+  {
+    photo: "/static/images/guests/placeholders/eva.jpg",
+    id: "unknown9"
+  },
+  {
+    photo: "/static/images/guests/preview/thiessen.jpg",
+    name: "Jayson Thiessen",
+    id: "thiessen",
+    url: "/guests/jayson-thiessen"
+  },
+  {
+    photo: "/static/images/guests/placeholders/ingrid.jpg",
+    id: "unknown11"
+  },
+  {
+    photo: "/static/images/guests/preview/brown.jpg",
+    name: "Gabriel Brown",
+    id: "brown",
+    url: "/guests/gabriel-brown"
   }
   // {
   //   photo: "/static/images/guests/britt-mckillip.jpg",
