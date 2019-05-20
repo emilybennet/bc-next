@@ -13,6 +13,10 @@ const NAV_LINKS = [
     url: "/policies/marketplace"
   },
   {
+    text: "Art Show Policies",
+    url: "/policies/artshow"
+  },
+  {
     text: "Press Policy",
     url: "/policies/press"
   },

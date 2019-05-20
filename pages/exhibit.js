@@ -200,17 +200,17 @@ const ExhibitPage = props => (
     </MarketplaceSection>
 
     <MarketplaceSection>
-      <SectionHeading text="Art Show" />
+      <SectionHeading text="Art Show" id="artshow" />
       <Lead style={{ marginBottom: 20 }}>
         Submit one-of-a-kind artwork for attendees to bid on in a
         BronyCon-operated art gallery.
       </Lead>
-      <InlineButton href="#" disabled={true}>
-        Apply in Spring 2019
+      <InlineButton href="https://forms.gle/GhKiwihRTS4bttFr7">
+        Submit to Art Show
       </InlineButton>
       <div>
-        <Link href="https://eepurl.com/dCvaLf">
-          <PolicyLink>Get Notified</PolicyLink>
+        <Link href="/policies/artshow">
+          <PolicyLink>Art Show Policies</PolicyLink>
         </Link>
       </div>
     </MarketplaceSection>
