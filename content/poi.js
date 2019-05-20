@@ -1,22 +1,5 @@
 const hotels = [
   {
-    id: 1,
-    hash: "hilton",
-    name: "Hilton Baltimore",
-    address: "401 W Pratt St",
-    phone: "443-573-8700",
-    url:
-      "https://www3.hilton.com/en/hotels/maryland/hilton-baltimore-inner-harbor-BWICCHH/index.html",
-    urlSpecial: "https://book.passkey.com/event/49756644/owner/61726/home",
-    price: 158,
-    distance: 0.5,
-    walkTime: 0,
-    coordinates: {
-      lat: 39.286255,
-      lng: -76.620865
-    }
-  },
-  {
     id: 2,
     hash: "marriott",
     name: "Baltimore Marriott Inner Harbor at Camden Yards",
@@ -35,6 +18,23 @@ const hotels = [
     }
   },
   {
+    id: 1,
+    hash: "hilton",
+    name: "Hilton Baltimore",
+    address: "401 W Pratt St",
+    phone: "443-573-8700",
+    url:
+      "https://www3.hilton.com/en/hotels/maryland/hilton-baltimore-inner-harbor-BWICCHH/index.html",
+    urlSpecial: "https://book.passkey.com/event/49756644/owner/61726/home",
+    price: 158,
+    distance: 0.5,
+    walkTime: 0,
+    coordinates: {
+      lat: 39.286255,
+      lng: -76.620865
+    }
+  },
+  {
     id: 3,
     hash: "sheraton",
     name: "Sheraton Inner Harbor Hotel",
@@ -50,6 +50,23 @@ const hotels = [
     coordinates: {
       lat: 39.28547,
       lng: -76.61482
+    }
+  },
+  {
+    id: 12,
+    hash: "hyatt",
+    name: "Hyatt Regency Baltimore Inner Harbor",
+    address: "300 Light Street",
+    phone: "410-528-1234",
+    url:
+      "https://www.hyatt.com/en-US/hotel/maryland/hyatt-regency-baltimore-inner-harbor/bwirb",
+    urlSpecial: "https://www.hyatt.com/en-US/group-booking/BWIRB/G-BYCO",
+    price: 165,
+    distance: 0.19,
+    walkTime: 0,
+    coordinates: {
+      lat: 39.285076,
+      lng: -76.613833
     }
   },
   {
