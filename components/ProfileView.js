@@ -13,6 +13,10 @@ const Container = styled.div`
   img {
     width: 100%;
   }
+  a {
+    color: ${props => props.theme.gold};
+    text-decoration: underline;
+  }
 `;
 
 const StyledH2 = styled.h2`
