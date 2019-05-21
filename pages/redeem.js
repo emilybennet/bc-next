@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import BasicLayout from "../components/BasicLayout";
-import Directive from "../components/Directive";
-import SectionHeading from "../components/styled/SectionHeading";
+import BasicLayout from "../components/common/BasicLayout";
+import Directive from "../components/common/Directive";
+import SectionHeading from "../components/common/SectionHeading";
 
 const RedeemLayout = styled.section`
   margin: 0 auto;
