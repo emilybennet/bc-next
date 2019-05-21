@@ -69,5 +69,15 @@ export default [
     title: "Andy Price Draws Up Plans for BronyCon This August",
     date: "2019-05-02 19:00:00",
     path: "20190502-andy-price"
+  },
+  {
+    title: "Michelle Creber and Gabriel Brown Groove Into BronyCon",
+    date: "2019-05-15 18:30:00",
+    path: "20190515-creber-brown"
+  },
+  {
+    title: "BronyCon Maid Cafè and Departments Seeking Volunteers",
+    date: "2019-05-18 22:00:00",
+    path: "20190518-help-wanted"
   }
 ];
