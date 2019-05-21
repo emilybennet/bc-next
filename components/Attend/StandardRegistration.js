@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import RegisterCard from "./RegisterCard";
+import RegisterCard from "../common/RegisterCard";
 
 const Container = styled.section`
   display: block;

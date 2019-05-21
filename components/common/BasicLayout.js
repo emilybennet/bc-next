@@ -4,7 +4,7 @@ import { withRouter } from "next/router";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import EapBanner from "./EapBanner";
+import EapBanner from "../EapBanner";
 
 const BasicLayout = withRouter(({ router, ...props }) => {
   const titleString = `${

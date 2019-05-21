@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import IconNavigator from "../static/images/icons/navigator-hollow.svg";
+import IconNavigator from "../../static/images/icons/navigator-hollow.svg";
 
 const nudgeNavigator = keyframes`
   0% {

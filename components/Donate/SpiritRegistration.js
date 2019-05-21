@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import SectionHeading from "./styled/SectionHeading";
-import RegisterCard from "./RegisterCard";
+import SectionHeading from "../common/SectionHeading";
+import RegisterCard from "../common/RegisterCard";
 
 const Container = styled.section`
   margin: 6em 0;

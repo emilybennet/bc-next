@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import SectionHeading from "./styled/SectionHeading";
+import SectionHeading from "../common/SectionHeading";
 
 const Section = styled.section`
   margin: 0 auto;

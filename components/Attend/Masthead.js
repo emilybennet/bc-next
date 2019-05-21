@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import Logo from "../static/images/bronycon-logo.svg";
+import Logo from "../../static/images/bronycon-logo.svg";
 
 const StyledLink = styled.a`
   align-items: center;

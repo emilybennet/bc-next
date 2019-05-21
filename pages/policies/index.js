@@ -1,16 +1,8 @@
-import styled from "styled-components";
+import PolicyPage from "../../components/Policy";
+import Content from "../../content/policies/attendee.mdx";
 
-import BasicLayout from "../../components/BasicLayout";
-import Directive from "../../components/Directive";
-import PolicyView from "../../components/PolicyView";
-
-import Content from "../../content/policy_attendee.mdx";
-
-const AttendeePolicies = props => (
-  <BasicLayout pageTitle="Attendee Policies">
-    <Directive>Store this document in a dry and secure location</Directive>
-    <PolicyView heading="policies" Content={Content} />
-  </BasicLayout>
+const ArtShowPolicies = () => (
+  <PolicyPage pageTitle="Attendee Policies" Content={Content} />
 );
 
-export default AttendeePolicies;
+export default ArtShowPolicies;

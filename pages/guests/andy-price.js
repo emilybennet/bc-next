@@ -1,20 +1,12 @@
-import styled from "styled-components";
-
-import BasicLayout from "../../components/BasicLayout";
-import Directive from "../../components/Directive";
-import ProfileView from "../../components/ProfileView";
-
+import GuestProfile from "../../components/GuestProfile";
 import Bio from "../../content/guest-bios/andy-price.mdx";
 
-const AndyPrice = props => (
-  <BasicLayout pageTitle="Andy Price">
-    <Directive>Declassified Intel</Directive>
-    <ProfileView
-      name="Andy Price"
-      headshot="/static/images/guests/headshot/price.jpg"
-      Bio={Bio}
-    />
-  </BasicLayout>
+const AndyPriceProfile = () => (
+  <GuestProfile
+    name="Andy Price"
+    headshot="/static/images/guests/headshot/price.jpg"
+    Bio={Bio}
+  />
 );
 
-export default AndyPrice;
+export default AndyPriceProfile;

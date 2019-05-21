@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import Button from "./styled/Button";
-import SectionHeading from "./styled/SectionHeading";
+import Button from "../common/Button";
+import SectionHeading from "../common/SectionHeading";
 
 const Container = styled.section`
   display: block;

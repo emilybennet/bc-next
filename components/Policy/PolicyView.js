@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import slugify from "slugify";
 
-import SectionHeading from "./styled/SectionHeading";
+import SectionHeading from "../common/SectionHeading";
 import PolicyNav from "./PolicyNav";
 
 const slugifySettings = {

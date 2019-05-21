@@ -1,20 +1,12 @@
-import styled from "styled-components";
-
-import BasicLayout from "../../components/BasicLayout";
-import Directive from "../../components/Directive";
-import ProfileView from "../../components/ProfileView";
-
+import GuestProfile from "../../components/GuestProfile";
 import Bio from "../../content/guest-bios/creber.mdx";
 
-const MichelleCreber = props => (
-  <BasicLayout pageTitle="Michelle Creber">
-    <Directive>Declassified Intel</Directive>
-    <ProfileView
-      name="Michelle Creber"
-      headshot="/static/images/guests/headshot/creber.jpg"
-      Bio={Bio}
-    />
-  </BasicLayout>
+const MichelleCreberProfile = () => (
+  <GuestProfile
+    name="Michelle Creber"
+    headshot="/static/images/guests/headshot/creber.jpg"
+    Bio={Bio}
+  />
 );
 
-export default MichelleCreber;
+export default MichelleCreberProfile;

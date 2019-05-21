@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import SectionHeading from "./styled/SectionHeading";
+import SectionHeading from "../common/SectionHeading";
 import SponsorTier from "./SponsorTier";
 
-import IconBronze from "../static/images/icons/sponsor-heart.svg";
-import IconSilver from "../static/images/icons/sponsor-club.svg";
-import IconGold from "../static/images/icons/sponsor-spade.svg";
-import IconDiamond from "../static/images/icons/sponsor-diamond.svg";
+import IconBronze from "../../static/images/icons/sponsor-heart.svg";
+import IconSilver from "../../static/images/icons/sponsor-club.svg";
+import IconGold from "../../static/images/icons/sponsor-spade.svg";
+import IconDiamond from "../../static/images/icons/sponsor-diamond.svg";
 
 const Section = styled.section`
   margin: 0 auto;

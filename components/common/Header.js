@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import Button from "./styled/HollowButton";
-import Logo from "../static/images/bronycon-logo.svg";
+import Button from "./HollowButton";
+import Logo from "../../static/images/bronycon-logo.svg";
 
 const StyledHeader = styled.header`
   align-items: center;

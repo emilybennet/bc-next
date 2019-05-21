@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./styled/Button";
+import Button from "../common/Button";
 
 const Container = styled.div`
   padding: 2em 2em;

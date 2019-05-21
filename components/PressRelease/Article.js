@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import BasicLayout from "./BasicLayout";
-import Directive from "./Directive";
-import SectionHeading from "./styled/SectionHeading";
+import BasicLayout from "../common/BasicLayout";
+import Directive from "../common/Directive";
+import SectionHeading from "../common/SectionHeading";
 import WarningPressAccess from "./WarningPressAccess";
 
 const ContentWrap = styled.article`

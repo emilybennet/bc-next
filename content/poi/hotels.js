@@ -210,4 +210,4 @@ const hotels = [
   }
 ];
 
-export { hotels };
+export default hotels;

@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-import Map from "../static/images/footer-usa.svg";
-import IconFacebook from "../static/images/icons/social-facebook.svg";
-import IconSoundCloud from "../static/images/icons/social-soundcloud.svg";
-import IconTwitter from "../static/images/icons/social-twitter.svg";
-import IconYouTube from "../static/images/icons/social-youtube.svg";
+import Map from "../../static/images/footer-usa.svg";
+import IconFacebook from "../../static/images/icons/social-facebook.svg";
+import IconSoundCloud from "../../static/images/icons/social-soundcloud.svg";
+import IconTwitter from "../../static/images/icons/social-twitter.svg";
+import IconYouTube from "../../static/images/icons/social-youtube.svg";
 
 const Container = styled.footer`
   align-items: center;

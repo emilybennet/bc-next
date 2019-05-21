@@ -2,9 +2,9 @@ import React from "react";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 
-import Header from "../Header";
+import Header from "../common/Header";
 import Sheet from "./Sheet";
-import { hotels } from "../../content/poi";
+import hotels from "../../content/poi/hotels";
 
 // Skipping server-side for Map import due to mapbox-gl issue.
 const DynamicMap = dynamic(() => import("./Map"), {

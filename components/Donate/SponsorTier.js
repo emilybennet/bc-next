@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import ProgressRing from "./ProgressRing";
-import Button from "./styled/Button";
-import IconStar from "../static/images/icons/star.svg";
+import Button from "../common/Button";
+import IconStar from "../../static/images/icons/star.svg";
 
 const Tier = styled.div`
   display: flex;

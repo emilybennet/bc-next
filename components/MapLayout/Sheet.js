@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Footer from "../Footer";
+import Footer from "../common/Footer";
 import PoiList from "./PoiList";
-import Warning from "../Warning";
+import Warning from "../common/Warning";
 
 const Container = styled.div`
   margin: 0 auto 0;

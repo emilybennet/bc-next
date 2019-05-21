@@ -1,4 +1,4 @@
-import PressReleaseLayout from "../../components/PressReleaseLayout";
+import PressReleaseLayout from "../../components/PressRelease/Article";
 import Content, {
   meta
 } from "../../content/press-releases/20190320-cathy-weseluck.mdx";

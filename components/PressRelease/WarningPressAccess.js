@@ -1,5 +1,5 @@
 import React from "react";
-import Warning from "./Warning";
+import Warning from "../common/Warning";
 
 const WarningPressAccess = props => (
   <Warning

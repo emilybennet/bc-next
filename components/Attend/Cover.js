@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import Masthead from "./Masthead";
-import Directive from "./Directive";
-import Annual from "../static/images/bronycon-2019-annual_logo-website.svg";
+import Directive from "../common/Directive";
+import Annual from "../../static/images/bronycon-2019-annual_logo-website.svg";
 
 const Container = styled.section`
   display: flex;
