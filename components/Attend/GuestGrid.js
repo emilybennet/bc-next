@@ -23,8 +23,10 @@ const Lineup = styled.div`
 
 const GUESTS_CONTENT = [
   {
-    photo: "/static/images/guests/placeholders/pascale.jpg",
-    id: "unknown5"
+    photo: "/static/images/guests/preview/shoichet.jpg",
+    name: "Rebecca Shoichet",
+    id: "shoichet",
+    url: "/guests/rebecca-shoichet"
   },
   {
     photo: "/static/images/guests/preview/libman.jpg",
@@ -39,10 +41,9 @@ const GUESTS_CONTENT = [
     url: "/guests/nicole-oliver"
   },
   {
-    photo: "/static/images/guests/preview/price.jpg",
-    name: "Andy Price",
-    id: "price",
-    url: "/guests/andy-price"
+    photo: "/static/images/guests/placeholders/pascale.jpg",
+    id: "unknown5",
+    pos: 1
   },
   {
     photo: "/static/images/guests/preview/weseluck.jpg",
@@ -51,16 +52,15 @@ const GUESTS_CONTENT = [
     url: "/guests/cathy-weseluck"
   },
   {
-    photo: "/static/images/guests/preview/fleecs.jpg",
-    name: "Tony Fleecs",
-    id: "fleecs",
-    url: "/guests/tony-fleecs"
-  },
-  {
     photo: "/static/images/guests/preview/creber.jpg",
     name: "Michelle Creber",
     id: "creber",
     url: "/guests/michelle-creber"
+  },
+  {
+    photo: "/static/images/guests/placeholders/steve.jpg",
+    id: "unknown9",
+    pos: 6
   },
   {
     photo: "/static/images/guests/preview/mckillip.jpg",
@@ -69,18 +69,32 @@ const GUESTS_CONTENT = [
     url: "/guests/britt-mckillip"
   },
   {
-    photo: "/static/images/guests/placeholders/eva.jpg",
-    id: "unknown9"
-  },
-  {
     photo: "/static/images/guests/preview/thiessen.jpg",
     name: "Jayson Thiessen",
     id: "thiessen",
     url: "/guests/jayson-thiessen"
   },
   {
+    photo: "/static/images/guests/placeholders/eva.jpg",
+    id: "unknown11",
+    pos: 11
+  },
+  {
+    photo: "/static/images/guests/preview/fleecs.jpg",
+    name: "Tony Fleecs",
+    id: "fleecs",
+    url: "/guests/tony-fleecs"
+  },
+  {
+    photo: "/static/images/guests/preview/price.jpg",
+    name: "Andy Price",
+    id: "price",
+    url: "/guests/andy-price"
+  },
+  {
     photo: "/static/images/guests/placeholders/ingrid.jpg",
-    id: "unknown11"
+    id: "unknown13",
+    pos: 13
   },
   {
     photo: "/static/images/guests/preview/brown.jpg",
@@ -88,14 +102,6 @@ const GUESTS_CONTENT = [
     id: "brown",
     url: "/guests/gabriel-brown"
   }
-  // {
-  //   photo: "/static/images/guests/britt-mckillip.jpg",
-  //   name: "Britt McKillip"
-  // },
-  // {
-  //   photo: "/static/images/guests/cathy-weseluck.jpg",
-  //   name: "Cathy Weseluck"
-  // }
 ];
 
 const GuestTease = props => (

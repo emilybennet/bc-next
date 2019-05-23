@@ -79,5 +79,10 @@ export default [
     title: "BronyCon Maid Cafè and Departments Seeking Volunteers",
     date: "2019-05-18 22:00:00",
     path: "20190518-help-wanted"
+  },
+  {
+    title: "Rebecca Shoichet Returns for Round Two at BronyCon 2019",
+    date: "2019-05-22 18:00:00",
+    path: "20190522-rebecca-shoichet"
   }
 ];
