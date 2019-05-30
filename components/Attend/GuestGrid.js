@@ -23,6 +23,12 @@ const Lineup = styled.div`
 
 const GUESTS_CONTENT = [
   {
+    photo: "/static/images/guests/preview/faust.jpg",
+    name: "Lauren Faust",
+    id: "faust",
+    url: "/guests/lauren-faust"
+  },
+  {
     photo: "/static/images/guests/preview/shoichet.jpg",
     name: "Rebecca Shoichet",
     id: "shoichet",
@@ -39,11 +45,6 @@ const GUESTS_CONTENT = [
     name: "Nicole Oliver",
     id: "oliver",
     url: "/guests/nicole-oliver"
-  },
-  {
-    photo: "/static/images/guests/placeholders/pascale.jpg",
-    id: "unknown5",
-    pos: 1
   },
   {
     photo: "/static/images/guests/preview/weseluck.jpg",

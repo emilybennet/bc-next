@@ -84,5 +84,10 @@ export default [
     title: "Rebecca Shoichet Returns for Round Two at BronyCon 2019",
     date: "2019-05-22 18:00:00",
     path: "20190522-rebecca-shoichet"
+  },
+  {
+    title: "Lauren Faust Comes to BronyCon to Inspire Agents",
+    date: "2019-05-29 18:30:00",
+    path: "20190529-lauren-faust"
   }
 ];
