@@ -31,14 +31,17 @@ const Tab = styled.a`
   border-bottom-width: 0;
   border-radius: 3px 3px 0 0;
   color: ${props => props.theme.turquoise};
-  display: block;
-  font-size: 1.22em;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88em;
   font-weight: 600;
+  height: 45px;
+  justify-content: center;
   letter-spacing: 0.05em;
-  padding: 0.55em 1.38em 0.33em;
+  padding: 0 1.2em;
   text-transform: uppercase;
   &:not(:last-child) {
-    margin-right: 1.11em;
+    margin-right: 15px;
   }
   em {
     font-size: 0.6em;
@@ -50,34 +53,57 @@ const Tab = styled.a`
   }
   &.disabled {
     cursor: default;
+    border-color: ${props => props.theme.turquoise};
+    color: ${props => props.theme.turquoise};
+    span {
+      opacity: 0.3;
+    }
   }
 `;
 
-const Sheet = props => (
+const Sheet = ({ tabs, activeTab, changeTab }) => (
   <Container>
     <TabContainer>
-      <Tab className="active">Hotels</Tab>
+      {tabs.map((t, index) => (
+        <Tab
+          className={activeTab === index ? "active" : ""}
+          key={t.name}
+          onClick={() => changeTab(index)}
+        >
+          {t.name}
+        </Tab>
+      ))}
       <Tab className="disabled">
-        Food & Fun <em>(Soon)</em>
+        <span>
+          Food <em>(soon)</em>
+        </span>
       </Tab>
+      {/* <Tab className="disabled">
+        Food & Fun <em>(Soon)</em>
+      </Tab> */}
     </TabContainer>
     <Content>
-      <Warning>
-        <div>
-          <p>
-            <strong>Demand for discounted rooms is extremely high</strong>, book
-            whatever days you can or try another hotel. Contact the hotel
-            directly to extend your stay at the standard rate for any days you
-            were unable to book at the discounted rate.
-          </p>
-          <p>
-            <strong>Pre-registration pickup</strong> doesn't start until
-            Thursday, August 1, so don't stress if you’re unable to get into
-            town on Wednesday.
-          </p>
-        </div>
-      </Warning>
-      <PoiList data={props.hotels} />
+      {activeTab == !0 ? (
+        ""
+      ) : (
+        <Warning>
+          <div>
+            <p>
+              <strong>Demand for discounted rooms is extremely high</strong>,
+              book whatever days you can or try another hotel. Contact the hotel
+              directly to extend your stay at the standard rate for any days you
+              were unable to book at the discounted rate.
+            </p>
+            <p>
+              <strong>Pre-registration pickup</strong> doesn't start until
+              Thursday, August 1, so don't stress if you’re unable to get into
+              town on Wednesday.
+            </p>
+          </div>
+        </Warning>
+      )}
+
+      <PoiList data={tabs[activeTab].data} />
       <Footer />
     </Content>
   </Container>

@@ -67,7 +67,18 @@ const ItemMetric = styled.div`
 `;
 
 const Poi = (
-  { name, address, phone, url, urlSpecial, price, distance, walkTime, hash },
+  {
+    name,
+    address,
+    phone,
+    url,
+    urlSpecial,
+    price,
+    distance,
+    walkTime,
+    hash,
+    description
+  },
   ...props
 ) => (
   <ItemContainer>
@@ -76,10 +87,11 @@ const Poi = (
       <ItemLoc>
         {address} // {phone}
       </ItemLoc>
+      {description && <p>{description}</p>}
     </div>
     <ItemMetricsContainer>
       <ItemMetric as="a" href={urlSpecial} target="_blank">
-        <span>${price}</span>
+        <span>{price === 0 ? "Free" : `$${price}`}</span>
         <label>Book Now ></label>
       </ItemMetric>
       <ItemMetric>
