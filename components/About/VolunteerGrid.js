@@ -98,11 +98,11 @@ const APP_CONTENT = [
     description: "Help attendees and press. Pre-event roles available.",
     url: "http://bit.ly/2Rkdzts"
   },
-  {
-    dept: "Registration",
-    description: "Make first impressions while handing out badges.",
-    url: "http://bit.ly/2SiodBf"
-  },
+  // {
+  //   dept: "Registration",
+  //   description: "Make first impressions while handing out badges.",
+  //   url: "http://bit.ly/2SiodBf"
+  // },
   {
     dept: "Security",
     description: "Guide attendees and maintain order. Medical roles available.",
