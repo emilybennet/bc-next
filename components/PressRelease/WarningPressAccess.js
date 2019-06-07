@@ -9,7 +9,7 @@ const WarningPressAccess = props => (
     ]}
   >
     Media organizations looking to cover BronyCon 2019 can apply for
-    complementary press badges until April 30, 2019.
+    complementary press badges until June 30, 2019.
   </Warning>
 );
 

@@ -122,7 +122,7 @@ const PressReleaseLayout = ({ Content, meta, ...props }) => (
         }}
       />
       <SignOff>-&#8202;30&thinsp;-</SignOff>
-      {/* <WarningPressAccess /> */}
+      <WarningPressAccess />
     </ContentWrap>
   </BasicLayout>
 );

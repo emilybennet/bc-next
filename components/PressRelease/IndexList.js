@@ -102,7 +102,7 @@ const PressReleaseList = props => {
       <Directive>Vital Mission Information</Directive>
       <Container>
         <SectionHeading text="Media Advisories" echo="media" />
-        {/* <WarningPressAccess /> */}
+        <WarningPressAccess />
         <StyledList>
           {props.releases.map(item => (
             <Release {...item} key={item.path} />
