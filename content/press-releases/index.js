@@ -89,5 +89,10 @@ export default [
     title: "Lauren Faust Comes to BronyCon to Inspire Agents",
     date: "2019-05-29 18:30:00",
     path: "20190529-lauren-faust"
+  },
+  {
+    title: "M.A. Larson Helps Write the Final Tale for BronyCon",
+    date: "2019-06-11 18:00:00",
+    path: "20190611-ma-larson"
   }
 ];

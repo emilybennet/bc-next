@@ -59,15 +59,16 @@ const GUESTS_CONTENT = [
     url: "/guests/michelle-creber"
   },
   {
-    photo: "/static/images/guests/placeholders/steve.jpg",
-    id: "unknown9",
-    pos: 6
-  },
-  {
     photo: "/static/images/guests/preview/mckillip.jpg",
     name: "Britt McKillip",
     id: "mckillip",
     url: "/guests/britt-mckillip"
+  },
+  {
+    photo: "/static/images/guests/preview/larson.jpg",
+    name: "M.A. Larson",
+    id: "larson",
+    url: "/guests/ma-larson"
   },
   {
     photo: "/static/images/guests/preview/thiessen.jpg",
