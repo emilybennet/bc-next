@@ -117,12 +117,12 @@ const APP_CONTENT = [
     dept: "VIP Relations",
     description: "Shape the VIP Guest experience.",
     url: "http://bit.ly/2E2997z"
-  },
-  {
-    dept: "General Staff",
-    description: "Not sure where you fit in? We'll figure that out :)",
-    url: "http://bit.ly/2E3b6Rr"
   }
+  // {
+  //   dept: "General Staff",
+  //   description: "Not sure where you fit in? We'll figure that out :)",
+  //   url: "http://bit.ly/2E3b6Rr"
+  // }
 ];
 
 const VolunteerGrid = props => (
