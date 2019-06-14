@@ -77,9 +77,10 @@ const GUESTS_CONTENT = [
     url: "/guests/jayson-thiessen"
   },
   {
-    photo: "/static/images/guests/placeholders/eva.jpg",
-    id: "unknown11",
-    pos: 11
+    photo: "/static/images/guests/preview/richard.jpg",
+    name: "Sara Richard",
+    id: "richard",
+    url: "/guests/sara-richard"
   },
   {
     photo: "/static/images/guests/preview/fleecs.jpg",

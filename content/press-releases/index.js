@@ -94,5 +94,10 @@ export default [
     title: "M.A. Larson Helps Write the Final Tale for BronyCon",
     date: "2019-06-11 18:00:00",
     path: "20190611-ma-larson"
+  },
+  {
+    title: "Sara Richard Sets the Scene for the Final BronyCon",
+    date: "2019-06-13 18:00:00",
+    path: "20190613-sara-richard"
   }
 ];
