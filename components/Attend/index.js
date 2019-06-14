@@ -6,6 +6,7 @@ import EapBanner from "../EapBanner";
 import Cover from "./Cover";
 import StandardRegistration from "./StandardRegistration";
 import HomeTease from "./HomeTease";
+import PremierEvents from "./PremierEvents";
 import GuestTease from "./GuestGrid";
 import Footer from "../common/Footer";
 
@@ -22,7 +23,8 @@ const Attend = props => (
     <StandardRegistration />
     <GuestTease />
     <Directive>Continue for Briefing</Directive>
-    <HomeTease />
+    {/* <HomeTease /> */}
+    <PremierEvents />
     <Footer />
   </EnlistFlow>
 );

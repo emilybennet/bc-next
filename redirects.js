@@ -133,10 +133,18 @@ const about = [
   }
 ];
 
+const events = [
+  {
+    from: "/premier",
+    to: "/#premier"
+  }
+];
+
 module.exports = [
   ...policies,
   ...marketplace,
   ...social,
   ...baltimore,
-  ...about
+  ...about,
+  ...events
 ];
