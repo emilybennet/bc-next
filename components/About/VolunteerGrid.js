@@ -112,12 +112,12 @@ const APP_CONTENT = [
     dept: "Staff Suite",
     description: "Provide a little internal hospitality.",
     url: "http://bit.ly/2E2WDVA"
-  },
-  {
-    dept: "VIP Relations",
-    description: "Shape the VIP Guest experience.",
-    url: "http://bit.ly/2E2997z"
   }
+  // {
+  //   dept: "VIP Relations",
+  //   description: "Shape the VIP Guest experience.",
+  //   url: "http://bit.ly/2E2997z"
+  // }
   // {
   //   dept: "General Staff",
   //   description: "Not sure where you fit in? We'll figure that out :)",
