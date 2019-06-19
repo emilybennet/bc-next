@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
+import MainMenu from "./common/MainMenu";
+
 const theme = {
   // brand primary
   cyan: "#6ED2FA",
@@ -160,6 +162,7 @@ const Page = props => (
       </Head>
       {props.children}
       <GlobalStyle />
+      <MainMenu />
       <svg
         style={{
           colorInterpolationFilters: "sRGB",
