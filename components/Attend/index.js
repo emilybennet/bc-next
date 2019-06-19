@@ -7,7 +7,7 @@ import Cover from "./Cover";
 import StandardRegistration from "./StandardRegistration";
 import HomeTease from "./HomeTease";
 import PremierEvents from "./PremierEvents";
-import GuestTease from "./GuestGrid";
+import GuestTease from "./GuestTease";
 import Footer from "../common/Footer";
 
 const EnlistFlow = styled.div`
