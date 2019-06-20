@@ -136,11 +136,31 @@ const events = [
   }
 ];
 
+const guests = [
+  {
+    from: "/guests/alexandre-bellelle",
+    to: "/guests/minty-root"
+  },
+  {
+    from: "/guests/monochromatic-cayetana",
+    to: "/guests/monochromatic"
+  },
+  {
+    from: "/guests/thelostnarator",
+    to: "/guests/thelostnarrator"
+  },
+  {
+    from: "/guests/trish",
+    to: "/guests/trish-forstner"
+  }
+];
+
 module.exports = [
   ...policies,
   ...marketplace,
   ...social,
   ...baltimore,
   ...about,
-  ...events
+  ...events,
+  ...guests
 ];

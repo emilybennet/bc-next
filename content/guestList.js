@@ -84,6 +84,134 @@ const vips = [
   }
 ];
 
-const community = [];
+const community = [
+  {
+    photo: "/static/images/guests/community/ac-racebest.jpg",
+    name: "ACRacebest",
+    id: "acracebest",
+    url: "/guests/ac-racebest"
+  },
+  {
+    photo: "/static/images/guests/community/foal-papers.jpg",
+    name: "Foal Papers",
+    id: "foal-papers",
+    url: "/guests/foal-papers"
+  },
+  {
+    photo: "/static/images/guests/community/saberspark.jpg",
+    name: "Saberspark",
+    id: "saberspark",
+    url: "/guests/saberspark"
+  },
+  {
+    photo: "/static/images/guests/community/dustykatt.jpg",
+    name: "DustyKatt",
+    id: "dustykatt",
+    url: "/guests/dustykatt"
+  },
+
+  {
+    photo: "/static/images/guests/community/ncmares.jpg",
+    name: "NCMares",
+    id: "ncmares",
+    url: "/guests/ncmares"
+  },
+  {
+    photo: "/static/images/guests/community/trish.jpg",
+    name: "Trish Forstner",
+    id: "trish",
+    url: "/guests/trish-forstner"
+  },
+  {
+    photo: "/static/images/guests/community/imdrunkontea.jpg",
+    name: "Brandon Dunn",
+    id: "imdrunkontea",
+    url: "/guests/brandon-dunn"
+  },
+  {
+    photo: "/static/images/guests/community/alumx.jpg",
+    name: "Alumx",
+    id: "alumx",
+    url: "/guests/alumx"
+  },
+
+  {
+    photo: "/static/images/guests/community/jakewhyman.jpg",
+    name: "JakeWhyMan",
+    id: "jakewhyman",
+    url: "/guests/jakewhyman"
+  },
+  {
+    photo: "/static/images/guests/community/jhaller.jpg",
+    name: "Jhaller",
+    id: "jhaller",
+    url: "/guests/jhaller"
+  },
+  {
+    photo: "/static/images/guests/community/thelostnarrator.jpg",
+    name: "TheLostNarrator",
+    id: "thelostnarrator",
+    url: "/guests/thelostnarrator"
+  },
+  {
+    photo: "/static/images/guests/community/obabscribbler.jpg",
+    name: "ObabScribbler",
+    id: "obabscribbler",
+    url: "/guests/obabscribbler"
+  },
+
+  {
+    photo: "/static/images/guests/community/monochromatic.jpg",
+    name: "Monochromatic",
+    id: "monochromatic",
+    url: "/guests/monochromatic"
+  },
+  {
+    photo: "/static/images/guests/community/skywriter.jpg",
+    name: "Jeffrey Wells",
+    id: "skywriter",
+    url: "/guests/jeffrey-wells"
+  },
+  {
+    photo: "/static/images/guests/community/horizon-bax.jpg",
+    name: "Horizon Bax",
+    id: "horizon-bax",
+    url: "/guests/horizon-bax"
+  },
+  {
+    photo: "/static/images/guests/community/jesse-nowack.jpg",
+    name: "Jesse Nowack",
+    id: "jesse-nowack",
+    url: "/guests/jesse-nowack"
+  },
+
+  {
+    photo: "/static/images/guests/community/silverquill.jpg",
+    name: "SilverQuill",
+    id: "silverquill",
+    url: "/guests/silverquill"
+  },
+
+  {
+    photo: "/static/images/guests/community/scope.jpg",
+    name: "Scope",
+    id: "scope",
+    url: "/guests/scope"
+  },
+
+  {
+    photo: "/static/images/guests/community/magpiepony.jpg",
+    name: "MagpiePony",
+    id: "magpiepony",
+    url: "/guests/magpiepony"
+  },
+
+  {
+    photo: "/static/images/guests/community/minty-root.jpg",
+    name: "Minty Root",
+    id: "minty-root",
+    url: "/guests/minty-root"
+  }
+];
 
 export { vips, community };
