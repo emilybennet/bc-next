@@ -18,10 +18,13 @@ const Container = styled.section`
 
 const PlaceholderPage = props => (
   <BasicLayout pageTitle={props.pageTitle}>
-    <Directive>Clearance Required</Directive>
+    <Directive>Access Denied</Directive>
     <Container>
       <SectionHeading text={props.pageTitle} />
-      <p>{props.message}</p>
+      <p>
+        We're not quite ready to declassify this intel.
+        <br /> Check back ~14 days prior to the convention.
+      </p>
     </Container>
   </BasicLayout>
 );
