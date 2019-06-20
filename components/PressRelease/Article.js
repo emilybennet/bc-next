@@ -101,7 +101,10 @@ const PressReleaseLayout = ({ Content, meta, ...props }) => (
           h1: StyledH1,
           h2: DontRender,
           a: DontRender,
-          p: DontRender
+          p: DontRender,
+          ul: DontRender,
+          ol: DontRender,
+          li: DontRender
         }}
       />
       <MetaBox>
