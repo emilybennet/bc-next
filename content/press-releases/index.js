@@ -99,5 +99,10 @@ export default [
     title: "Sara Richard Sets the Scene for the Final BronyCon",
     date: "2019-06-13 18:00:00",
     path: "20190613-sara-richard"
+  },
+  {
+    title: "BronyCon Announces Special Community Agents for Final Mission",
+    date: "2019-06-19 18:30:00",
+    path: "20190619-community-guests"
   }
 ];
