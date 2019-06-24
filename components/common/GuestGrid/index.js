@@ -10,6 +10,7 @@ const Lineup = styled.div`
   grid-auto-rows: 1fr;
   grid-gap: 30px;
   margin: 2em 0 0 0;
+  justify-items: center;
 `;
 
 const GuestTease = props => (
