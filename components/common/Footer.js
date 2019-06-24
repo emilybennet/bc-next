@@ -17,6 +17,16 @@ const Container = styled.footer`
   margin: 3em auto;
   max-width: ${props => props.theme.maxWidth};
   padding-top: 3em;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: 50vw;
+    justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 100vw;
+    justify-content: center;
+  }
 `;
 
 const MapWrap = styled.div`
@@ -25,11 +35,19 @@ const MapWrap = styled.div`
   svg {
     width: 100%;
   }
+
+  @media (max-width: 1300px) {
+    grid-column: 1 / span 1;
+  }
 `;
 
 const LegalWrap = styled.div`
   grid-column: 6 / span 7;
   padding: 0 20px;
+
+  @media (max-width: 1300px) {
+    grid-column: 1 / span 1;
+  }
 `;
 
 const Coordinates = styled.span`
