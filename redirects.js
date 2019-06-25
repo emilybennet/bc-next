@@ -150,6 +150,10 @@ const guests = [
     to: "/guests/thelostnarrator"
   },
   {
+    from: "/guests/horizon-bax",
+    to: "/guests/horizon"
+  },
+  {
     from: "/guests/trish",
     to: "/guests/trish-forstner"
   }
