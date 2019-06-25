@@ -72,9 +72,10 @@ const vips = [
     url: "/guests/andy-price"
   },
   {
-    photo: "/static/images/guests/placeholders/red-herring.jpg",
-    id: "unknown13",
-    pos: 13
+    photo: "/static/images/guests/preview/zacherle.jpg",
+    name: "Bonnie Zacherle",
+    id: "zacherle",
+    url: "/guests/bonnie-zacherle"
   },
   {
     photo: "/static/images/guests/preview/brown.jpg",

@@ -104,5 +104,10 @@ export default [
     title: "BronyCon Announces Special Community Agents for Final Mission",
     date: "2019-06-19 18:30:00",
     path: "20190619-community-guests"
+  },
+  {
+    title: "BronyCon Goes to Where it all Began with Bonnie Zacherle",
+    date: "2019-06-25 18:30:00",
+    path: "20190625-bonnie-zacherle"
   }
 ];
