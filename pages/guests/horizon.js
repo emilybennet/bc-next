@@ -1,10 +1,10 @@
 import GuestProfile from "../../components/GuestProfile";
-import Bio from "../../content/community-bios/horizon-bax.mdx";
+import Bio from "../../content/community-bios/horizon.mdx";
 
 const CommunityProfile = () => (
   <GuestProfile
-    name="Horizon Bax"
-    headshot="/static/images/guests/community/horizon-bax.jpg"
+    name="Horizon"
+    headshot="/static/images/guests/community/horizon.jpg"
     Bio={Bio}
   />
 );

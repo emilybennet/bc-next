@@ -173,10 +173,10 @@ const community = [
     url: "/guests/jeffrey-wells"
   },
   {
-    photo: "/static/images/guests/community/horizon-bax.jpg",
-    name: "Horizon Bax",
-    id: "horizon-bax",
-    url: "/guests/horizon-bax"
+    photo: "/static/images/guests/community/horizon.jpg",
+    name: "Horizon",
+    id: "horizon",
+    url: "/guests/horizon"
   },
   {
     photo: "/static/images/guests/community/jesse-nowack.jpg",
