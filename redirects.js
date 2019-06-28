@@ -1,5 +1,9 @@
 const policies = [
   {
+    from: "/about/policy",
+    to: "/policies"
+  },
+  {
     from: "/about/policies",
     to: "/policies"
   },
@@ -146,6 +150,10 @@ const events = [
     from: "/cafe",
     to:
       "https://www.eventbrite.com/e/crystal-cafe-2019-dining-registration-63888650674"
+  },
+  {
+    from: "/gala",
+    to: "/policies/gala"
   }
 ];
 

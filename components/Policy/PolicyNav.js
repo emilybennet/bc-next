@@ -21,6 +21,10 @@ const NAV_LINKS = [
     url: "/policies/press"
   },
   {
+    text: "Gala Rules & Dress Code",
+    url: "/policies/gala"
+  },
+  {
     text: "Hall Cosplay Contest Rules",
     url: "/policies/hall-cosplay-contest"
   },
