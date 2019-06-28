@@ -126,6 +126,14 @@ const about = [
   {
     from: "/about/press-media/apply",
     to: "http://bit.ly/2BouuoZ"
+  },
+  {
+    from: "/staffswag",
+    to: "https://bcconstore.myshopify.com/"
+  },
+  {
+    from: "/polo",
+    to: "https://bcconstore.myshopify.com/products/bronycon-polo"
   }
 ];
 
