@@ -83,6 +83,26 @@ const PREMIER_EVENTS = [
     loc: "Thursday @ 6pm – Mane Event's Hall"
   },
   {
+    name: "Crystal Café",
+    loc: "Friday @ 9am, 2pm, 4pm – Hall of the Stars",
+    controls: [
+      {
+        text: "Buy Tickets",
+        url: "/cafe"
+      }
+    ]
+  },
+  {
+    name: "Grand Galloping Gala",
+    loc: "Friday @ 7pm – Mane Event's Hall",
+    controls: [
+      {
+        text: "Dress Code",
+        url: "/policies/gala"
+      }
+    ]
+  },
+  {
     name: "Cosplay Fashion Show",
     loc: "Saturday – Hall of the Sun",
     controls: [
@@ -111,14 +131,8 @@ const PREMIER_EVENTS = [
     ]
   },
   {
-    name: "Crystal Café",
-    loc: "Friday @ 9am, 2pm, 4pm – Hall of the Stars",
-    controls: [
-      {
-        text: "Buy Tickets",
-        url: "/cafe"
-      }
-    ]
+    name: "BronyCon Talent Show",
+    loc: "Sunday @ 11:30am – Mane Event's Hall"
   },
   {
     name: "Annual Charity Auction",
@@ -129,10 +143,6 @@ const PREMIER_EVENTS = [
         url: "https://goo.gl/forms/QkF9ffKA1N2rl6353"
       }
     ]
-  },
-  {
-    name: "BronyCon Talent Show",
-    loc: "Sunday @ 11:30am – Mane Event's Hall"
   },
   {
     name: "Blank Canvas's Marketplace",
