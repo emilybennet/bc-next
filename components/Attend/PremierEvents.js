@@ -98,7 +98,7 @@ const PREMIER_EVENTS = [
   },
   {
     name: "Hall Cosplay Contest",
-    loc: "Pre-judging: Saturday 9:30am–2pm",
+    loc: "Saturday @ 9:30am–2pm – Pre-judging Room",
     controls: [
       {
         text: "Pre-Register",
@@ -107,6 +107,16 @@ const PREMIER_EVENTS = [
       {
         text: "Rules",
         url: "/policies/hall-cosplay-contest"
+      }
+    ]
+  },
+  {
+    name: "Crystal Café",
+    loc: "Friday @ 9am, 2pm, 4pm – Hall of the Stars",
+    controls: [
+      {
+        text: "Buy Tickets",
+        url: "/cafe"
       }
     ]
   },

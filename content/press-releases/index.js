@@ -109,5 +109,10 @@ export default [
     title: "BronyCon Goes to Where it all Began with Bonnie Zacherle",
     date: "2019-06-25 18:30:00",
     path: "20190625-bonnie-zacherle"
+  },
+  {
+    title: "BronyCon Announces Crystal Café",
+    date: "2019-06-27 18:30:00",
+    path: "20190627-cafe"
   }
 ];

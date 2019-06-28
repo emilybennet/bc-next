@@ -133,6 +133,11 @@ const events = [
   {
     from: "/premier",
     to: "/#premier"
+  },
+  {
+    from: "/cafe",
+    to:
+      "https://www.eventbrite.com/e/crystal-cafe-2019-dining-registration-63888650674"
   }
 ];
 
