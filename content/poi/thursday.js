@@ -34,7 +34,7 @@ const thursday = [
       lng: -76.593179
     },
     description:
-      "Visit the bars of Baltimore's historic Fells Point neighborhood on this fully-guided, historical walking tour. It features drinks, dessert, and prizes; trot spots include The Point, Max's Taphouse, The Admiral's Cup, and The Wharf Rat."
+      "Two historic Baltimore neighborhoods, two different Bar Trots. Agents venturing to Fells Point will possibly visit The Admiral's Cup, Max's Taphouse, and The Wharf Rat. Agents looking to stay a bit closer to HQ should sign up for Fed Hill and check out Mother's, Magerks, and Ropewalk Tavern."
   },
   {
     id: 103,
