@@ -6,6 +6,7 @@ import DossierPhoto from "./DossierPhoto";
 const Container = styled.article`
   display: block;
   text-align: center;
+  max-width: 300px;
 `;
 
 const GuestName = styled.div`
