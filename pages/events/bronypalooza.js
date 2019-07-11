@@ -5,7 +5,7 @@ import Lineup from "../../components/BronyPalooza/Lineup.js";
 import Marquee from "../../components/BronyPalooza/Marquee.js";
 
 const BronyPalooza = props => (
-  <BasicLayout pageTitle={`${props.name}`}>
+  <BasicLayout pageTitle="BronyPalooza">
     <Marquee />
     <Lineup />
   </BasicLayout>
