@@ -83,6 +83,17 @@ const PREMIER_EVENTS = [
     loc: "Thursday @ 6pm – Mane Event's Hall"
   },
   {
+    name: "BronyPalooza",
+    loc:
+      "Thursday @ 7pm – Mane Event's Hall<br/>Friday @ 11pm – Mane Event's Hall<br/>Saturday @ 8pm — Mane Event's Hall",
+    controls: [
+      {
+        text: "See Lineup",
+        url: "/events/bronypalooza"
+      }
+    ]
+  },
+  {
     name: "Crystal Café",
     loc: "Friday @ 9am, 2pm, 4pm – Hall of the Stars",
     controls: [
