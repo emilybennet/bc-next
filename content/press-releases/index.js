@@ -114,5 +114,10 @@ export default [
     title: "BronyCon Announces Crystal Café",
     date: "2019-06-27 18:30:00",
     path: "20190627-cafe"
+  },
+  {
+    title: "BronyCon Announces Lineup for BronyPalooza 2019",
+    date: "2019-07-10 18:30:00",
+    path: "20190710-bronypalooza"
   }
 ];
