@@ -144,7 +144,7 @@ const community = [
   },
   {
     photo: "/static/images/guests/community/jhaller.jpg",
-    name: "Jhaller",
+    name: "JHaller",
     id: "jhaller",
     url: "/guests/jhaller"
   },
