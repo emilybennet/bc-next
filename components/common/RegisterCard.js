@@ -40,13 +40,21 @@ const Description = styled.p`
   line-height: 1.6;
 `;
 
+const ActionButton = props => {
+  if (props.disabled) return <Button disabled>Sales Complete</Button>;
+
+  return (
+    <Button href={props.url} target="_blank">
+      Go: {props.name}
+    </Button>
+  );
+};
+
 const RegisterCard = props => (
   <Container className="register-card">
     <Hook>{props.lead}</Hook>
     <Price>${props.price}</Price>
-    <Button href={props.url} target="_blank">
-      Go: {props.name}
-    </Button>
+    <ActionButton {...props} />
     <Description>{props.description}</Description>
   </Container>
 );

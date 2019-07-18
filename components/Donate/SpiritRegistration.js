@@ -43,6 +43,7 @@ const RegOption = styled.div`
 
 const SPIRIT_OPTION = {
   name: "Spirit",
+  disabled: true,
   price: 35,
   url: "https://bronycon2019.eventbrite.com#tickets",
   lead: "Remote Swag",
