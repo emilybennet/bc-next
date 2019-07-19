@@ -10,7 +10,7 @@ const Container = styled.section`
   flex-direction: column;
   min-height: 100vh;
   padding-bottom: 20px;
-  width: 100vw;
+  width: calc(100vw - 40px);
   @media (max-width: 700px) {
     min-height: unset;
   }
