@@ -1,10 +1,19 @@
-import PlaceholderPage from "../../components/PlaceholderPage";
+import axios from "axios";
 
-const SchedulePage = () => (
-  <PlaceholderPage
-    pageTitle="Schedule"
-    message="We're not quite ready to declassify this intel. Check back ~T-15 days to the convention"
-  />
+import BasicLayout from "../../components/common/BasicLayout";
+import EventSchedule from "../../components/EventSchedule";
+
+const SchedulePage = props => (
+  <BasicLayout pageTitle="Event Schedule">
+    <EventSchedule {...props} />
+  </BasicLayout>
 );
+
+SchedulePage.getInitialProps = async () => {
+  const res = await axios.get("https://intel.bronycon.org/api/events/list/");
+  const eventData = await res.data;
+
+  return { eventData };
+};
 
 export default SchedulePage;
