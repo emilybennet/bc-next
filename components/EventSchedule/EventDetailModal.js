@@ -34,7 +34,7 @@ const ModalBox = styled.section`
 const SessionName = styled.h3`
   color: ${props => props.theme.gold};
   font-family: ${props => props.theme.plex};
-  line-height: 1;
+  line-height: 1.4;
   font-size: 1.66em;
   font-style: italic;
   font-weight: 300;
@@ -80,9 +80,19 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
     }
   });
 
-  const formattedDuration = moment
-    .duration(moment(session.end_time).diff(moment(session.start_time)))
-    .humanize();
+  const formatDuration = seconds => {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = (seconds % 3600) / 60;
+
+    const hoursString = hours > 0 ? `${hours} hr` : "";
+    const minutesString = minutes > 0 ? `${minutes} min.` : "";
+
+    return `${hoursString} ${minutesString}`.trim();
+  };
+
+  const renderer = new marked.Renderer();
+  renderer.link = (href, title, text) =>
+    `<a target="_blank" href="${href}" title="${title}">${text}</a>`;
 
   return (
     <ModalContainer style={{ display: show }}>
@@ -91,7 +101,9 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
         <SessionName>{session.event_name}</SessionName>
         <SessionDescription
           dangerouslySetInnerHTML={{
-            __html: marked.inlineLexer(session.description, [])
+            __html: marked.inlineLexer(session.description, [], {
+              renderer: renderer
+            })
           }}
         />
         <Metric label="Location" value={session.location_name} />
@@ -99,7 +111,7 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
           label="Start"
           value={moment(session.start_time).format("MMMM D, YYYY @ h:mma")}
         />
-        <Metric label="Duration" value={formattedDuration} />
+        <Metric label="Duration" value={formatDuration(session.duration)} />
         {session.fee ? <Metric label="Fee" value={`$${session.fee}`} /> : ""}
       </ModalBox>
     </ModalContainer>
