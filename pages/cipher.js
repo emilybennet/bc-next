@@ -17,7 +17,9 @@ const CipherTool = styled.div`
   background-color: ${props=> props.theme.deepAbyss};
 
   @media (max-width: 600px) {
-    margin: 10px;
+    margin: 10px 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 `;
 
@@ -36,10 +38,6 @@ const CipherStep = styled.div`
   padding: 0;
   border-bottom: 1px solid ${props=> props.theme.aqua};
   position: relative;
-
-  @media (max-width: 600px) {
-    font-size: 18px;
-  }
 
   &:first-child {
     border-radius: 10px 10px 0 0;
@@ -97,6 +95,8 @@ const CipherStep = styled.div`
     top: 15px;
     right: 15px;
     transition: transform cubic-bezier(0.680, -0.550, 0.265, 1.550) .5s;
+    background-size: 64px;
+    background-repeat: no-repeat;
   }
 
   &.decrypt:after {
@@ -109,7 +109,21 @@ const CipherStep = styled.div`
     top: 15px;
     right: 15px;
     transition: transform cubic-bezier(0.680, -0.550, 0.265, 1.550) .5s;
+    background-size: 64px;
+    background-repeat: no-repeat;
     transform: rotate(180deg);
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+
+    &.encrypt:after, &.decrypt:after {
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+      top: 10px;
+      right: 10px;
+    }
   }
 `;
 
@@ -149,10 +163,17 @@ class CipherPage extends React.Component {
 
   handleCipherText(event) {
     let scrubbed = this.scrub(event.target.value);
-    this.setState({
-      cipherText: scrubbed,
-      plainText: Cipher.decrypt(scrubbed, this.state.keyString)
-    });
+    if(this.state.keyString == '') {
+      this.setState({
+        cipherText: scrubbed,
+        mode: 1
+      });
+    } else {
+      this.setState({
+        cipherText: scrubbed,
+        plainText: Cipher.decrypt(scrubbed, this.state.keyString)
+      });
+    }
   }
 
   handleKeyString(event) {
@@ -189,7 +210,7 @@ class CipherPage extends React.Component {
             onFocus={(e)=> {this.changeMode(e, 1)}}
           />
         </CipherStep>
-        <CipherStep className={this.state.mode ? 'decrypt' : 'encrypt'}>
+        <CipherStep className={this.state.mode ? 'encrypt' : 'decrypt'}>
           <label for="keystring">Key &gt;&gt;</label> 
           <input name="keystring" type="text" 
             value={this.state.keyString} 
