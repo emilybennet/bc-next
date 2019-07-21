@@ -28,6 +28,11 @@ const LogoWrap = styled.a`
       fill: ${props => props.theme.turquoise};
     }
   }
+  &:active {
+    svg {
+      fill: ${props => props.theme.sapphire};
+    }
+  }
 `;
 
 const Header = props => (

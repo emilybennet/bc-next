@@ -121,6 +121,10 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     text-decoration: none;
   }
+  ::selection {
+    background-color: ${props=> props.theme.sapphire};
+    color: ${props=> props.theme.abyss};
+  }
   @media (max-width: 600px) {
     body {
       font-size: 1.2rem;
