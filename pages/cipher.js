@@ -12,7 +12,6 @@ const CipherTool = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  border: 2px solid ${props=> props.theme.aqua};
   box-shadow: 0 0 0 10px ${props=> props.theme.abyss};
   background-color: ${props=> props.theme.deepAbyss};
 
@@ -36,16 +35,20 @@ const CipherStep = styled.div`
   background-position: center right 20px;
   color: white;
   padding: 0;
-  border-bottom: 1px solid ${props=> props.theme.aqua};
+  // border-bottom: 1px solid ${props=> props.theme.aqua};
+  border: 2px solid ${props=> props.theme.aqua};
+  border-top: 0;
+  border-bottom: 0;
   position: relative;
 
   &:first-child {
     border-radius: 10px 10px 0 0;
+    border: 2px solid ${props=> props.theme.aqua};
   }
 
   &:last-child {
-    border-bottom: none;
     border-radius: 0 0 10px 10px;
+    border: 2px solid ${props=> props.theme.aqua};
   }
 
   label {
@@ -157,16 +160,16 @@ class TabulaRecta extends React.Component {
     super(props);
   }
 
-  outputTabulaRecta() {
+  outputTabulaRecta(a) {
     let table = [];
-    let alphabet = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+    let alphabet = a ? a : `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
     let offset = 0;
 
     for (let l = 0; l < alphabet.length; l++) {
       let partOne = alphabet.substring(0, offset);
       let partTwo = alphabet.substring(offset);
       let line = partTwo + partOne;
-      table.push((offset + 1) + '\t' + line + '\n');
+      table.push((offset < 10 ? offset : '') + '\t' + line + '\n');
       offset++;
     }
     return table.join('');
@@ -250,10 +253,10 @@ class CipherPage extends React.Component {
       <BasicLayout>
       <Directive>THE/OWLS/ARE/NOT/WHAT/THEY/SEEM</Directive>
       <CipherTool>
-        <CipherStep>
+        <CipherStep className="cipher-text">
           <label for="ciphertext">Cipher Text &gt;&gt;</label>
           <textarea 
-            name="ciphertext" type="text" 
+            name="ciphertext" type="text"  
             value={this.state.cipherText} 
             placeholder="ENCRYPTED_TEXT_HERE" 
             onChange={(e)=> {this.handleCipherText(e)}}
@@ -262,15 +265,17 @@ class CipherPage extends React.Component {
         </CipherStep>
         <CipherStep className={this.state.mode ? 'encrypt' : 'decrypt'}>
           <label for="keystring">Key &gt;&gt;</label> 
-          <input name="keystring" type="text" 
+          <input 
+            name="keystring" type="text" 
             value={this.state.keyString} 
             placeholder="SECRET_KEY_HERE" 
             onChange={(e)=> this.handleKeyString(e)} 
           />
         </CipherStep>
-        <CipherStep>
+        <CipherStep className="plain-text">
           <label for="plaintext">Plain Text &gt;&gt;</label>
-          <textarea name="plaintext" type="text" 
+          <textarea 
+            name="plaintext" type="text" 
             value={this.state.plainText} 
             placeholder="DECRYPTED_MESSAGE_HERE"
             onChange={(e)=> {this.handlePlainText(e)}}
