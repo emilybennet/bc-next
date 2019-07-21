@@ -42,9 +42,9 @@ const Header = props => (
         <Logo />
       </LogoWrap>
     </Link>
-    <Button className="btn" href="/">
+    {/* <Button className="btn" href="/">
       Attend
-    </Button>
+    </Button> */}
   </StyledHeader>
 );
 

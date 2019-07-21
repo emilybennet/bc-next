@@ -154,6 +154,14 @@ const events = [
   {
     from: "/gala",
     to: "/policies/gala"
+  },
+  {
+    from: "/bronypalooza",
+    to: "/events/bronypalooza"
+  },
+  {
+    from: "/bp",
+    to: "/events/bronypalooza"
   }
 ];
 

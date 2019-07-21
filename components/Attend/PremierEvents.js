@@ -64,11 +64,21 @@ const StyledEvent = styled.li`
       padding: 20px 30px;
       text-transform: uppercase;
       transition: color 0.15s;
-      &:hover {
+      &:hover:not(.disabled) {
         color: ${props => props.theme.gold};
       }
       &:after {
         content: " >";
+      }
+      &.disabled {
+        color: rgba(57, 81, 89, 1);
+        cursor: default;
+        text-decoration: line-through;
+        user-select: none;
+        &:focus {
+          box-shadow: 0 0 0 1px ${props => props.theme.midnight},
+            0 0 0 4px ${props => props.theme.ruby};
+        }
       }
       &:not(:last-child) {
         border-right: 1px solid ${props => props.theme.turquoise};
@@ -83,12 +93,25 @@ const PREMIER_EVENTS = [
     loc: "Thursday @ 6pm – Mane Event's Hall"
   },
   {
+    name: "BronyPalooza",
+    loc:
+      "Thursday @ 7pm – Mane Event's Hall<br/>Friday @ 11pm – Mane Event's Hall<br/>Saturday @ 8pm — Mane Event's Hall",
+    controls: [
+      {
+        text: "See Lineup",
+        url: "/events/bronypalooza"
+      }
+    ]
+  },
+  {
     name: "Crystal Café",
     loc: "Friday @ 9am, 2pm, 4pm – Hall of the Stars",
     controls: [
       {
-        text: "Buy Tickets",
-        url: "/cafe"
+        // text: "Buy Tickets",
+        text: "Sold Out",
+        url: "/cafe",
+        disabled: true
       }
     ]
   },
@@ -154,11 +177,20 @@ const PREMIER_EVENTS = [
 const EventControls = ({ controls }) => {
   return (
     <div className="event-controls">
-      {controls.map((c, i) => (
-        <a key={i} href={c.url}>
-          {c.text}
-        </a>
-      ))}
+      {controls.map((c, i) => {
+        if (c.disabled)
+          return (
+            <a key={i} className="disabled">
+              {c.text}
+            </a>
+          );
+
+        return (
+          <a key={i} href={c.url}>
+            {c.text}
+          </a>
+        );
+      })}
     </div>
   );
 };

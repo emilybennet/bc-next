@@ -23,7 +23,7 @@ const PlaceholderPage = props => (
       <SectionHeading text={props.pageTitle} />
       <p>
         We're not quite ready to declassify this intel.
-        <br /> Check back ~14 days prior to the convention.
+        <br /> Check back closer to the convention.
       </p>
     </Container>
   </BasicLayout>
