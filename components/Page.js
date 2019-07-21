@@ -17,7 +17,7 @@ const theme = {
   yellow: "#FFEB5F",
   green: "#87C88C",
   cerulean: "#37559B",
-  gold: "#FFC30F",
+  gold: "#FBD71C",
   purple: "#9B4B96",
   pink: "#D291BE",
   rust: "#F0641E",
