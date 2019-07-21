@@ -23,6 +23,8 @@
     "remark-emoji": "^2.0.2",
     "remark-images": "^0.18.0",
     "slugify": "^1.3.4",
-    "styled-components": "^4.2.0"
-  }
+    "styled-components": "^4.2.0",
+    "vignere-babbage-cipher": "^1.0.1"
+  },
+  "devDependencies": {}
 }
