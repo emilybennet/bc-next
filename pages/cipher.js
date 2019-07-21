@@ -127,6 +127,56 @@ const CipherStep = styled.div`
   }
 `;
 
+const CodeDisplay = styled.div`
+  max-width: 900px;
+  margin: 30px auto 0;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid ${props=> props.theme.aqua};
+  box-shadow: 0 0 0 10px ${props=> props.theme.abyss};
+  background-color: ${props=> props.theme.deepAbyss};
+  font-family: ${props=> props.theme.plex};
+  display: block;
+  white-space: pre;
+  overflow-wrap: normal;
+  background: ${props=> props.theme.abyss};
+  letter-spacing: .5vw;
+  line-height: 1.4em;
+
+  @media (max-width: 600px) {
+    margin: 10px 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+`;
+
+class TabulaRecta extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  outputTabulaRecta() {
+    let table = [];
+    let alphabet = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+    let offset = 0;
+
+    for (let l = 0; l < alphabet.length; l++) {
+      let partOne = alphabet.substring(0, offset);
+      let partTwo = alphabet.substring(offset);
+      let line = partTwo + partOne;
+      table.push((offset + 1) + '\t' + line + '\n');
+      offset++;
+    }
+    return table.join('');
+  }
+
+  render() {
+    return <CodeDisplay>{this.outputTabulaRecta()}</CodeDisplay>;
+  }
+}
+
 class CipherPage extends React.Component {
   constructor(props) {
     super(props);
@@ -228,6 +278,7 @@ class CipherPage extends React.Component {
           />
         </CipherStep>
       </CipherTool>
+      <TabulaRecta />
     </BasicLayout>
     );
   }
