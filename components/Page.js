@@ -122,8 +122,8 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
   ::selection {
-    background-color: ${props=> props.theme.sapphire};
-    color: ${props=> props.theme.abyss};
+    background-color: ${props => props.theme.sapphire};
+    color: ${props => props.theme.abyss};
   }
   @media (max-width: 600px) {
     body {

@@ -12,8 +12,8 @@ const CipherTool = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 0 0 10px ${props=> props.theme.abyss};
-  background-color: ${props=> props.theme.deepAbyss};
+  box-shadow: 0 0 0 10px ${props => props.theme.abyss};
+  background-color: ${props => props.theme.deepAbyss};
 
   @media (max-width: 600px) {
     margin: 10px 0;
@@ -35,20 +35,20 @@ const CipherStep = styled.div`
   background-position: center right 20px;
   color: white;
   padding: 0;
-  // border-bottom: 1px solid ${props=> props.theme.aqua};
-  border: 2px solid ${props=> props.theme.aqua};
+  // border-bottom: 1px solid ${props => props.theme.aqua};
+  border: 2px solid ${props => props.theme.aqua};
   border-top: 0;
   border-bottom: 0;
   position: relative;
 
   &:first-child {
     border-radius: 10px 10px 0 0;
-    border: 2px solid ${props=> props.theme.aqua};
+    border: 2px solid ${props => props.theme.aqua};
   }
 
   &:last-child {
     border-radius: 0 0 10px 10px;
-    border: 2px solid ${props=> props.theme.aqua};
+    border: 2px solid ${props => props.theme.aqua};
   }
 
   label {
@@ -73,12 +73,12 @@ const CipherStep = styled.div`
     line-height: 1.4em;
 
     ::selection {
-      background-color: ${props=> props.theme.sapphire};
-      color: ${props=> props.theme.abyss};
+      background-color: ${props => props.theme.sapphire};
+      color: ${props => props.theme.abyss};
     }
 
     ::placeholder {
-      color: ${props=> props.theme.turquoise};
+      color: ${props => props.theme.turquoise};
     }
   }
 
@@ -137,15 +137,15 @@ const CodeDisplay = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  border: 2px solid ${props=> props.theme.aqua};
-  box-shadow: 0 0 0 10px ${props=> props.theme.abyss};
-  background-color: ${props=> props.theme.deepAbyss};
-  font-family: ${props=> props.theme.plex};
+  border: 2px solid ${props => props.theme.aqua};
+  box-shadow: 0 0 0 10px ${props => props.theme.abyss};
+  background-color: ${props => props.theme.deepAbyss};
+  font-family: ${props => props.theme.plex};
   display: block;
   white-space: pre;
   overflow-wrap: normal;
-  background: ${props=> props.theme.abyss};
-  letter-spacing: .5vw;
+  background: ${props => props.theme.abyss};
+  letter-spacing: 0.5vw;
   line-height: 1.4em;
 
   @media (max-width: 600px) {
@@ -169,10 +169,10 @@ class TabulaRecta extends React.Component {
       let partOne = alphabet.substring(0, offset);
       let partTwo = alphabet.substring(offset);
       let line = partTwo + partOne;
-      table.push((offset < 10 ? offset : '') + '\t' + line + '\n');
+      table.push((offset < 10 ? offset : "") + "\t" + line + "\n");
       offset++;
     }
-    return table.join('');
+    return table.join("");
   }
 
   render() {
@@ -184,11 +184,11 @@ class CipherPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cipherText: '',
-      keyString: '',
-      plainText: '',
+      cipherText: "",
+      keyString: "",
+      plainText: "",
       mode: 0 // 0 if encrypt, 1 for decrypt
-    }
+    };
     this.changeMode = this.changeMode.bind(this);
     this.handlePlainText = this.handlePlainText.bind(this);
     this.handleCipherText = this.handleCipherText.bind(this);
@@ -197,9 +197,9 @@ class CipherPage extends React.Component {
   }
 
   scrub(input) {
-    return input.toUpperCase().replace(/[^A-Z]/g, '')
+    return input.toUpperCase().replace(/[^A-Z]/g, "");
   }
-  
+
   changeMode(event, mode) {
     this.setState({
       mode: mode
@@ -216,7 +216,7 @@ class CipherPage extends React.Component {
 
   handleCipherText(event) {
     let scrubbed = this.scrub(event.target.value);
-    if(this.state.keyString == '') {
+    if (this.state.keyString == "") {
       this.setState({
         cipherText: scrubbed,
         mode: 1
@@ -235,15 +235,15 @@ class CipherPage extends React.Component {
       keyString: scrubbed
     });
 
-    if(scrubbed.length > 0) {
-      if(this.state.mode == 0) {
+    if (scrubbed.length > 0) {
+      if (this.state.mode == 0) {
         this.setState({
           cipherText: Cipher.encrypt(this.state.plainText, scrubbed)
         });
       } else {
         this.setState({
           plainText: Cipher.decrypt(this.state.cipherText, scrubbed)
-        })
+        });
       }
     }
   }
@@ -251,42 +251,53 @@ class CipherPage extends React.Component {
   render() {
     return (
       <BasicLayout>
-      <Directive>THE/OWLS/ARE/NOT/WHAT/THEY/SEEM</Directive>
-      <CipherTool>
-        <CipherStep className="cipher-text">
-          <label for="ciphertext">Cipher Text &gt;&gt;</label>
-          <textarea 
-            name="ciphertext" type="text"  
-            value={this.state.cipherText} 
-            placeholder="ENCRYPTED_TEXT_HERE" 
-            onChange={(e)=> {this.handleCipherText(e)}}
-            onFocus={(e)=> {this.changeMode(e, 1)}}
-          />
-        </CipherStep>
-        <CipherStep className={this.state.mode ? 'encrypt' : 'decrypt'}>
-          <label for="keystring">Key &gt;&gt;</label> 
-          <input 
-            name="keystring" type="text" 
-            value={this.state.keyString} 
-            placeholder="SECRET_KEY_HERE" 
-            onChange={(e)=> this.handleKeyString(e)} 
-          />
-        </CipherStep>
-        <CipherStep className="plain-text">
-          <label for="plaintext">Plain Text &gt;&gt;</label>
-          <textarea 
-            name="plaintext" type="text" 
-            value={this.state.plainText} 
-            placeholder="DECRYPTED_MESSAGE_HERE"
-            onChange={(e)=> {this.handlePlainText(e)}}
-            onFocus={(e)=> {this.changeMode(e, 0)}}
-          />
-        </CipherStep>
-      </CipherTool>
-      <TabulaRecta />
-    </BasicLayout>
+        <Directive>THE/OWLS/ARE/NOT/WHAT/THEY/SEEM</Directive>
+        <CipherTool>
+          <CipherStep className="cipher-text">
+            <label htmlFor="ciphertext">Cipher Text &gt;&gt;</label>
+            <textarea
+              name="ciphertext"
+              type="text"
+              value={this.state.cipherText}
+              placeholder="ENCRYPTED_TEXT_HERE"
+              onChange={e => {
+                this.handleCipherText(e);
+              }}
+              onFocus={e => {
+                this.changeMode(e, 1);
+              }}
+            />
+          </CipherStep>
+          <CipherStep className={this.state.mode ? "encrypt" : "decrypt"}>
+            <label htmlFor="keystring">Key &gt;&gt;</label>
+            <input
+              name="keystring"
+              type="text"
+              value={this.state.keyString}
+              placeholder="SECRET_KEY_HERE"
+              onChange={e => this.handleKeyString(e)}
+            />
+          </CipherStep>
+          <CipherStep className="plain-text">
+            <label htmlFor="plaintext">Plain Text &gt;&gt;</label>
+            <textarea
+              name="plaintext"
+              type="text"
+              value={this.state.plainText}
+              placeholder="DECRYPTED_MESSAGE_HERE"
+              onChange={e => {
+                this.handlePlainText(e);
+              }}
+              onFocus={e => {
+                this.changeMode(e, 0);
+              }}
+            />
+          </CipherStep>
+        </CipherTool>
+        <TabulaRecta />
+      </BasicLayout>
     );
   }
-};
+}
 
 export default CipherPage;
