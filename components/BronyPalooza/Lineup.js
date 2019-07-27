@@ -4,191 +4,107 @@ import styled from "styled-components";
 import BasicLayout from "../common/BasicLayout";
 import Directive from "../common/Directive";
 
-import RedactedName from "../../static/images/bp-redacted-name.svg";
-
-const PerformerList = styled.ul`
-  width: 100%;
-  padding: 0;
-  margin: 0;
-`;
-
-const Performer = styled.li`
-  min-height: 50vh;
-  width: 100vw;
+const Performer = styled.div`
+  --w: 80vw;
+  width: var(--w);
+  height: 1vh;
+  min-height: calc(.086 * var(--w));
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin: 0;
-  font-size: 3em;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
+  border: none;
+  overflow: hidden;
+  transition: all .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  outline: none;
+  position: relative;
 
-  span {
-    display: block;
+  &:hover .performer-name-decorative {
+    transform: perspective(500px) translateZ(-20px);
   }
 
-  svg {
-    height: 40px;
-    margin-bottom: 0.25em;
+  &:focus {
+    height: calc(.172 * var(--w));
+    background-size: 75%;
   }
 
-  path {
-    fill: ${props => props.theme.white};
+  .image {
+    width: var(--w);
+    height: calc(.086 * var(--w));
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
   }
 
-  @media (max-width: 1300px) {
-    width: auto;
-    min-height: 3em;
-    font-size: 2em;
-    letter-spacing: 0.15em;
+  .performer-name-decorative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: url(/static/images/bp-lineup-poster.svg#view-${props => props.slug});
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    z-index: 0;
+    text-indent: -8000px;
+    overflow: hidden;
+    transition: transform .25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    cursor: pointer;
+  }
 
-    svg {
-      height: 15px;
-      margin-bottom: 0.25em;
+  .dymo {
+    background: black;
+    font-family: ${props => props.theme.plex};
+    color: ${props => props.theme.gold};
+    font-weight: 300;
+    padding: .25em .75em;
+    border-radius: 2px;
+    box-shadow: 0 3px 0 rgba(0,0,0,.25);
+    font-size: 20px;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity .25s;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=radio]:checked ~ .dymo {
+    opacity: 1;
+  }
+
+  input[type=radio]:checked ~ .image {
+    transform: perspective(500px) translateZ(-100px);
+    opacity: .5;
+  }
+
+  @media (max-width: 800px) {
+    --w: 100vw;
+    min-height: auto;
+    height: 4em;
+
+    .dymo {
+      font-size: 14px;
     }
   }
 `;
 
-const SuperBandPerformer = styled.span`
-  min-height: 15vh;
-`;
-
-const SetTime = styled.span`
-  color: ${props => props.theme.gold};
-  display: block;
-  font-size: 0.25em;
-  letter-spacing: 1em;
-`;
-
-const PerformerHeader = styled.span`
-  display: block;
-  margin: 4em;
-  font-size: 0.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.4em;
-  /* width: 100%: */
-
-  @media (max-width: 1300px) {
-    width: auto;
-    /* height: 6em; */
-    margin-bottom: 1em;
-    font-size: 1.4em;
-    letter-spacing: 0.15em;
-    font-size: 0.5em;
-  }
-`;
-
-// const PerformerHeader = styled.li`
-//   height: 50vh;
-//   width: 100vw;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-align: center;
-//   margin: 0;
-//   font-size: 2em;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   letter-spacing: 0.15em;
-
-//   @media (max-width: 1300px) {
-//     width: auto;
-//     height: 6em;
-//     font-size: 1.4em;
-//     letter-spacing: 0.15em;
-//   }
-// `;
-
-const Lineup = props => (
-  <PerformerList>
-    <Performer>
-      Hollowpoint
-      <SetTime>Thursday @ 7:00pm</SetTime>
+const Lineup = ({ lineupList }) => (
+  lineupList.map(item => (
+    <Performer aria-label={`${item.name} ${item.setTime}`} key={item.slug} slug={item.slug}>
+      <input type="radio" name="performer" id={`toggle-${item.slug}`} />
+      <img class="image" title={item.name} src={`/static/images/bp-lineup-poster.svg#view-${item.slug}`} width="1500px" height="127px" />
+      <label htmlFor={`toggle-${item.slug}`} class="performer-name-decorative">{item.name}</label>
+      <span class="dymo">{item.name} — {item.setTime}</span>
     </Performer>
-    <Performer>
-      Seventh Element
-      <SetTime>Thursday @ 7:40pm</SetTime>
-    </Performer>
-    <Performer>
-      John Kenza
-      <SetTime>Thursday @ 8:20pm</SetTime>
-    </Performer>
-    <Performer>
-      YourEnigma
-      <SetTime>Thursday @ 8:55pm</SetTime>
-    </Performer>
-    <Performer>
-      GeekBrony
-      <SetTime>Thursday @ 9:30pm</SetTime>
-    </Performer>
-    <Performer>
-      loophoof
-      <SetTime>Thursday @ 10:05pm</SetTime>
-    </Performer>
-    <Performer>
-      Elevative
-      <SetTime>Thursday @ 10:40pm</SetTime>
-    </Performer>
-    <Performer>
-      FLIGHTRUSH
-      <SetTime>Thursday @ 11:15pm</SetTime>
-    </Performer>
-    <Performer>
-      R3CTIFIER
-      <SetTime>Thursday @ 11:50pm</SetTime>
-    </Performer>
-    <Performer>
-      Chang31ing
-      <SetTime>Friday @ 12:25am</SetTime>
-    </Performer>
-    <Performer>
-      StrachAttack
-      <SetTime>Friday @ 1:00am</SetTime>
-    </Performer>
-    <Performer>
-      VinylTastic
-      <SetTime>Friday @ 11:00pm</SetTime>
-    </Performer>
-    <Performer>
-      Vylet Pony
-      <SetTime>Friday @ 11:35pm</SetTime>
-    </Performer>
-    <Performer>
-      <RedactedName />
-      <SetTime>Saturday @ 12:10am</SetTime>
-    </Performer>
-    <Performer>
-      Silva Hound
-      <SetTime>Saturday @ 1:00am</SetTime>
-    </Performer>
-    <Performer>
-      Michelle Creber
-      <br />
-      Black Gryph0n,
-      <br />
-      &amp; Baasik
-      <SetTime>Saturday @ 8:00pm</SetTime>
-    </Performer>
-
-    <Performer>
-      <PerformerHeader>The BronyPalooza Superband, featuring:</PerformerHeader>
-      <span>Luck Rock</span>
-      <span>Crusader!</span>
-      <span>Cyril the Wolf</span>
-      <span>P1K</span>
-      <span>The Wonderbolts!</span>
-      <SetTime>Saturday @ 9:40pm</SetTime>
-    </Performer>
-
-    <Performer>
-      Eurobeat Brony
-      <SetTime>Sunday @ 1:00am</SetTime>
-    </Performer>
-  </PerformerList>
+  ))
 );
 
 export default Lineup;
