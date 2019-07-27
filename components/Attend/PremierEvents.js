@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 import SectionHeading from "../common/SectionHeading";
 
@@ -17,8 +18,6 @@ const EventList = styled.ul`
   padding: 0;
   li {
     padding: 0 2em;
-  }
-  li:not(:last-of-type) {
     border-bottom: 8px dotted ${props => props.theme.black};
     margin-bottom: 1.8em;
     padding-bottom: 1.8em;
@@ -87,6 +86,37 @@ const StyledEvent = styled.li`
   }
 `;
 
+const Footer = styled.footer`
+  display: block;
+  line-height: 1.33em;
+  letter-spacing: 2px;
+  padding: 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  a {
+    color: ${props => props.theme.aqua};
+    font-weight: 700;
+    padding: 0 0.25em;
+    margin-left: 1.75em;
+    transition: color 0.15s;
+    &:hover {
+      color: ${props => props.theme.turquoise};
+    }
+    &:focus {
+      outline: none;
+      background: ${props => props.theme.sapphire};
+      color: ${props => props.theme.midnight};
+      box-shadow: 0 0 0 3px ${props => props.theme.sapphire};
+      border-radius: 1px;
+    }
+  }
+  @media (max-width: 700px) {
+    a {
+      display: block;
+    }
+  }
+`;
+
 const PREMIER_EVENTS = [
   {
     name: "Opening Ceremonies",
@@ -127,7 +157,7 @@ const PREMIER_EVENTS = [
   },
   {
     name: "Cosplay Fashion Show",
-    loc: "Saturday – Hall of the Sun",
+    loc: "Saturday @  5:30pm – Hall of the Sun",
     controls: [
       {
         text: "Pre-Register",
@@ -170,7 +200,13 @@ const PREMIER_EVENTS = [
   {
     name: "Blank Canvas's Marketplace",
     loc:
-      "Thursday @ 2–8pm <br/> Friday–Saturday @ 10am–6pm <br /> Sunday @ 10am–4pm"
+      "Thursday @ 2:30–8pm <br/> Friday–Saturday @ 10:30am–6pm <br /> Sunday @ 10:30am–4pm",
+    controls: [
+      {
+        text: "View Map",
+        url: "/marketplace"
+      }
+    ]
   }
 ];
 
@@ -214,6 +250,12 @@ const PremierEvents = () => (
       {PREMIER_EVENTS.map((ev, i) => (
         <Event {...ev} key={i} />
       ))}
+      <Footer>
+        300+ additional events.
+        <Link href="/events">
+          <a>View full itinerary →</a>
+        </Link>
+      </Footer>
     </EventList>
   </Container>
 );
