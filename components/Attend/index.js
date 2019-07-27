@@ -8,6 +8,7 @@ import StandardRegistration from "./StandardRegistration";
 import HomeTease from "./HomeTease";
 import PremierEvents from "./PremierEvents";
 import GuestTease from "./GuestTease";
+import Baltimore from "./Baltimore";
 import Footer from "../common/Footer";
 
 const EnlistFlow = styled.div`
@@ -25,6 +26,7 @@ const Attend = props => (
     <Directive>Continue for Briefing</Directive>
     {/* <HomeTease /> */}
     <PremierEvents />
+    <Baltimore />
     <Footer />
   </EnlistFlow>
 );

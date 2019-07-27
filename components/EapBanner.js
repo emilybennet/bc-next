@@ -34,13 +34,14 @@ const Container = styled.div`
 `;
 
 const EapBanner = props => (
-  <Container>
-    <Link href="/baltimore">
-      <a>
-        <span>// Incoming Transmission → Book Discounted Hotels Now</span>
-      </a>
-    </Link>
-  </Container>
+  // <Container>
+  //   <Link href="/baltimore">
+  //     <a>
+  //       <span>// Incoming Transmission → Book Discounted Hotels Now</span>
+  //     </a>
+  //   </Link>
+  // </Container>
+  <div />
 );
 
 export default EapBanner;
