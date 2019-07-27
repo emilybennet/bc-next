@@ -71,12 +71,12 @@ const policies = [
 
 const marketplace = [
   {
-    from: "/marketplace",
-    to: "/exhibit"
+    from: "/exhibit",
+    to: "/marketplace"
   },
   {
     from: "/marketplace/apply-to-sell",
-    to: "/exhibit"
+    to: "/marketplace"
   }
 ];
 

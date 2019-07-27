@@ -1,10 +1,5 @@
-import PlaceholderPage from "../components/PlaceholderPage";
+import MarketplaceDirectory from "../components/MarketplaceDirectory";
 
-const MarketplacePage = () => (
-  <PlaceholderPage
-    pageTitle="Marketplace"
-    message="We're not quite ready to declassify this intel. Check back ~T-15 days to the convention"
-  />
-);
+const MarketplacePage = () => <MarketplaceDirectory />;
 
 export default MarketplacePage;
