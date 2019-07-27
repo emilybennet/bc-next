@@ -12,6 +12,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 2.7em 2.2em;
   width: 100%;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
 `;
 
 const LogoWrap = styled.a`
