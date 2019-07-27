@@ -61,6 +61,16 @@ const SessionMetric = styled.p`
     display: inline-block;
     width: 6.38em;
   }
+  em {
+    color: rgba(255, 255, 255, 0.4);
+    size: 0.4em;
+  }
+`;
+
+const Disclaimer = styled.p`
+  color: ${props => props.theme.aqua};
+  font-style: italic;
+  margin-bottom: 0;
 `;
 
 const Metric = ({ label, value }) => (
@@ -90,6 +100,9 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
     return `${hoursString} ${minutesString}`.trim();
   };
 
+  const formatLocationText = (bcName, roomNo) =>
+    `${bcName} <small><em>[${roomNo}]</em></small>`;
+
   const renderer = new marked.Renderer();
   renderer.link = (href, title, text) =>
     `<a target="_blank" href="${href}" title="${title}">${text}</a>`;
@@ -106,13 +119,39 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
             })
           }}
         />
-        <Metric label="Location" value={session.location_name} />
+        <SessionMetric>
+          <label>Location</label>
+          <span
+            dangerouslySetInnerHTML={{
+              __html: formatLocationText(
+                session.location_name,
+                session.bcc_room_number
+              )
+            }}
+          />
+        </SessionMetric>
         <Metric
           label="Start"
           value={moment(session.start_time).format("MMMM D, YYYY @ h:mma")}
         />
         <Metric label="Duration" value={formatDuration(session.duration)} />
         {session.fee ? <Metric label="Fee" value={`$${session.fee}`} /> : ""}
+        {session.location_name === "Crusaders' Clubhouse" ? (
+          <Disclaimer>
+            Crusaders' Clubhouse is limited to youth attendees and their
+            families.
+          </Disclaimer>
+        ) : (
+          ""
+        )}
+        {session.mature ? (
+          <Disclaimer>
+            This session contains mature content and is restricted to attendees
+            21 or older.
+          </Disclaimer>
+        ) : (
+          ""
+        )}
       </ModalBox>
     </ModalContainer>
   );

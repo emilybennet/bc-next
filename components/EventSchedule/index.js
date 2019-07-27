@@ -44,6 +44,7 @@ const SchedulePage = props => {
     end_time: "2019-09-14 00:31:00",
     location_name: "BCC",
     short_code: "NULL",
+    bcc_room_number: "Hall Zero",
     fee: 14,
     mature: false
   });
