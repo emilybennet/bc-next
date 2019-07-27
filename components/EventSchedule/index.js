@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Head from "next/head";
 
 import Directive from "../common/Directive";
 import SectionHeading from "../common/SectionHeading";
@@ -58,6 +59,9 @@ const SchedulePage = props => {
 
   return (
     <React.Fragment>
+      <Head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+      </Head>
       <Directive>Situational Chronology</Directive>
 
       <Container>

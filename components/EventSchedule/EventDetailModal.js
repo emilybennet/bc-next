@@ -136,6 +136,7 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
         />
         <Metric label="Duration" value={formatDuration(session.duration)} />
         {session.fee ? <Metric label="Fee" value={`$${session.fee}`} /> : ""}
+        <Metric label="Type" value={session.track_name} />
         {session.location_name === "Crusaders' Clubhouse" ? (
           <Disclaimer>
             Crusaders' Clubhouse is limited to youth attendees and their
