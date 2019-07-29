@@ -35,8 +35,8 @@ const LINEUPLIST = [
     setTime: "Thursday @ 10:05pm"
   },
   {
-    name: "Elative",
-    slug: "elative",
+    name: "Elevative",
+    slug: "elevative",
     setTime: "Thursday @ 10:40pm"
   },
   {
