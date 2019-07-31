@@ -36,15 +36,6 @@ export default [
     is_artist_alley: false
   },
   {
-    id: "2",
-    booth_number: "AA-43",
-    name: "AnnaKitsun3",
-    url: "",
-    offering: "Apparel (Traditional), Art/Posters (Digital), Other",
-    accepts: "PayPal",
-    is_artist_alley: true
-  },
-  {
     id: "107",
     booth_number: "AA-105",
     name: "AR.GI.BI. Creative Studio",
@@ -711,6 +702,24 @@ export default [
     is_artist_alley: true
   },
   {
+    id: "2019072901",
+    booth_number: "170",
+    name: "Little Toy Shop",
+    url: "",
+    offering: "",
+    accepts: "",
+    is_artist_alley: false
+  },
+  {
+    id: "91",
+    booth_number: "AA-25",
+    name: "Little Party Comics",
+    url: "http://www.littlepartycomics.com",
+    offering: "Art/Posters (Digital), Books/Manga, Promotion",
+    accepts: "Cash, Credit Cards",
+    is_artist_alley: true
+  },
+  {
     id: "90",
     booth_number: "AA-60",
     name: "lulamoonarts",
@@ -769,10 +778,11 @@ export default [
   {
     id: "113",
     booth_number: "101",
-    name: "Michelle Creber + Black Gryphon",
-    url: "",
-    offering: "",
-    accepts: "",
+    name: "Michelle Creber + Black Gryph0n",
+    url: "https://creberbrown.com/",
+    offering:
+      "Music, Apparel (Traditional), Art/Posters (Digital), Jewelry/Accessories",
+    accepts: "Cash, Credit Cards, PayPal",
     is_artist_alley: false
   },
   {
@@ -805,7 +815,7 @@ export default [
   {
     id: "158",
     booth_number: "207",
-    name: "My Little Ties",
+    name: "My Little Ties + Russian Brony Community",
     url: "http://www.mylittleties.com",
     offering: "Apparel (Novelty), Jewelry/Accessories",
     accepts: "Credit Cards, Cash",
@@ -1078,8 +1088,9 @@ export default [
     id: "129",
     booth_number: "405",
     name: "Shottsy Arts LLC",
-    url: "",
-    offering: "Apparel (Traditional), Other, Classic Toys",
+    url: "https://www.shottsyarts.com",
+    offering:
+      "Apparel (Traditional), Art/Posters (Digital), Classic Toys, Figures/Sculptures, Jewelry/Accessories, Other",
     accepts: "Cash, Credit Cards",
     is_artist_alley: false
   },
@@ -1248,7 +1259,7 @@ export default [
   {
     id: "157",
     booth_number: "513",
-    name: "The Bookstore",
+    name: "The Golden Oaks Bookstore",
     url: "https://www.fimfiction.net/user/246/Aquaman",
     offering: "Books/Manga",
     accepts: "Cash, Credit Cards, PayPal",
@@ -1341,7 +1352,7 @@ export default [
     name: "Traveling Pony Museum",
     url: "https://www.travelingponymuseum.com",
     offering:
-      "Art/Posters (Digital), Apparel (Traditional), Art/Posters (Traditional)",
+      "Apparel (Traditional), Art/Posters (Digital), Art/Posters (Traditional), Books/Manga, Jewelry/Accessories, Other",
     accepts: "Cash, PayPal, Credit Cards",
     is_artist_alley: false
   },
