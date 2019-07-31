@@ -69,14 +69,21 @@ const Footer = styled.footer`
 const BADGES = {
   SINGLE_DAY: {
     name: "1-Day",
-    price: 40,
+    price: 50,
     url: "https://bronycon2019.eventbrite.com#tickets",
     lead: "Visit for a Day",
     description: ""
   },
+  WEEKEND_YOUTH: {
+    name: "4-Day Youth",
+    price: 45,
+    url: "https://bronycon2019.eventbrite.com#tickets",
+    lead: "Junior Agents",
+    description: "Ages 0–5 are free!"
+  },
   WEEKEND: {
     name: "4-Day",
-    price: 70,
+    price: 80,
     url: "https://bronycon2019.eventbrite.com#tickets",
     lead: "All-Weekend Access",
     description:
@@ -97,8 +104,9 @@ const StandardRegistration = props => (
     <H2>Choose Your Clearance Level</H2>
     <Options>
       <RegisterCard {...BADGES.SINGLE_DAY} />
+      <RegisterCard {...BADGES.WEEKEND_YOUTH} />
       <RegisterCard {...BADGES.WEEKEND} />
-      <RegisterCard {...BADGES.WEEKEND_PLUS} />
+      {/* <RegisterCard {...BADGES.WEEKEND_PLUS} /> */}
     </Options>
     <Footer>
       Looking to help bankroll our operation?

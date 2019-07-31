@@ -119,6 +119,11 @@ const Footer = styled.footer`
 
 const PREMIER_EVENTS = [
   {
+    name: "Attendee Badge Pickup",
+    loc:
+      "Registration <small><em>[BCC Hall A]</em></small> <br/>Wednesday @ 6:30–10pm <br/>Thursday–Saturday @ 8am–8pm <br/>Sunday @ 9am–1pm"
+  },
+  {
     name: "Opening Ceremonies",
     loc: "Thursday @ 6pm – Mane Event's Hall"
   },
