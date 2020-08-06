@@ -1,6 +1,8 @@
 # bronycon-next
 
-New marketing site for BronyCon running off Next and Express.
+# bronycon-next
+
+2019 marketing site for BronyCon running off Next and Express.
 
 ## Run the Project
 
@@ -17,3 +19,7 @@ For ease, this project is deployed to [Now](https://now.sh) instead of Luna.
 2. Switch to the BronyCon org (Design can add you, just make sure you have a Zeit account first).
 3. Run `now` and follow the prompts.
 4. If the staging URL looks good, `now alias` to push live.
+
+---
+
+Copyright Lunar Solis Corp. Unauthorized use or redistribution prohibited.
