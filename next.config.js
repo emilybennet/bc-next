@@ -3,10 +3,11 @@ const emoji = require("remark-emoji");
 
 const withMDX = require("@zeit/next-mdx")({
   options: {
-    mdPlugins: [images, emoji]
-  }
+    mdPlugins: [images, emoji],
+  },
 });
 
 module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "mdx"]
+  basePath: "/2019-9",
+  pageExtensions: ["js", "jsx", "mdx"],
 });
