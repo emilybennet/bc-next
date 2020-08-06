@@ -6,7 +6,7 @@ export default [
     url: "https://www.etsy.com/shop/AdrestiasDice",
     offering: "Traditional/Board/Table Top Games",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "75",
@@ -15,7 +15,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "145",
@@ -24,7 +24,7 @@ export default [
     url: "https://www.deviantart.com/akili-amethyst",
     offering: "Art/Posters (Digital), Jewelry/Accessories",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "10",
@@ -33,7 +33,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "107",
@@ -43,7 +43,7 @@ export default [
     offering:
       "Apparel (Traditional), Art/Posters (Digital), Jewelry/Accessories",
     accepts: "PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "44",
@@ -52,7 +52,7 @@ export default [
     url: "https://www.deviantart.com/ardail/gallery/",
     offering: "Art/Posters (Digital), Other, Jewelry/Accessories",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "19",
@@ -61,7 +61,7 @@ export default [
     url: "http://fleebites.tumblr.com/",
     offering: "Art/Posters (Traditional), Books/Manga, Plush",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "78",
@@ -70,7 +70,7 @@ export default [
     url: "http://artworktee.com",
     offering: "Apparel (Traditional)",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "99",
@@ -79,7 +79,7 @@ export default [
     url: "https://www.deviantart.com/assasinmonkey",
     offering: "Art/Posters (Digital), Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "14",
@@ -88,7 +88,7 @@ export default [
     url: "https://www.deviantart.com/amarynceus",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "20",
@@ -97,7 +97,7 @@ export default [
     url: "https://www.babscon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "15",
@@ -106,7 +106,7 @@ export default [
     url: "https://www.deviantart.com/bakufoon",
     offering: "Plush",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "117",
@@ -115,7 +115,7 @@ export default [
     url: "https://www.balticon.org/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "16",
@@ -125,7 +125,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Jewelry/Accessories",
     accepts: "PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "18",
@@ -134,7 +134,7 @@ export default [
     url: "http://www.blindcoyote.com",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "56",
@@ -143,7 +143,7 @@ export default [
     url: "http://boiler3.tumblr.com/",
     offering: "Art/Posters (Digital), Apparel (Novelty), Card Games",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "65",
@@ -153,7 +153,7 @@ export default [
     offering:
       "Art/Posters (Digital), Jewelry/Accessories, Apparel (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "24",
@@ -162,7 +162,7 @@ export default [
     url: "http://www.instagram.com/briannacherrygarcia",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Books/Manga",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "25",
@@ -171,7 +171,7 @@ export default [
     url: "http://Briannesewcrafty.com",
     offering: "Plush",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "11",
@@ -180,7 +180,7 @@ export default [
     url: "https://www.deviantart.com/animechristy/gallery/",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "9",
@@ -190,7 +190,7 @@ export default [
     offering:
       "Promotion (Non-Profit/Not-for-Profit), Apparel (Traditional), Books/Manga",
     accepts: "PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "97",
@@ -199,7 +199,7 @@ export default [
     url: "https://brony.scot/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "138",
@@ -208,7 +208,7 @@ export default [
     url: "http://plushbutts.tumblr.com/",
     offering: "Plush, Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "105",
@@ -217,7 +217,7 @@ export default [
     url: "http://chocolatepony.daportfolio.com/gallery/983846",
     offering: "Art/Posters (Digital), Card Games, Other",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "34",
@@ -226,7 +226,7 @@ export default [
     url: "http://clinkorz.deviantart.com/gallery",
     offering: "Other",
     accepts: "Credit Cards, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "155",
@@ -235,7 +235,7 @@ export default [
     url: "http://banzatou.deviantart.com",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "132",
@@ -244,7 +244,7 @@ export default [
     url: "https://www.deviantart.com/supacrikeydave",
     offering: "Art/Posters (Traditional)",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "70",
@@ -253,7 +253,7 @@ export default [
     url: "https://curesearch.org/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "66",
@@ -262,7 +262,7 @@ export default [
     url: "https://www.czequestria.cz/en/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "8",
@@ -271,7 +271,7 @@ export default [
     url: "https://www.etsy.com/ca/shop/Darkodraco",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "163",
@@ -280,7 +280,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "82",
@@ -290,7 +290,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Jewelry/Accessories",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "103",
@@ -299,7 +299,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "7",
@@ -309,7 +309,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Jewelry/Accessories",
     accepts: "PayPal, Credit Cards, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "71",
@@ -318,7 +318,7 @@ export default [
     url: "https://www.derpycon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "64",
@@ -327,7 +327,7 @@ export default [
     url: "http://Cadmiumcrab.deviantart.com",
     offering: "Models/Miniatures",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "43",
@@ -336,7 +336,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "45",
@@ -345,7 +345,7 @@ export default [
     url: "http://dustysculptures.deviantart.com",
     offering: "Models/Miniatures",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "27",
@@ -354,7 +354,7 @@ export default [
     url: "http://Earth-Pony.com",
     offering: "Models/Miniatures",
     accepts: "Credit Cards, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "47",
@@ -363,7 +363,7 @@ export default [
     url: "https://www.deviantart.com/earthsong9405",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "55",
@@ -372,7 +372,7 @@ export default [
     url: "http://the-barefoot-hatter-plushies.tumblr.com/",
     offering: "Plush",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "4",
@@ -381,7 +381,7 @@ export default [
     url: "http://www.emberfall.com/",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "111",
@@ -390,7 +390,7 @@ export default [
     url: "https://www.deviantart.com/epicrainbowcrafts",
     offering: "Plush",
     accepts: "PayPal, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "98",
@@ -399,7 +399,7 @@ export default [
     url: "http://equestriaplush.deviantart.com",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "59",
@@ -408,7 +408,7 @@ export default [
     url: "https://everfreenw.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "51",
@@ -417,7 +417,7 @@ export default [
     url: "http://www.farpointcon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "58",
@@ -426,7 +426,7 @@ export default [
     url: "https://www.furthemore.org/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "54",
@@ -435,7 +435,7 @@ export default [
     url: "http://www.twitter.com/gifter_s",
     offering: "Plush, Apparel (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "146",
@@ -444,7 +444,7 @@ export default [
     url: "http://tim-kangaroo.deviantart.com",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "60",
@@ -453,7 +453,7 @@ export default [
     url: "https://harmonycon.org/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "156",
@@ -462,7 +462,7 @@ export default [
     url: "https://www.deviantart.com/harwicks-art/gallery/",
     offering: "Art/Posters (Digital)",
     accepts: "Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "104",
@@ -471,7 +471,7 @@ export default [
     url: "https://www.deviantart.com/ruirik/gallery/62386809/Woodcrafts",
     offering: "Other",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "159",
@@ -480,7 +480,7 @@ export default [
     url: "https://www.hibiscusstitch.com/bronycon-portfolio.html",
     offering: "Plush, Jewelry/Accessories, Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "57",
@@ -489,7 +489,7 @@ export default [
     url: "http://hobbsmeerkat.deviantart.com",
     offering: "Art/Posters (Digital)",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "53",
@@ -498,7 +498,7 @@ export default [
     url: "https://www.deviantart.com/frist44",
     offering: "Art/Posters (Digital), Other, Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "36",
@@ -507,7 +507,7 @@ export default [
     url: "https://www.deviantart.com/horseez/gallery/",
     offering: "Art/Posters (Traditional)",
     accepts: "PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "22",
@@ -516,7 +516,7 @@ export default [
     url: "https://www.deviantart.com/imdrunkontea",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "62",
@@ -525,7 +525,7 @@ export default [
     url: "https://www.deviantart.com/bumblebun",
     offering: "Art/Posters (Digital), Card Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "123",
@@ -534,7 +534,7 @@ export default [
     url: "http://ponycon.jp/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "69",
@@ -544,7 +544,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Apparel (Traditional)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "84",
@@ -553,7 +553,7 @@ export default [
     url: "http://www.furaffinity.net/user/jenkiwi/",
     offering: "Art/Posters (Traditional), Classic Toys, Jewelry/Accessories",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "72",
@@ -563,7 +563,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Jewelry/Accessories",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "26",
@@ -572,7 +572,7 @@ export default [
     url: "",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "77",
@@ -581,7 +581,7 @@ export default [
     url: "http://kazzysplushemporium.storenvy.com/",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "46",
@@ -590,7 +590,7 @@ export default [
     url: "http://kefkafloyd.deviantart.com",
     offering: "Art/Posters (Traditional), Other, Jewelry/Accessories",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "79",
@@ -599,7 +599,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "80",
@@ -608,7 +608,7 @@ export default [
     url: "https://www.deviantart.com/cosmicchrissy",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "81",
@@ -618,7 +618,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Apparel (Novelty)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "83",
@@ -627,7 +627,7 @@ export default [
     url: "https://www.deviantart.com/kiashone/gallery/38141360/Plushies",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "87",
@@ -636,7 +636,7 @@ export default [
     url: "https://www.facebook.com/Kittysapphirestudios",
     offering: "Art/Posters (Traditional), Art/Posters (Digital)",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "73",
@@ -645,7 +645,7 @@ export default [
     url: "https://www.facebook.com/KLPlushies",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "85",
@@ -654,7 +654,7 @@ export default [
     url: "http://Knitkritters.etsy.com",
     offering: "Jewelry/Accessories, Plush, Models/Miniatures",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "86",
@@ -663,7 +663,7 @@ export default [
     url: "https://www.deviantart.com/kopeskreations/gallery/?catpath=/",
     offering: "Apparel (Novelty), Plush, Models/Miniatures",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "50",
@@ -672,7 +672,7 @@ export default [
     url: "https://www.levelupoutfitters.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "116",
@@ -681,7 +681,7 @@ export default [
     url: "",
     offering: "Art/Posters (Digital), Card Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "88",
@@ -690,7 +690,7 @@ export default [
     url: "https://www.deviantart.com/lilmoon",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "91",
@@ -699,7 +699,7 @@ export default [
     url: "http://www.littlepartycomics.com",
     offering: "Art/Posters (Digital), Books/Manga, Promotion",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "2019072901",
@@ -708,16 +708,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
-  },
-  {
-    id: "91",
-    booth_number: "AA-25",
-    name: "Little Party Comics",
-    url: "http://www.littlepartycomics.com",
-    offering: "Art/Posters (Digital), Books/Manga, Promotion",
-    accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: false,
   },
   {
     id: "90",
@@ -727,7 +718,7 @@ export default [
     offering:
       "Art/Posters (Digital), Traditional/Board/Table Top Games, Apparel (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "94",
@@ -736,7 +727,7 @@ export default [
     url: "https://lunarshinestore.com/",
     offering: "Plush, Art/Posters (Digital), Card Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "128",
@@ -746,7 +737,7 @@ export default [
     offering:
       "Art/Posters (Digital), Apparel (Traditional), Jewelry/Accessories",
     accepts: "Credit Cards, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "68",
@@ -755,7 +746,7 @@ export default [
     url: "https://www.magfest.org/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "93",
@@ -764,7 +755,7 @@ export default [
     url: "http://www.etsy.com/shop/MajikCraft",
     offering: "Other",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "96",
@@ -773,7 +764,7 @@ export default [
     url: "",
     offering: "Art/Posters (Digital)",
     accepts: "PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "113",
@@ -783,7 +774,7 @@ export default [
     offering:
       "Music, Apparel (Traditional), Art/Posters (Digital), Jewelry/Accessories",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "31",
@@ -792,7 +783,7 @@ export default [
     url: "http://www.midnightmares.com",
     offering: "Plush, Books/Manga, Art/Posters (Digital)",
     accepts: "Credit Cards, PayPal, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "100",
@@ -801,7 +792,7 @@ export default [
     url: "https://www.deviantart.com/midnightpremiere/",
     offering: "Art/Posters (Digital), Jewelry/Accessories, Other",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "32",
@@ -810,7 +801,7 @@ export default [
     url: "http://mousu.pw",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "PayPal, Credit Cards, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "158",
@@ -819,7 +810,7 @@ export default [
     url: "http://www.mylittleties.com",
     offering: "Apparel (Novelty), Jewelry/Accessories",
     accepts: "Credit Cards, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "23",
@@ -828,7 +819,7 @@ export default [
     url: "https://www.deviantart.com/nadnerbd",
     offering: "Art/Posters (Digital)",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "108",
@@ -837,7 +828,7 @@ export default [
     url: "https://www.deviantart.com/ncmares/gallery/",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "110",
@@ -846,7 +837,7 @@ export default [
     url: "https://nichroniclesvsart.wordpress.com/",
     offering: "Art/Posters (Digital), Plush, Apparel (Novelty)",
     accepts: "PayPal, Credit Cards, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "112",
@@ -855,7 +846,7 @@ export default [
     url: "http://NightengaleNeedles.etsy.com",
     offering: "Plush",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "52",
@@ -864,7 +855,7 @@ export default [
     url: "http://outofworkderpy.tumblr.com/tagged/post",
     offering: "Art/Posters (Digital), Card Games, Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "106",
@@ -873,7 +864,7 @@ export default [
     url: "https://www.deviantart.com/peruserofpieces",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "148",
@@ -882,7 +873,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "5",
@@ -891,7 +882,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "122",
@@ -900,7 +891,7 @@ export default [
     url: "",
     offering: "Plush",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "28",
@@ -909,7 +900,7 @@ export default [
     url: "https://ponyvilleciderfest.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "37",
@@ -918,7 +909,7 @@ export default [
     url: "https://seaponycon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "119",
@@ -927,7 +918,7 @@ export default [
     url: "http://rainb0wdashie.com",
     offering: "Art/Posters (Digital), Books/Manga",
     accepts: "Cash, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "120",
@@ -937,7 +928,7 @@ export default [
     offering:
       "Art/Posters (Digital), Jewelry/Accessories, Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "13",
@@ -947,7 +938,7 @@ export default [
     offering:
       "Art/Posters (Traditional), Art/Posters (Digital), Apparel (Novelty)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "144",
@@ -956,7 +947,7 @@ export default [
     url: "https://redponyplushonline.webs.com",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "33",
@@ -965,7 +956,7 @@ export default [
     url: "http://www.roanrpg.com",
     offering: "Traditional/Board/Table Top Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "124",
@@ -974,7 +965,7 @@ export default [
     url: "http://www.samdoesart.com/conventions",
     offering: "Art/Posters (Digital), Art/Posters (Traditional)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "125",
@@ -983,7 +974,7 @@ export default [
     url: "https://twitter.com/SamohtLion",
     offering: "Art/Posters (Traditional), Other, Apparel (Novelty)",
     accepts: "PayPal, Credit Cards, Cash",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "67",
@@ -992,7 +983,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "1",
@@ -1001,7 +992,7 @@ export default [
     url: "https://saturdaymorningcon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "127",
@@ -1010,7 +1001,7 @@ export default [
     url: "http://www.sfcontinuum.com",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "61",
@@ -1019,7 +1010,7 @@ export default [
     url: "http://www.furaffinity.net/gallery/sciggles/folder/54742/Conventions",
     offering: "Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "126",
@@ -1028,7 +1019,7 @@ export default [
     url: "https://twitter.com/SeaBronies",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "114",
@@ -1037,7 +1028,7 @@ export default [
     url: "https://www.seaquestriafest.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "76",
@@ -1046,7 +1037,7 @@ export default [
     url: "https://www.deviantart.com/sen5",
     offering: "Plush",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "40",
@@ -1055,7 +1046,7 @@ export default [
     url: "https://www.deviantart.com/serenity-sama/gallery/",
     offering: "Plush",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "74",
@@ -1064,7 +1055,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "38",
@@ -1073,7 +1064,7 @@ export default [
     url: "https://www.etsy.com/shop/Miyuka",
     offering: "Jewelry/Accessories",
     accepts: "Credit Cards, PayPal, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "92",
@@ -1082,7 +1073,7 @@ export default [
     url: "https://www.deviantart.com/ithryskylark/gallery/",
     offering: "Card Games, Traditional/Board/Table Top Games",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "129",
@@ -1092,7 +1083,7 @@ export default [
     offering:
       "Apparel (Traditional), Art/Posters (Digital), Classic Toys, Figures/Sculptures, Jewelry/Accessories, Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "130",
@@ -1101,7 +1092,7 @@ export default [
     url: "https://www.deviantart.com/silfoe",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "42",
@@ -1110,7 +1101,7 @@ export default [
     url: "https://www.drivethrurpg.com/browse/pub/5559/Silver-Games-LLC",
     offering: "Traditional/Board/Table Top Games, Models/Miniatures, Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "29",
@@ -1119,7 +1110,7 @@ export default [
     url: "https://www.deviantart.com/slipsntime/gallery/",
     offering: "Apparel (Novelty), Art/Posters (Digital), Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "131",
@@ -1128,7 +1119,7 @@ export default [
     url: "https://awfulslugmonster.com/",
     offering: "Apparel (Novelty), Art/Posters (Digital), Jewelry/Accessories",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "133",
@@ -1137,7 +1128,7 @@ export default [
     url: "http://www.snuggletrumpet.com",
     offering: "Apparel (Novelty), Other, Card Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "30",
@@ -1146,7 +1137,7 @@ export default [
     url: "http://chibi-Jen-hen.deviantart.com",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "134",
@@ -1155,7 +1146,7 @@ export default [
     url: "http://Sophillia.deviantart.com",
     offering: "Plush, Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "135",
@@ -1164,7 +1155,7 @@ export default [
     url: "https://www.deviantart.com/spacekitsc",
     offering: "Art/Posters (Digital)",
     accepts: "Credit Cards, Cash",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "136",
@@ -1173,7 +1164,7 @@ export default [
     url: "https://www.deviantart.com/splattertank",
     offering: "Art/Posters (Digital), Plush",
     accepts: "PayPal, Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "121",
@@ -1182,7 +1173,7 @@ export default [
     url: "https://www.etsy.com/shop/StarsSpikes",
     offering: "Other, Plush, Apparel (Novelty)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "137",
@@ -1191,7 +1182,7 @@ export default [
     url: "http://www.deviantart.com/starsheepsweaters",
     offering: "Art/Posters (Digital), Art/Posters (Traditional), Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "89",
@@ -1200,7 +1191,7 @@ export default [
     url: "",
     offering: "Art/Posters (Digital), Apparel (Novelty)",
     accepts: "PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "139",
@@ -1209,7 +1200,7 @@ export default [
     url: "http://www.etsy.com/shop/sundame",
     offering: "Jewelry/Accessories",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "140",
@@ -1218,7 +1209,7 @@ export default [
     url: "https://sweetappleamperes.webs.com/",
     offering: "Classic Toys, Jewelry/Accessories",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "142",
@@ -1227,7 +1218,7 @@ export default [
     url: "https://www.etsy.com/shop/TechnicolourCostumes",
     offering: "Apparel (Novelty)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "143",
@@ -1236,7 +1227,7 @@ export default [
     url: "https://www.techycutie.com/bronyconportfolio",
     offering: "Art/Posters (Digital), Apparel (Novelty)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "6",
@@ -1245,7 +1236,7 @@ export default [
     url: "http://www.teamtekko.us/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "153",
@@ -1254,7 +1245,7 @@ export default [
     url: "http://bronythankyoufund.org",
     offering: "Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "157",
@@ -1263,7 +1254,7 @@ export default [
     url: "https://www.fimfiction.net/user/246/Aquaman",
     offering: "Books/Manga",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "48",
@@ -1272,7 +1263,7 @@ export default [
     url: "https://www.deviantart.com/thecrochetdragon",
     offering: "Apparel (Novelty), Art/Posters (Traditional), Plush",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "21",
@@ -1281,7 +1272,7 @@ export default [
     url: "http://www.facebook.com/encountercomics",
     offering: "Books/Manga, Plush, Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "95",
@@ -1290,7 +1281,7 @@ export default [
     url: "http://newgraymare.com",
     offering: "Classic Toys, Jewelry/Accessories, Models/Miniatures",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "101",
@@ -1299,7 +1290,7 @@ export default [
     url: "https://www.etsy.com/shop/thepaperponyplace",
     offering: "Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "109",
@@ -1308,7 +1299,7 @@ export default [
     url: "https://www.deviantart.com/the-plushaholic",
     offering: "Plush",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "49",
@@ -1317,7 +1308,7 @@ export default [
     url: "https://www.deviantart.com/lightning-bliss",
     offering: "Plush, Art/Posters (Digital)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "147",
@@ -1326,7 +1317,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "149",
@@ -1335,7 +1326,7 @@ export default [
     url: "https://www.deviantart.com/topplush",
     offering: "Plush, Apparel (Novelty)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "162",
@@ -1344,7 +1335,7 @@ export default [
     url: "https://www.deviantart.com/art-n-prints",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "63",
@@ -1354,7 +1345,7 @@ export default [
     offering:
       "Apparel (Traditional), Art/Posters (Digital), Art/Posters (Traditional), Books/Manga, Jewelry/Accessories, Other",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "150",
@@ -1364,7 +1355,7 @@ export default [
     offering:
       "Art/Posters (Digital), Art/Posters (Traditional), Books/Manga, Plush, Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "39",
@@ -1373,7 +1364,7 @@ export default [
     url: "https://trotcon.net/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "151",
@@ -1382,7 +1373,7 @@ export default [
     url: "http://www.deviantart.com/tsaoshin",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "152",
@@ -1391,7 +1382,7 @@ export default [
     url: "http://tsitra360.deviantart.com/gallery",
     offering: "Art/Posters (Traditional)",
     accepts: "PayPal",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "154",
@@ -1401,7 +1392,7 @@ export default [
     offering:
       "Art/Posters (Traditional), Art/Posters (Digital), Jewelry/Accessories",
     accepts: "Cash, Credit Cards, PayPal",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "141",
@@ -1410,7 +1401,7 @@ export default [
     url: "",
     offering: "Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "17",
@@ -1419,7 +1410,7 @@ export default [
     url: "https://viwrastupr.deviantart.com/gallery/",
     offering: "Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "3",
@@ -1428,7 +1419,7 @@ export default [
     url: "http://dakimakuradreams.com",
     offering: "Other, Plush, Card Games",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "41",
@@ -1437,7 +1428,7 @@ export default [
     url: "http://warponyforge.com/",
     offering: "Apparel (Traditional), Apparel (Novelty), Other",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "102",
@@ -1446,7 +1437,7 @@ export default [
     url: "http://mlp-silver-quill.deviantart.com/",
     offering: "Apparel (Traditional), Art/Posters (Digital), Apparel (Novelty)",
     accepts: "Cash, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "160",
@@ -1455,7 +1446,7 @@ export default [
     url: "https://www.deviantart.com/werdunfo",
     offering: "Plush, Other, Art/Posters (Traditional)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "161",
@@ -1464,7 +1455,7 @@ export default [
     url: "https://www.etsy.com/shop/wintrearts",
     offering: "Other, Apparel (Novelty), Jewelry/Accessories",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
+    is_artist_alley: true,
   },
   {
     id: "115",
@@ -1473,7 +1464,7 @@ export default [
     url: "",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "35",
@@ -1482,7 +1473,7 @@ export default [
     url: "https://www.youmacon.com/",
     offering: "",
     accepts: "",
-    is_artist_alley: false
+    is_artist_alley: false,
   },
   {
     id: "118",
@@ -1491,6 +1482,6 @@ export default [
     url: "http://www.princrim.deviantart.com",
     offering: "Art/Posters (Digital)",
     accepts: "Cash, PayPal, Credit Cards",
-    is_artist_alley: true
-  }
+    is_artist_alley: true,
+  },
 ];

@@ -70,7 +70,7 @@ const LINEUPLIST = [
     setTime: "Friday @ 11:35pm"
   },
   {
-    name: "A Secret Guest",
+    name: "Garnika",
     slug: "sekrit-gest",
     setTime: "Saturday @ 12:10am"
   },
@@ -95,7 +95,8 @@ const LINEUPLIST = [
     setTime: "Saturday @ 8:00pm"
   },
   {
-    name: "BronyPalooza Superband, featuring Luck Rock, Crusader!, Cyril the Wolf, P1K, & The Wonderbolts!",
+    name:
+      "BronyPalooza Superband, featuring Luck Rock, Crusader!, Cyril the Wolf, P1K, & The Wonderbolts!",
     slug: "bp-superband",
     setTime: "Saturday @ 9:40pm"
   },
@@ -108,7 +109,7 @@ const LINEUPLIST = [
 
 const BronyPalooza = props => (
   <BasicLayout pageTitle="BronyPalooza">
-    <Lineup lineupList={ LINEUPLIST } />
+    <Lineup lineupList={LINEUPLIST} />
   </BasicLayout>
 );
 

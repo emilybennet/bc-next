@@ -162,6 +162,10 @@ const events = [
   {
     from: "/bp",
     to: "/events/bronypalooza"
+  },
+  {
+    from: "/guide",
+    to: "https://bronycon2019.sched.com"
   }
 ];
 

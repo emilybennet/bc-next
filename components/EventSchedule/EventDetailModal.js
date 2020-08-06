@@ -3,6 +3,7 @@ import moment from "moment";
 import marked from "marked";
 
 import CloseButton from "./CloseButton";
+import Button from "../common/Button";
 
 const ModalContainer = styled.div`
   align-items: center;
@@ -153,6 +154,15 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
         ) : (
           ""
         )}
+        <div style={{ marginTop: 10 }}>
+          {session.location_name === "Mane Event's Hall" ? (
+            <Button target="_blank" href="https://www.twitch.tv/bronyconathome">
+              Watch Live
+            </Button>
+          ) : (
+            ""
+          )}
+        </div>
       </ModalBox>
     </ModalContainer>
   );
