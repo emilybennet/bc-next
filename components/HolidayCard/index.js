@@ -13,6 +13,8 @@ import SigEliana from "../../static/images/holiday2018/signature-eliana.svg";
 import SigEric from "../../static/images/holiday2018/signature-eric.svg";
 import Logo from "../../static/images/bronycon-logo.svg";
 
+const basePath = process.env.basePath;
+
 const GlobalOverwrite = createGlobalStyle`
   html,
   body {
@@ -23,8 +25,8 @@ const GlobalOverwrite = createGlobalStyle`
 
 const CardCover = styled.div`
   align-items: center;
-  background: url("/static/images/holiday2018/cover-bg-wood.jpg") #2a2745
-    no-repeat center center;
+  background: url(${basePath}/static/images/holiday2018/cover-bg-wood.jpg)
+    #2a2745 no-repeat center center;
   background-size: cover;
   box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.5);
   display: grid;
@@ -172,8 +174,9 @@ class HolidayPage extends React.PureComponent {
 
   setWrapHeight = () => {
     console.log(this.cardBody.current.clientHeight);
-    this.cardWrap.current.style.height = `${this.cardBody.current.clientHeight +
-      window.innerHeight}px`;
+    this.cardWrap.current.style.height = `${
+      this.cardBody.current.clientHeight + window.innerHeight
+    }px`;
   };
 
   handleScroll = () => {
@@ -224,7 +227,7 @@ class HolidayPage extends React.PureComponent {
           <meta property="og:url" content="https://bronycon.org/holiday" />
           <meta
             property="og:image"
-            content="http://bronycon.org/static/images/opengraph-holiday2018.jpg"
+            content={`${basePath}/static/images/opengraph-holiday2018.jpg`}
             key="opengraphImage"
           />
           <meta name="twitter:card" content="summary_large_image" />
@@ -240,13 +243,13 @@ class HolidayPage extends React.PureComponent {
           />
           <meta
             name="twitter:image:src"
-            content="https://bronycon.org/static/images/opengraph-holiday2018.jpg"
+            content={`${basePath}/static/images/opengraph-holiday2018.jpg`}
           />
         </Head>
         <GlobalOverwrite />
         <CardCover>
           <img
-            src="/static/images/holiday2018/cover-fg-cozy-scene.png"
+            src={`${basePath}/static/images/holiday2018/cover-fg-cozy-scene.png`}
             alt="BronyCon Mascots"
           />
           <FestiveFrame />

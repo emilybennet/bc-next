@@ -215,6 +215,13 @@ const PREMIER_EVENTS = [
   }
 ];
 
+const prefixUrl = url => {
+  if (!url.startsWith("http")) {
+    return process.env.basePath + url;
+  }
+  return url;
+};
+
 const EventControls = ({ controls }) => {
   return (
     <div className="event-controls">
@@ -227,7 +234,7 @@ const EventControls = ({ controls }) => {
           );
 
         return (
-          <a key={i} href={c.url}>
+          <a key={i} href={prefixUrl(c.url)}>
             {c.text}
           </a>
         );

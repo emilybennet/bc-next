@@ -45,7 +45,8 @@ const Performer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    // background-image: url(/static/images/bp-lineup-poster.svg#view-${props => props.slug});
+    // background-image: url(/static/images/bp-lineup-poster.svg#view-${props =>
+      props.slug});
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,15 +97,28 @@ const Performer = styled.div`
   }
 `;
 
-const Lineup = ({ lineupList }) => (
+const Lineup = ({ lineupList }) =>
   lineupList.map(item => (
-    <Performer aria-label={`${item.name} ${item.setTime}`} key={item.slug} slug={item.slug}>
+    <Performer
+      aria-label={`${item.name} ${item.setTime}`}
+      key={item.slug}
+      slug={item.slug}
+    >
       <input type="radio" name="performer" id={`toggle-${item.slug}`} />
-      <img class="image" title={item.name} src={`/static/images/bp-lineup-poster.svg#view-${item.slug}`} width="1500px" height="127px" />
-      <label htmlFor={`toggle-${item.slug}`} class="performer-name-decorative">{item.name}</label>
-      <span class="dymo">{item.name} — {item.setTime}</span>
+      <img
+        class="image"
+        title={item.name}
+        src={`${process.env.basePath}/static/images/bp-lineup-poster.svg#view-${item.slug}`}
+        width="1500px"
+        height="127px"
+      />
+      <label htmlFor={`toggle-${item.slug}`} class="performer-name-decorative">
+        {item.name}
+      </label>
+      <span class="dymo">
+        {item.name} — {item.setTime}
+      </span>
     </Performer>
-  ))
-);
+  ));
 
 export default Lineup;

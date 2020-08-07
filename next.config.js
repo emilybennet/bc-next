@@ -3,11 +3,17 @@ const emoji = require("remark-emoji");
 
 const withMDX = require("@zeit/next-mdx")({
   options: {
-    mdPlugins: [images, emoji],
-  },
+    mdPlugins: [images, emoji]
+  }
 });
 
+// For use when exporting a static site that will live in a sub directory
+const basePath = "";
+
 module.exports = withMDX({
-  basePath: "/2019-9",
-  pageExtensions: ["js", "jsx", "mdx"],
+  basePath,
+  env: {
+    basePath
+  },
+  pageExtensions: ["js", "jsx", "mdx"]
 });

@@ -10,16 +10,24 @@ const Container = styled.div`
 `;
 
 const DossierImage = styled.img`
-  filter: contrast(.85) url(#lcd_duotone);
+  filter: contrast(0.85) url(#lcd_duotone);
   object-fit: cover;
   width: 100%;
   height: 100%;
 `;
 
+const basePath = process.env.basePath;
+
 const DossierPhoto = props => (
   <Container>
-    <DossierImage src={props.srcPath || '/static/images/guests/unknown.png'} {...props} />
+    <DossierImage
+      src={
+        `${basePath + props.srcPath}` ||
+        `${basePath}/static/images/guests/unknown.png`
+      }
+      {...props}
+    />
   </Container>
-)
+);
 
 export default DossierPhoto;

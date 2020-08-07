@@ -5,6 +5,8 @@ import Directive from "../components/common/Directive";
 
 import Cipher from "vignere-babbage-cipher";
 
+const basePath = process.env.basePath;
+
 const CipherTool = styled.div`
   max-width: 900px;
   margin: 30px auto 0;
@@ -91,7 +93,7 @@ const CipherStep = styled.div`
   &.encrypt:after {
     content: '';
     display: block;
-    background-image: url(/static/images/icons/arrow.svg);
+    background-image: url(${basePath}/static/images/icons/arrow.svg);
     width: 64px;
     height: 64px;
     position: absolute;
@@ -105,7 +107,7 @@ const CipherStep = styled.div`
   &.decrypt:after {
     content: '';
     display: block;
-    background-image: url(/static/images/icons/arrow.svg);
+    background-image: url(${basePath}/static/images/icons/arrow.svg);
     width: 64px;
     height: 64px;
     position: absolute;

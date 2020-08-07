@@ -13,9 +13,9 @@ const Container = styled.section`
 const Lead = styled.p`
   font-size: 1.5em;
   font-weight: 300;
-  max-width: ${(props) => props.theme.maxWidth};
+  max-width: ${props => props.theme.maxWidth};
   margin: 2em auto 3em;
-  @media (max-width: ${(props) => props.theme.maxWidth}) {
+  @media (max-width: ${props => props.theme.maxWidth}) {
     padding: 0 20px;
     text-align: center;
   }
@@ -27,7 +27,7 @@ const Options = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: 3em auto 0;
-  max-width: ${(props) => props.theme.maxWidth};
+  max-width: ${props => props.theme.maxWidth};
   & > * {
     flex: 1;
   }
@@ -49,7 +49,7 @@ const RegOption = styled.div`
   img {
     max-width: 100%;
     border-radius: 50%;
-    border: 1px solid ${(props) => props.theme.aqua};
+    border: 1px solid ${props => props.theme.aqua};
     grid-column: 1;
     grid-row: 1;
   }
@@ -62,7 +62,7 @@ const RegOption = styled.div`
   }
 `;
 
-const BaltimoreCallout = (props) => (
+const BaltimoreCallout = props => (
   <Container>
     <Directive>Location Declassified</Directive>
     <Options>
@@ -74,7 +74,7 @@ const BaltimoreCallout = (props) => (
       <div>
         <RegOption>
           <img
-            src="/static/images/baltimore-map-thumb.jpg"
+            src={`${process.env.basePath}/static/images/baltimore-map-thumb.jpg`}
             alt="Baltimore Map"
           />
           <DarkButton text="Website" href="/baltimore">

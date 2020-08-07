@@ -4,6 +4,8 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
 import MainMenu from "./common/MainMenu";
 
+const basePath = process.env.basePath;
+
 const theme = {
   // brand primary
   cyan: "#6ED2FA",
@@ -44,47 +46,49 @@ const theme = {
   gridGap: "20px"
 };
 
+const fontPath = filename => `${basePath}/static/fonts/${filename}`;
+
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'IBM Plex Mono';
-    src: url('/static/fonts/IBMPlexMono-Text-Latin1.woff2') format('woff2');
+    src: url(${fontPath("IBMPlexMono-Text-Latin1.woff2")}) format('woff2');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'IBM Plex Mono';
-    src: url('/static/fonts/IBMPlexMono-LightItalic-Full.woff2') format('woff2');
+    src: url(${fontPath("IBMPlexMono-LightItalic-Full.woff2")}) format('woff2');
     font-weight: 300; /* light */
     font-style: italic;
   }
 
   @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/poppins-v5-latin-regular.woff2') format('woff2');
+    src: url(${fontPath("poppins-v5-latin-regular.woff2")}) format('woff2');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/poppins-v5-latin-italic.woff2') format('woff2');
+    src: url(${fontPath("poppins-v5-latin-italic.woff2")}) format('woff2');
     font-weight: normal;
     font-style: italic;
   }
   @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/poppins-v5-latin-300.woff2') format('woff2');
+    src: url(${fontPath("poppins-v5-latin-300.woff2")}) format('woff2');
     font-weight: 300; /* light */
     font-style: normal;
   }
   @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/poppins-v5-latin-600.woff2') format('woff2');
+    src: url(${fontPath("poppins-v5-latin-600.woff2")}) format('woff2');
     font-weight: 600; /* semi */
     font-style: normal;
   }
   @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/poppins-v5-latin-700.woff2') format('woff2');
+    src: url(${fontPath("poppins-v5-latin-700.woff2")}) format('woff2');
     font-weight: 700; /* bold */
     font-style: normal;
   }
@@ -140,7 +144,7 @@ const Page = props => (
         <meta charSet="utf-8" />
         <title>BronyCon 2019</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/static/favicon.png" />
+        <link rel="shortcut icon" href={`${basePath}/static/favicon.png`} />
 
         <meta name="twitter:site" content="@bronycon" />
         <meta property="og:title" content="BronyCon 2019" />
@@ -152,7 +156,7 @@ const Page = props => (
         <meta property="og:url" content="https://bronycon.org" />
         <meta
           property="og:image"
-          content="https://bronycon.org/static/images/opengraph.png"
+          content={`${basePath}/static/images/opengraph.png`}
           key="opengraphImage"
         />
         <link
