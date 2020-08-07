@@ -49,13 +49,15 @@ const LabelStyle = styled.span`
   padding: 10px 14px;
 `;
 
-const MenuItem = ({ name, Icon = false, rotation = 0, ...props }) => (
-  <StyledMenuItem {...props}>
-    {Icon && <Icon />}
-    <LabelStyle style={{ transform: `rotate(${rotation}deg)` }}>
-      {name}
-    </LabelStyle>
-  </StyledMenuItem>
+const MenuItem = React.forwardRef(
+  ({ name, Icon = false, rotation = 0, ...props }, ref) => (
+    <StyledMenuItem {...props}>
+      {Icon && <Icon />}
+      <LabelStyle style={{ transform: `rotate(${rotation}deg)` }}>
+        {name}
+      </LabelStyle>
+    </StyledMenuItem>
+  )
 );
 
 export default MenuItem;

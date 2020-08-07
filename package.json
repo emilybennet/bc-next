@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production node server.js",
     "next": "NODE_ENV=production next",
     "next:dev": "next",
+    "next:build": "next build",
     "next:start": "next start",
     "next:export": "next export"
   },
