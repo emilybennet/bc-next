@@ -10,7 +10,7 @@ import thursday from "../../content/poi/thursday";
 // Skipping server-side for Map import due to mapbox-gl issue.
 const DynamicMap = dynamic(() => import("./Map"), {
   loading: () => <p>Loading Map...</p>,
-  ssr: false,
+  ssr: false
 });
 
 const FixedHeader = styled(Header)`
@@ -19,27 +19,27 @@ const FixedHeader = styled(Header)`
   top: 0;
   z-index: 10;
   .btn {
-    background: ${(props) => props.theme.black};
+    background: ${props => props.theme.black};
   }
 `;
 
 const TAB_DATA = [
   {
     name: "Hotels",
-    data: hotels,
+    data: hotels
   },
   {
     name: "Thursday Activities",
-    data: thursday,
-  },
+    data: thursday
+  }
 ];
 
 class MapLayout extends React.Component {
   state = {
-    activeTab: 1,
+    activeTab: 1
   };
 
-  changeTab = (index) => {
+  changeTab = index => {
     this.setState({ activeTab: index });
   };
 

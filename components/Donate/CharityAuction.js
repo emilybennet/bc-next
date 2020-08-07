@@ -12,22 +12,22 @@ const Section = styled.section`
 const LeadParagraph = styled.p`
   font-size: 1.5em;
   font-weight: 300;
-  max-width: ${(props) => props.theme.maxWidth};
+  max-width: ${props => props.theme.maxWidth};
   margin: 2em auto 3em;
   text-align: center;
-  @media (max-width: ${(props) => props.theme.maxWidth}) {
+  @media (max-width: ${props => props.theme.maxWidth}) {
     padding: 0 20px;
   }
   a {
-    color: ${(props) => props.theme.gold};
+    color: ${props => props.theme.gold};
     text-decoration: underline;
     &:hover {
-      color: ${(props) => props.theme.yellow};
+      color: ${props => props.theme.yellow};
     }
   }
 `;
 
-const CharityAuction = (props) => (
+const CharityAuction = props => (
   <Section>
     <SectionHeading text="Charity Auction" id="charityauction" />
     <LeadParagraph>

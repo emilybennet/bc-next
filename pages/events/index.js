@@ -4,7 +4,7 @@ import BasicLayout from "../../components/common/BasicLayout";
 import EventSchedule from "../../components/EventSchedule";
 import eventData from "../../content/eventsList.json";
 
-const SchedulePage = (props) => (
+const SchedulePage = props => (
   <BasicLayout pageTitle="Event Schedule">
     <EventSchedule {...props} />
   </BasicLayout>

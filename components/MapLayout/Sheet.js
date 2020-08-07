@@ -13,9 +13,9 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  background: ${(props) => props.theme.deepAbyss};
-  border-top: 4px solid ${(props) => props.theme.aqua};
-  box-shadow: 0 0 2.5em ${(props) => props.theme.black};
+  background: ${props => props.theme.deepAbyss};
+  border-top: 4px solid ${props => props.theme.aqua};
+  box-shadow: 0 0 2.5em ${props => props.theme.black};
   padding: 3.33em;
 `;
 
@@ -26,11 +26,11 @@ const TabContainer = styled.div`
 `;
 
 const Tab = styled.a`
-  background: ${(props) => props.theme.deepAbyss};
-  border: 1px solid ${(props) => props.theme.aqua};
+  background: ${props => props.theme.deepAbyss};
+  border: 1px solid ${props => props.theme.aqua};
   border-bottom-width: 0;
   border-radius: 3px 3px 0 0;
-  color: ${(props) => props.theme.turquoise};
+  color: ${props => props.theme.turquoise};
   display: flex;
   flex-direction: column;
   font-size: 0.88em;
@@ -48,13 +48,13 @@ const Tab = styled.a`
     font-style: normal;
   }
   &.active {
-    background: ${(props) => props.theme.aqua};
-    color: ${(props) => props.theme.deepAbyss};
+    background: ${props => props.theme.aqua};
+    color: ${props => props.theme.deepAbyss};
   }
   &.disabled {
     cursor: default;
-    border-color: ${(props) => props.theme.turquoise};
-    color: ${(props) => props.theme.turquoise};
+    border-color: ${props => props.theme.turquoise};
+    color: ${props => props.theme.turquoise};
     span {
       opacity: 0.3;
     }
