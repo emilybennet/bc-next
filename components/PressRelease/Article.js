@@ -67,7 +67,7 @@ const StyledH2 = styled.h2`
   text-transform: uppercase;
 `;
 
-const Anchor = styled.a`
+const StyledAnchor = styled.a`
   color: ${props => props.theme.gold};
   text-decoration: underline;
   &:focus {
@@ -90,6 +90,13 @@ const MetaLabel = styled.label`
 `;
 
 const DontRender = () => false;
+
+const Anchor = ({ href, ...props }) => {
+  if (!href.startsWith("http")) {
+    href = process.env.basePath + href;
+  }
+  return <StyledAnchor href={href} {...props} />;
+};
 
 const PressReleaseLayout = ({ Content, meta, ...props }) => (
   <BasicLayout>
