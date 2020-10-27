@@ -41,7 +41,7 @@ const theme = {
   gridGap: "20px"
 };
 
-const basePath = '';
+const basePath = '/bc-next';
 const fontPath = filename => `${basePath}/fonts/${filename}`;
 const GlobalStyle = createGlobalStyle`
   @font-face {
