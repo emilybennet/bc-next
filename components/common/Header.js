@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Link from "next/link";
 
@@ -46,10 +47,17 @@ const Header = props => (
         <Logo />
       </LogoWrap>
     </Link>
-    {/* <Button className="btn" href="/">
+    <Button className="btn" href="/">
       Attend
-    </Button> */}
+    </Button>
   </StyledHeader>
 );
+
+Header.propTypes = {
+  /**
+   * in the event overrides are needed
+   */
+  className: PropTypes.string
+}
 
 export default Header;

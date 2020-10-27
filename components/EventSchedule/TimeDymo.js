@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Dymo = styled.span`
   background: ${props => props.theme.black};
@@ -30,5 +31,12 @@ const Dymo = styled.span`
 `;
 
 const TimeDymo = ({ time }) => <Dymo>{time}</Dymo>;
+
+TimeDymo.propTypes = {
+  /**
+   * Time to display, i.g. "1:00pm"
+   */
+  time: PropTypes.string.isRequired
+}
 
 export default TimeDymo;

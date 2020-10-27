@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -53,5 +54,19 @@ const Warning = ({ actions = [], ...props }) => {
     </WarningContainer>
   );
 };
+
+Warning.propTypes = {
+  /**
+   * Text or markup to render
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * Array of actions
+   */
+  actions: PropTypes.arrayOf(PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  }))
+}
 
 export default Warning;

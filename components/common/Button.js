@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Link from "next/link";
 
@@ -63,5 +64,32 @@ const Button = ({ href, target, className, disabled, style, ...props }) => {
     </Link>
   );
 };
+
+Button.propTypes = {
+  /**
+   * Text or markup to render
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * URL to open
+   */
+  href: PropTypes.string.isRequired,
+  /**
+   * Where to open the URL
+   */
+  target: PropTypes.string,
+  /**
+   * Disable button functionality
+   */
+  disabled: PropTypes.bool,
+  /**
+   * Optional style class
+   */
+  className: PropTypes.string,
+  /**
+   * Optional CSS styles to apply
+   */
+  style: PropTypes.string,
+}
 
 export default Button;

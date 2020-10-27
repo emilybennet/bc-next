@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import styled from "styled-components";
 import Button from "../common/Button";
 
@@ -58,5 +59,28 @@ const RegisterCard = props => (
     <Description>{props.description}</Description>
   </Container>
 );
+
+RegisterCard.propTypes = {
+  /**
+   * Registration option name
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * How much it costs
+   */
+  price: PropTypes.number.isRequired,
+  /**
+   * URL to Eventbrite to buy
+   */
+  url: PropTypes.string,
+  /**
+   * An in-theme markety tl;dr
+   */
+  lead: PropTypes.string.isRequired,
+  /**
+   * What comes with this option
+   */
+  description: PropTypes.string.isRequired
+};
 
 export default RegisterCard;

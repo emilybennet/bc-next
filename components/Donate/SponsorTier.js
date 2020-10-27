@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import ProgressRing from "./ProgressRing";
@@ -86,5 +87,40 @@ const SponsorCard = ({ Icon, ...props }) => {
     </Tier>
   );
 };
+
+SponsorCard.propTypes = {
+  /**
+   * What is this tier called.
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * Imported SVG to represent badge tier.
+   */
+  Icon: PropTypes.element.isRequired,
+  /**
+   * Badge price, as a whole number (2000 for $2000.00).
+   */
+  price: PropTypes.number.isRequired,
+  /**
+   * Eventbrite URL to buy badge.
+   */
+  url: PropTypes.string.isRequired,
+  /**
+   * Hex color code of the progress ring.
+   */
+  color: PropTypes.string.isRequired,
+  /**
+   * Attendee eXperience level (e.g. Good, Better, Best), a number 0-4.
+   */
+  axLevel: PropTypes.number.isRequired,
+  /**
+   * Number of badges remaining, as a whole number percentage (42 for 42%).
+   */
+  percent: PropTypes.number.isRequired,
+  /**
+   * A optional short note about this tier.
+   */
+  note: PropTypes.string
+}
 
 export default SponsorCard;

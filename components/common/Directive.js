@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import styled, { keyframes } from "styled-components";
 import IconNavigator from "../../static/images/icons/navigator-hollow.svg";
 
@@ -43,5 +44,12 @@ const Directive = props => (
     <IconNavigator />
   </StyledDiv>
 );
+
+Directive.propTypes = {
+  /**
+   * Text or markup to render within Directive.
+   */
+  children: PropTypes.node.isRequired
+}
 
 export default Directive;

@@ -16,7 +16,7 @@ const DossierImage = styled.img`
   height: 100%;
 `;
 
-const basePath = process.env.basePath;
+const basePath = process.env.basePath ? process.env.basePath : "";
 
 const DossierPhoto = props => (
   <Container>

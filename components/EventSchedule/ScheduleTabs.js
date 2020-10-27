@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const TabContainer = styled.div`
   display: flex;
@@ -68,4 +69,23 @@ const ScheduleTabs = ({ tabs, activeTab, setActiveTab }) => {
     </TabContainer>
   );
 };
+
+ScheduleTabs.propTypes = {
+  /**
+   * what are the tabs
+   */
+  tabs: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    key: PropTypes.string.isRequired
+  })).isRequired,
+  /**
+   * index of the active tab
+   */
+  activeTab: PropTypes.number.isRequired,
+  /**
+   * Handle on tab click
+   */
+  setActiveTab: PropTypes.func.isRequired
+}
+
 export default ScheduleTabs;

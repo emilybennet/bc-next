@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Chip = styled.li`
   display: block;
@@ -56,5 +57,28 @@ const EventChip = ({ session, handleOnClick, ...props }) => (
     </Event>
   </Chip>
 );
+
+EventChip.propTypes = {
+  /**
+   * Event session details to display
+   */
+  session: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    event_name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    start_time: PropTypes.string.isRequired,
+    end_time: PropTypes.string.isRequired,
+    location_name: PropTypes.string.isRequired,
+    short_code: PropTypes.string.isRequired,
+    bcc_room_number: PropTypes.string.isRequired,
+    track_name: PropTypes.string.isRequired,
+    fee: PropTypes.number.isRequired,
+    mature: PropTypes.bool.isRequired
+  }).isRequired,
+  /**
+   * What to do when the thing is clicked
+   */
+  handleOnClick: PropTypes.func.isRequired
+}
 
 export default EventChip;

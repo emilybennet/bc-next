@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import moment from "moment";
 import EventChip from "./EventChip";
@@ -196,5 +197,20 @@ const ScheduleSheet = ({ eventData, activeTabKey, openDetailModal }) => {
     </ContainerSheet>
   );
 };
+
+ScheduleSheet.propTypes = {
+  /**
+   * a series of keys (days), each with an array of event sessions (ex. `{thursday: [events]}`)
+   */
+  eventData: PropTypes.object.isRequired,
+  /**
+   * A string that matches the key in the session JSON (probably a day, like "thursday")
+   */
+  activeTabKey: PropTypes.oneOf(['thursday', 'friday', 'saturday', 'sunday']),
+  /**
+   * How to display more session info
+   */
+  openDetailModal: PropTypes.func.isRequired
+}
 
 export default ScheduleSheet;

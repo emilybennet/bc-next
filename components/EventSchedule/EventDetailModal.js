@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import moment from "moment";
 import marked from "marked";
 
@@ -81,8 +82,9 @@ const Metric = ({ label, value }) => (
   </SessionMetric>
 );
 
-const EventDetailModal = ({ showModal = false, handleClose, session }) => {
+const EventDetailModal = ({ showModal = false, takeover = true, handleClose, session }) => {
   const show = showModal ? "flex" : "none";
+  const over = takeover ? {} : {height: "auto", width: "auto", position: "relative"}
 
   moment.updateLocale("en", {
     relativeTime: {
@@ -109,7 +111,7 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
     `<a target="_blank" href="${href}" title="${title}">${text}</a>`;
 
   return (
-    <ModalContainer style={{ display: show }}>
+    <ModalContainer style={{ display: show, ...over }}>
       <ModalBox>
         <CloseButton action={handleClose} />
         <SessionName>{session.event_name}</SessionName>
@@ -167,5 +169,36 @@ const EventDetailModal = ({ showModal = false, handleClose, session }) => {
     </ModalContainer>
   );
 };
+
+EventDetailModal.propTypes = {
+  /**
+   * Show/hide modal, defaults to false
+   */
+  showModal: PropTypes.bool,
+  /**
+   * cover entire viewport, defaults to true
+   */
+  takeover: PropTypes.bool,
+  /**
+   * What to do when the modal's close button is clicked
+   */
+  handleClose: PropTypes.func.isRequired,
+  /**
+   * Event session details to display
+   */
+  session: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    event_name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    start_time: PropTypes.string.isRequired,
+    end_time: PropTypes.string.isRequired,
+    location_name: PropTypes.string.isRequired,
+    short_code: PropTypes.string.isRequired,
+    bcc_room_number: PropTypes.string.isRequired,
+    track_name: PropTypes.string.isRequired,
+    fee: PropTypes.number.isRequired,
+    mature: PropTypes.bool.isRequired
+  }).isRequired
+}
 
 export default EventDetailModal;

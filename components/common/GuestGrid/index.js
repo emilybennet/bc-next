@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Link from "next/link";
 
@@ -26,5 +27,17 @@ const GuestTease = props => (
     ))}
   </Lineup>
 );
+
+GuestTease.propTypes = {
+  /**
+   * An array of guests, each with a photo URL, name, id (typically the last name), and profile URL
+   */
+  guests: PropTypes.arrayOf(PropTypes.shape({
+    photo: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  })).isRequired
+}
 
 export default GuestTease;

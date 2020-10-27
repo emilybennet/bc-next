@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const StyledCircle = styled.circle`
@@ -80,5 +81,36 @@ const ProgressRing = ({
     </div>
   );
 };
+
+ProgressRing.propTypes = {
+  /**
+   * How large is the whole graph
+   */
+  radius: PropTypes.number.isRequired,
+  /**
+   * How many pixels thick is the ring
+   */
+  stroke: PropTypes.number.isRequired,
+  /**
+   * Whole number percent progress (0–100)
+   */
+  progress: PropTypes.number.isRequired,
+  /**
+   * Hex color code of the progress ring
+   */
+  barColor: PropTypes.string.isRequired,
+  /**
+   * Imported SVG to render in middle of ring
+   */
+  Icon: PropTypes.element.isRequired,
+  /**
+   * If True, ring progress fills counterclockwise. Useful for a countdown from 100% to 0%, the ring will empty clockwise.
+   */
+  countdown: PropTypes.bool,
+  /**
+   * Phrase to render if progress is zero (i.e. "Sold Out")
+   */
+  message: PropTypes.string.isRequired
+}
 
 export default ProgressRing;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const CloseShape = styled.a`
   align-items: center;
@@ -40,5 +41,12 @@ const CloseBtn = ({ action }) => (
     <div />
   </CloseShape>
 );
+
+CloseBtn.propTypes = {
+  /**
+   * What should happen on click
+   */
+  action: PropTypes.func.isRequired
+}
 
 export default CloseBtn;

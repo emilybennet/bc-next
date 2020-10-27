@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import slugify from "slugify";
 
@@ -52,5 +53,20 @@ const SectionHeading = ({ text, echo, id }) => {
     </Container>
   );
 };
+
+SectionHeading.propTypes = {
+  /**
+   * What the section called
+   */
+  text: PropTypes.string.isRequired,
+  /**
+   * Background text, defaults to text prop
+   */
+  echo: PropTypes.string,
+  /**
+   * Element ID for anchor linking, defaults to slugified "text" prop
+   */
+  id: PropTypes.string
+}
 
 export default SectionHeading;
